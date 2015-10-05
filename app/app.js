@@ -2,7 +2,7 @@
 
 var deevee = angular.module('deeVee', ['ngRoute']);
 
-deevee.controller('stage', ['$scope', '$http', function($scope, $http) {
+deevee.controller('stageCtrl', ['$scope', '$http', function($scope, $http) {
     $http.get('parts/parts.json').success(function(data) {
       $scope.parts = data;
       $scope.selected = data[0];
