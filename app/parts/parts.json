@@ -1,0 +1,19 @@
+[ 
+    {"name" : "Select part"},
+    {"name" : "FTL-T400",
+     "wetmass" : 2.25,
+     "drymass" : 0.25
+    },
+    {"name" : "LVT-30",
+    "wetmass" : 1.25,
+    "drymass" : 1.25,
+    "impulse" : 280,
+    "thrust"  : 200.67
+    },
+    {"name" : "LVT-909",
+    "wetmass" : 0.5,
+    "drymass" : 0.5,
+    "impulse" : 85,
+    "thrust"  : 14.783
+    }
+]
