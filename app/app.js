@@ -21,8 +21,9 @@ deevee.controller('stageCtrl', ['$scope', '$http', function($scope, $http) {
         if (partid > -1 && typeof $scope.partsList[partid] !== 'undefined') {
            $scope.partsList.splice(partid, 1);
         }
+        $scope.result = $scope.calculate();
     }
-    $scope.change = function(part) {
+    $scope.addPart = function(part) {
         var newpart = {'name' : part.name,
                        'wetmass' : part.wetmass,
                        'drymass' : part.drymass};

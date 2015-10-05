@@ -16,7 +16,7 @@
 </head>
 
 <body ng-controller="stageCtrl">
-  <select ng-options="part.name for part in parts" ng-model="selected" ng-change="change(selected)">
+  <select ng-options="part.name for part in parts" ng-model="selected" ng-change="addPart(selected)">
   </select>
   <ul class="whatever">
     <li ng-repeat="part in partsList track by $index">
