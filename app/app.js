@@ -32,7 +32,6 @@ deevee.controller('stageCtrl', ['$scope', '$http', function($scope, $http) {
         for (var i = 0; i < properties.length; i++) {
             newpart[properties[i]] = $scope.checkProperty(part, properties[i]);
         }
-        console.log(newpart);
         $scope.partsList.push(newpart);
         $scope.selected = $scope.parts[0];
         $scope.result = $scope.calculate();
@@ -41,9 +40,7 @@ deevee.controller('stageCtrl', ['$scope', '$http', function($scope, $http) {
         var sumdrymass, sumwetmass, sumthrust, sumfuelused, totalimpulse, dv;
         sumdrymass = sumwetmass = sumthrust = sumfuelused = totalimpulse = dv = 0;
 
-        console.log($scope.partsList);
         for (var i = 0; i < $scope.partsList.length; i++) {
-            console.log($scope.partsList[i]);
             sumdrymass += $scope.partsList[i].drymass;
             sumwetmass += $scope.partsList[i].wetmass;
             if ($scope.partsList[i].impulse !== 0) {
