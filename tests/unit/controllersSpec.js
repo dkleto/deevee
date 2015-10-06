@@ -21,7 +21,6 @@ describe('deeVee controllers', function() {
              wetmass : 2.25,
              drymass : 0.25 }
           ]);
-
       scope = $rootScope.$new();
       ctrl = $controller('stageCtrl', {$scope: scope});
     }));
@@ -49,6 +48,17 @@ describe('deeVee controllers', function() {
       expect(scope.selected).toBeUndefined();
       $httpBackend.flush();
       expect(scope.selected).toEqual({name: 'Select part'});
+    });
+
+    it('should add a new part', function() {
+        var testPart =
+            {'name' : 'test part',
+             'wetmass' : 0.5,
+             'drymass' : 0.25};
+
+        $httpBackend.flush();
+        scope.addPart(testPart);
+        expect(scope.partsList.length === 1);
     });
   });
 });
