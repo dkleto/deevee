@@ -60,5 +60,17 @@ describe('deeVee controllers', function() {
         scope.addPart(testPart);
         expect(scope.partsList.length === 1);
     });
+
+    it('should remove a part', function() {
+        var testPart =
+            {'name' : 'test part',
+             'wetmass' : 0.5,
+             'drymass' : 0.25};
+        $httpBackend.flush();
+        scope.partsList = [testPart];
+        expect(scope.partsList.length === 1);
+        scope.removePart(0);
+        expect(scope.partsList.length === 0);
+    });
   });
 });
