@@ -24,7 +24,11 @@
         <span><button ng-click="removePart($index)">Remove</button></span>
     </li>
   </ul>
-  <p>{{result}}</p>
+  <p>
+    dV: {{result.dv}}m/s<br>
+    thrust/weight ratio: {{result.thrustratio}}<br>
+    impulse: {{result.impulse}}s
+  </p>
 
   <!--[if lt IE 7]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>

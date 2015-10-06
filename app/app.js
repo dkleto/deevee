@@ -37,8 +37,10 @@ deevee.controller('stageCtrl', ['$scope', '$http', function($scope, $http) {
         $scope.result = $scope.calculate();
     }
     $scope.calculate = function() {
-        var sumdrymass, sumwetmass, sumthrust, sumfuelused, totalimpulse, dv;
-        sumdrymass = sumwetmass = sumthrust = sumfuelused = totalimpulse = dv = 0;
+        var sumdrymass, sumwetmass, sumthrust, sumfuelused, totalimpulse, dv,
+            thrustratio;
+        sumdrymass = sumwetmass = sumthrust = sumfuelused = totalimpulse = dv
+            = thrustratio = 0;
 
         for (var i = 0; i < $scope.partsList.length; i++) {
             sumdrymass += $scope.partsList[i].drymass;
@@ -53,9 +55,14 @@ deevee.controller('stageCtrl', ['$scope', '$http', function($scope, $http) {
             totalimpulse = sumthrust / sumfuelused;
         }
         if (sumdrymass !== 0) {
-            // TODO: Throw exception for zero dry mass - this should never happen.
-            dv = Math.log(sumwetmass / sumdrymass) * $scope.gravity * totalimpulse;
+            dv = Math.log(sumwetmass / sumdrymass)
+                 * $scope.gravity * totalimpulse;
         }
-        return 'DRY MASS: ' + sumdrymass + ' WET MASS: ' + sumwetmass + ' TOTAL IMPULSE: ' + totalimpulse + '...and the dV is: ' + dv;
+        if (sumwetmass !== 0) {
+            thrustratio = sumthrust / (sumwetmass * $scope.gravity);
+        }
+        return {'impulse' : totalimpulse,
+                'thrustratio' : thrustratio,
+                'dv' : dv};
     }
 }]);
