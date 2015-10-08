@@ -1,6 +1,5 @@
 'use strict';
 
-/* jasmine specs for controllers go here */
 describe('deeVee controllers', function() {
 
   describe('stageCtrl', function(){
