@@ -17,9 +17,9 @@ describe('deeVee controllers', function() {
       scope.testPart2 = {name : 'FTL-T400',
                    wetmass : 2.25,
                    drymass : 0.25 };
-      scope.result1 = {'impulse' : 280,
-                       'thrustratio' : 5.844473569244211,
-                       'dv' : 2327.357762911571};
+      scope.calculationResult1 = {'impulse' : 280,
+                                  'thrustratio' : 5.844473569244211,
+                                  'dv' : 2327.357762911571};
       $httpBackend = _$httpBackend_;
       $httpBackend.expectGET('parts/parts.json').
           respond([
@@ -29,7 +29,6 @@ describe('deeVee controllers', function() {
           ]);
       ctrl = $controller('stageCtrl', {$scope: scope});
     }));
-
 
     it('should create "parts" model with parts fetched from xhr', function() {
       expect(scope.parts).toBeUndefined();
@@ -41,7 +40,6 @@ describe('deeVee controllers', function() {
             scope.testPart2
           ]);
     });
-
 
     it('should set the default selected option', function() {
       expect(scope.selected).toBeUndefined();
@@ -71,6 +69,11 @@ describe('deeVee controllers', function() {
         expect(scope.partsList.length).toEqual(0);
     });
 
+    it('should calculate impulse, thrust ratio and dV', function() {
+        $httpBackend.flush();
+        scope.addPart(scope.testPart1);
+        scope.addPart(scope.testPart2);
+        expect(scope.calculate()).toEqual(scope.calculationResult1);
     });
   });
 });
