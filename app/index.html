@@ -18,7 +18,7 @@
 <body ng-controller="stageCtrl">
   <select ng-options="part.name for part in parts" ng-model="selected" ng-change="addPart(selected)">
   </select>
-  <ul class="whatever">
+  <ul>
     <li ng-repeat="part in partsList track by $index">
         <span>{{part.name}}</span>
         <span><button ng-click="removePart($index)">Remove</button></span>
