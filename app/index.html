@@ -16,19 +16,29 @@
 </head>
 
 <body ng-controller="stageCtrl">
-  <select ng-options="part.name for part in parts" ng-model="selected" ng-change="addPart(selected)">
-  </select>
-  <ul>
-    <li ng-repeat="part in partsList track by $index">
-        <span>{{part.name}}</span>
-        <span><button ng-click="removePart($index)">Remove</button></span>
-    </li>
-  </ul>
-  <p>
-    dV: {{result.dv}}m/s<br>
-    thrust/weight ratio: {{result.thrustratio}}<br>
-    impulse: {{result.impulse}}s
-  </p>
+  <div ng-repeat="stage in stageList track by $index">
+    Stage {{stageList.length - $index}}
+    <span>
+      <select ng-options="part.name for part in parts" ng-model="stage.selected" ng-change="stage.addPart(stage.selected)">
+      </select>
+    </span>
+    <span>
+      <button ng-click="removeStage($index)">Remove stage</button>
+    </span>
+
+    <ul>
+      <li ng-repeat="part in stage.partsList track by $index">
+          <span>{{part.name}}</span>
+          <span><button ng-click="stage.removePart($index)">Remove</button></span>
+      </li>
+    </ul>
+    <p>
+      dV: {{stage.result.dv.toFixed(2)}}m/s<br>
+      thrust/weight ratio: {{stage.result.thrustratio.toFixed(2)}}<br>
+      impulse: {{stage.result.impulse.toFixed(2)}}s
+    </p>
+  </div>
+  <button ng-click="addStage()">Add stage</button>
 
   <!--[if lt IE 7]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
