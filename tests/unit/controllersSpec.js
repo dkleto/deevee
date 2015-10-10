@@ -18,7 +18,8 @@ describe('deeVee controllers', function() {
                    drymass : 0.25 };
       scope.calculationResult1 = {'impulse' : 280,
                                   'thrustratio' : 5.844473569244211,
-                                  'dv' : 2327.357762911571};
+                                  'dv' : 2327.357762911571,
+                                  'sumwetmass' : 3.5};
       $httpBackend = _$httpBackend_;
       $httpBackend.expectGET('parts/parts.json').
           respond([
@@ -43,36 +44,41 @@ describe('deeVee controllers', function() {
     it('should set the default selected option', function() {
       expect(scope.selected).toBeUndefined();
       $httpBackend.flush();
-      expect(scope.selected).toEqual({name: 'Select part'});
+      expect(scope.newStage().selected).toEqual({name: 'Select part'});
     });
 
     it('should add a new part', function() {
         $httpBackend.flush();
-        expect(scope.partsList.length).toEqual(0);
-        scope.addPart(scope.testPart1);
-        expect(scope.partsList.length).toEqual(1);
+        var testStage = scope.newStage();
+        expect(testStage.partsList.length).toEqual(0);
+        testStage.addPart(scope.testPart1);
+        expect(testStage.partsList.length).toEqual(1);
     });
 
     it('should handle parts without impulse or thrust', function() {
         $httpBackend.flush();
-        scope.addPart(scope.testPart2);
-        expect(scope.partsList[0].impulse).toEqual(0);
-        expect(scope.partsList[0].thrust).toEqual(0);
+        var testStage = scope.newStage();
+        testStage.addPart(scope.testPart2);
+        expect(testStage.partsList[0].impulse).toEqual(0);
+        expect(testStage.partsList[0].thrust).toEqual(0);
     });
 
     it('should remove a part', function() {
         $httpBackend.flush();
-        scope.partsList = [scope.testPart1];
-        expect(scope.partsList.length).toEqual(1);
-        scope.removePart(0);
-        expect(scope.partsList.length).toEqual(0);
+        var testStage = scope.newStage();
+        testStage.partsList = [scope.testPart1];
+        expect(testStage.partsList.length).toEqual(1);
+        testStage.removePart(0);
+        expect(testStage.partsList.length).toEqual(0);
     });
 
     it('should calculate impulse, thrust ratio and dV', function() {
         $httpBackend.flush();
-        scope.addPart(scope.testPart1);
-        scope.addPart(scope.testPart2);
-        expect(scope.calculate()).toEqual(scope.calculationResult1);
+        var testStage = scope.newStage();
+        testStage.addPart(scope.testPart1);
+        testStage.addPart(scope.testPart2);
+        console.log(testStage.partsList);
+        expect(testStage.calculate(0)).toEqual(scope.calculationResult1);
     });
   });
 });
