@@ -20,17 +20,40 @@ deevee.controller('stageCtrl', ['$scope', '$http', function($scope, $http) {
     }
     $scope.removeStage = function(stageIndex) {
         $scope.stageList.splice(stageIndex, 1);
+        if ($scope.stageList.length > 0) {
+            $scope.updateCalculations(stageIndex);
+        }
+    }
+    $scope.addStagePart = function(stageIndex, part) {
+        $scope.stageList[stageIndex].addPart(part);
+        $scope.updateCalculations(stageIndex);
+    }
+    $scope.removeStagePart = function(stageIndex, partid) {
+        $scope.stageList[stageIndex].removePart(partid);
+        $scope.updateCalculations(stageIndex);
+    }
+    $scope.updateCalculations = function(stageIndex) {
+        if (stageIndex === 0) {
+            $scope.stageList[stageIndex].result = $scope.stageList[stageIndex].calculate(0);
+        } else {
+            for (var i = stageIndex; i < $scope.stageList.length; i++) {
+                $scope.stageList[i].result = $scope.stageList[i].calculate($scope.stageList[i - 1].result['sumwetmass']);
+            }
+        }
     }
     $scope.newStage = function() {
         var stage = {};
-        stage.result = '';
-        stage.partsList = []
+        stage.partsList = [];
         stage.selected = $scope.parts[0];
+        stage.result = {'impulse' : 0,
+                        'thrustratio' : 0,
+                        'dv' : 0,
+                        'sumwetmass' : 0};
         stage.removePart = function(partid) {
             if (partid > -1 && typeof stage.partsList[partid] !== 'undefined') {
                stage.partsList.splice(partid, 1);
             }
-            stage.result = stage.calculate();
+            stage.result = stage.calculate(0);
         }
         stage.addPart = function(part) {
             var newpart = {'name' : part.name,
@@ -44,13 +67,12 @@ deevee.controller('stageCtrl', ['$scope', '$http', function($scope, $http) {
             stage.partsList.push(newpart);
             stage.selected = stage.defaultSelected;
             stage.selected = $scope.parts[0];
-            stage.result = stage.calculate();
         }
-        stage.calculate = function() {
-            var sumdrymass, sumwetmass, sumthrust, sumfuelused, totalimpulse, dv,
-                thrustratio;
-            sumdrymass = sumwetmass = sumthrust = sumfuelused = totalimpulse = dv
-                = thrustratio = 0;
+        stage.calculate = function(payloadMass) {
+            var sumthrust, sumfuelused, totalimpulse, dv, sumwetmass,
+                sumdrymass, thrustratio;
+            sumthrust = sumfuelused = totalimpulse = dv = thrustratio = 0;
+            sumdrymass = sumwetmass = payloadMass;
 
             for (var i = 0; i < stage.partsList.length; i++) {
                 sumdrymass += stage.partsList[i].drymass;
@@ -73,7 +95,8 @@ deevee.controller('stageCtrl', ['$scope', '$http', function($scope, $http) {
             }
             return {'impulse' : totalimpulse,
                     'thrustratio' : thrustratio,
-                    'dv' : dv};
+                    'dv' : dv,
+                    'sumwetmass' : sumwetmass};
         }
         return stage;
     }

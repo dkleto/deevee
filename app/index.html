@@ -19,7 +19,7 @@
   <div ng-repeat="stage in stageList track by $index">
     Stage {{stageList.length - $index}}
     <span>
-      <select ng-options="part.name for part in parts" ng-model="stage.selected" ng-change="stage.addPart(stage.selected)">
+      <select ng-options="part.name for part in parts" ng-model="stage.selected" ng-change="addStagePart($index, stage.selected)">
       </select>
     </span>
     <span>
@@ -29,7 +29,7 @@
     <ul>
       <li ng-repeat="part in stage.partsList track by $index">
           <span>{{part.name}}</span>
-          <span><button ng-click="stage.removePart($index)">Remove</button></span>
+          <span><button ng-click="removeStagePart($parent.$index, $index)">Remove</button></span>
       </li>
     </ul>
     <p>
