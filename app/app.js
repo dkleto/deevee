@@ -35,6 +35,9 @@ deevee.controller('stageCtrl', ['$scope', '$http', function($scope, $http) {
     $scope.updateCalculations = function(stageIndex) {
         if (stageIndex === 0) {
             $scope.stageList[stageIndex].result = $scope.stageList[stageIndex].calculate(0);
+            if ($scope.stageList.length > 0) {
+                $scope.updateCalculations(1);
+            }
         } else {
             for (var i = stageIndex; i < $scope.stageList.length; i++) {
                 $scope.stageList[i].result = $scope.stageList[i].calculate($scope.stageList[i - 1].result['sumwetmass']);
