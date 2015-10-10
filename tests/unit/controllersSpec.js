@@ -20,6 +20,10 @@ describe('deeVee controllers', function() {
                                   'thrustratio' : 5.844473569244211,
                                   'dv' : 2327.357762911571,
                                   'sumwetmass' : 3.5};
+      scope.calculationResult2 = {'impulse' : 280,
+                                   'thrustratio' : 2.9222367846221053,
+                                   'dv' : 924.2219395511477,
+                                   'sumwetmass' : 7};
       $httpBackend = _$httpBackend_;
       $httpBackend.expectGET('parts/parts.json').
           respond([
@@ -42,7 +46,6 @@ describe('deeVee controllers', function() {
     });
 
     it('should set the default selected option', function() {
-      expect(scope.selected).toBeUndefined();
       $httpBackend.flush();
       expect(scope.newStage().selected).toEqual({name: 'Select part'});
     });
@@ -79,6 +82,57 @@ describe('deeVee controllers', function() {
         testStage.addPart(scope.testPart2);
         console.log(testStage.partsList);
         expect(testStage.calculate(0)).toEqual(scope.calculationResult1);
+    });
+
+    it('should add a new stage', function() {
+        $httpBackend.flush();
+        expect(scope.stageList.length).toEqual(0);
+        scope.addStage();
+        expect(scope.stageList.length).toEqual(1);
+    });
+
+    it('should remove a specific stage', function() {
+        $httpBackend.flush();
+        scope.addStage();
+        scope.addStage();
+        scope.stageList[0].addPart(scope.testPart2);
+        scope.stageList[1].addPart(scope.testPart1);
+        expect(scope.stageList.length).toEqual(2);
+        scope.removeStage(0);
+        expect(scope.stageList.length).toEqual(1);
+        expect(scope.stageList[0].partsList).toEqual([scope.testPart1]);
+    });
+
+    it('should add a new part to a specific stage', function() {
+        $httpBackend.flush();
+        scope.addStage();
+        scope.addStage();
+        expect(scope.stageList[1].partsList).toEqual([]);
+        scope.addStagePart(1, scope.testPart1);
+        expect(scope.stageList[1].partsList).toEqual([scope.testPart1]);
+    });
+
+    it('should remove a part from a specific stage', function() {
+        $httpBackend.flush();
+        scope.addStage();
+        scope.addStage();
+        scope.addStagePart(1, scope.testPart1);
+        expect(scope.stageList[1].partsList).toEqual([scope.testPart1]);
+        scope.removeStagePart(1, 0);
+        expect(scope.stageList[1].partsList).toEqual([]);
+    });
+
+    it('should update calculations across lower stages', function() {
+        $httpBackend.flush();
+        scope.addStage();
+        scope.addStage();
+        scope.stageList[0].addPart(scope.testPart1);
+        scope.stageList[0].addPart(scope.testPart2);
+        scope.stageList[1].addPart(scope.testPart1);
+        scope.stageList[1].addPart(scope.testPart2);
+        scope.updateCalculations(0);
+        expect(scope.stageList[0].result).toEqual(scope.calculationResult1);
+        expect(scope.stageList[1].result).toEqual(scope.calculationResult2);
     });
   });
 });
