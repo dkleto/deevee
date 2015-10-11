@@ -7,6 +7,9 @@ deevee.controller('stageCtrl', ['$scope', '$http', function($scope, $http) {
       $scope.parts = data;
     });
     $scope.gravity = 9.81;
+    $scope.totals = {'totaldv'   : 0,
+                     'totalmass' : 0,
+                     'totalparts': 0};
     $scope.checkProperty = function(part, property) {
         // If a part doesn't have an impulse or thrust value, assume zero.
         if (typeof part[property] === 'number') {
@@ -46,6 +49,22 @@ deevee.controller('stageCtrl', ['$scope', '$http', function($scope, $http) {
                 $scope.stageList[i].result = $scope.stageList[i].calculate($scope.stageList[i - 1].result['sumwetmass']);
             }
         }
+    }
+    $scope.updateTotals = function() {
+        var totalMass, totaldv, totalParts;
+        totalMass = totaldv = totalParts = 0;
+        for (var i = 0; i < $scope.stageList.length; i++) {
+            totaldv += $scope.stageList[i].result.dv;
+            totalParts += $scope.stageList[i].partsList.length;
+            // Just use the value of the last stage, as sumwetmass is cumulative.
+            if (i === $scope.stageList.length - 1) {
+                totalMass = $scope.stageList[i].result.sumwetmass;
+            }
+        }
+
+        $scope.totals = {'totaldv'   : totaldv,
+                         'totalmass' : totalMass,
+                         'totalparts': totalParts};
     }
     $scope.newStage = function() {
         var stage = {};
