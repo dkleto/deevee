@@ -25,6 +25,7 @@
     </span>
     <span>
       <button ng-click="removeStage($index)">Remove stage</button>
+      <input type="checkbox" ng-model="stage.atm" ng-change="updateCalculations($index)">Atmosphere</input>
     </span>
 
     <ul>
