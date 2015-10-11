@@ -16,6 +16,7 @@
 </head>
 
 <body ng-controller="stageCtrl">
+  <h1>DeeVee</h1>
   <div ng-repeat="stage in stageList track by $index">
     Stage {{stageList.length - $index}}
     <br>
@@ -25,7 +26,7 @@
     </span>
     <span>
       <button ng-click="removeStage($index)">Remove stage</button>
-      <input type="checkbox" ng-model="stage.atm" ng-change="updateCalculations($index)">Atmosphere</input>
+      <input type="checkbox" ng-model="stage.atm" ng-change="updateCalculations($index); updateTotals()">Atmosphere</input>
     </span>
 
     <ul>
@@ -41,6 +42,10 @@
     </p>
   </div>
   <button ng-click="addStage()">Add stage</button>
+  <h2>Totals</h2>
+  Total dV: {{totals.totaldv}} m/s <br>
+  Total mass: {{totals.totalmass}} t <br>
+  Total part count: {{totals.totalparts}}
 
   <!--[if lt IE 7]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
