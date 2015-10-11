@@ -84,8 +84,22 @@ describe('deeVee controllers', function() {
         var testStage = scope.newStage();
         testStage.addPart(scope.testPart1);
         testStage.addPart(scope.testPart2);
-        console.log(testStage.partsList);
         expect(testStage.calculate(0)).toEqual(scope.calculationResult1);
+    });
+
+    it('should use impulse/thrust values specific to atmosphere', function() {
+        $httpBackend.flush();
+        var result, testStage;
+        testStage = scope.newStage();
+        testStage.addPart(scope.testPart1);
+        testStage.addPart(scope.testPart2);
+        result = testStage.calculate(0);
+        expect(result.impulse).toEqual(280);
+        expect(result.thrustratio).toEqual(5.844473569244211);
+        testStage.atm = false;
+        result = testStage.calculate(0);
+        expect(result.impulse).toEqual(300);
+        expect(result.thrustratio).toEqual(6.2618319499053445);
     });
 
     it('should add a new stage', function() {
