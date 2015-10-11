@@ -49,6 +49,7 @@ deevee.controller('stageCtrl', ['$scope', '$http', function($scope, $http) {
     }
     $scope.newStage = function() {
         var stage = {};
+        stage.atm = true;
         stage.partsList = [];
         stage.selected = $scope.parts[0];
         stage.result = {'impulse' : 0,
@@ -65,7 +66,8 @@ deevee.controller('stageCtrl', ['$scope', '$http', function($scope, $http) {
             var newpart = {'name' : part.name,
                            'wetmass' : part.wetmass,
                            'drymass' : part.drymass};
-            var properties = ['impulse', 'thrust'];
+            var properties = ['impulseatm', 'impulsevac', 'thrustatm',
+                              'thrustvac'];
 
             for (var i = 0; i < properties.length; i++) {
                 newpart[properties[i]] = $scope.checkProperty(part, properties[i]);
@@ -84,10 +86,17 @@ deevee.controller('stageCtrl', ['$scope', '$http', function($scope, $http) {
             for (var i = 0; i < stage.partsList.length; i++) {
                 sumdrymass += stage.partsList[i].drymass;
                 sumwetmass += stage.partsList[i].wetmass;
-                if (stage.partsList[i].impulse !== 0) {
-                    sumthrust += stage.partsList[i].thrust;
-                    sumfuelused += stage.partsList[i].thrust
-                                   / stage.partsList[i].impulse;
+                var impulse, thrust;
+                if (stage.atm) {
+                    impulse = stage.partsList[i].impulseatm;
+                    thrust = stage.partsList[i].thrustatm;
+                } else {
+                    impulse = stage.partsList[i].impulsevac;
+                    thrust = stage.partsList[i].thrustvac;
+                }
+                if (impulse !== 0) {
+                    sumthrust += thrust;
+                    sumfuelused += thrust / impulse;
                 }
             }
             if (sumfuelused !== 0) {

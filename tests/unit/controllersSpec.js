@@ -11,8 +11,10 @@ describe('deeVee controllers', function() {
       scope.testPart1 = {name: 'LVT-30',
                    wetmass: 1.25,
                    drymass: 1.25,
-                   impulse: 280,
-                   thrust: 200.67};
+                   impulseatm : 280,
+                   impulsevac : 300,
+                   thrustatm  : 200.67,
+                   thrustvac  : 215};
       scope.testPart2 = {name : 'FTL-T400',
                    wetmass : 2.25,
                    drymass : 0.25 };
@@ -62,8 +64,10 @@ describe('deeVee controllers', function() {
         $httpBackend.flush();
         var testStage = scope.newStage();
         testStage.addPart(scope.testPart2);
-        expect(testStage.partsList[0].impulse).toEqual(0);
-        expect(testStage.partsList[0].thrust).toEqual(0);
+        expect(testStage.partsList[0].impulseatm).toEqual(0);
+        expect(testStage.partsList[0].thrustatm).toEqual(0);
+        expect(testStage.partsList[0].impulsevac).toEqual(0);
+        expect(testStage.partsList[0].thrustvac).toEqual(0);
     });
 
     it('should remove a part', function() {
