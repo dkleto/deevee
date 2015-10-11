@@ -1,10 +1,14 @@
 [ 
     {"name" : "Select part"},
+    {"name" : "FTL-T200",
+     "wetmass" : 1.125,
+     "drymass" : 0.125
+    },
     {"name" : "FTL-T400",
      "wetmass" : 2.25,
      "drymass" : 0.25
     },
-    {"name" : "LVT-30",
+    {"name" : "LV-T30",
     "wetmass" : 1.25,
     "drymass" : 1.25,
     "impulseatm" : 280,
@@ -12,12 +16,96 @@
     "thrustatm"  : 200.67,
     "thrustvac"  : 215
     },
-    {"name" : "LVT-909",
+    {"name" : "LV-T909",
     "wetmass" : 0.5,
     "drymass" : 0.5,
     "impulseatm" : 85,
     "impulsevac" : 345,
     "thrustatm"  : 14.783,
     "thrustvac"  : 60
+    },
+    {"name" : "LV-T45",
+     "wetmass" : 1.5,
+     "drymass" : 1.5,
+     "impulseatm" : 270,
+     "impulsevac" : 320,
+     "thrustatm"  : 168.75,
+     "thrustvac"  : 200
+    },
+    {"name" : "Mk-55 Thud",
+     "wetmass" : 0.9,
+     "drymass" : 0.9,
+     "impulseatm" : 275,
+     "impulsevac" : 305,
+     "thrustatm"  : 108.20,
+     "thrustvac"  : 120
+    },
+    {"name" : "Mk1 Command Pod",
+     "wetmass" : 0.84,
+     "drymass" : 0.84
+    },
+    {"name" : "TR-18A Stack Decoupler",
+     "wetmass" : 0.05,
+     "drymass" : 0.05
+    },
+    {"name" : "TT-38K Radial Decoupler",
+     "wetmass" : 0.025,
+     "drymass" : 0.025
+    },
+    {"name" : "Mk16 Parachute",
+     "wetmass" : 0.1,
+     "drymass" : 0.1
+    },
+    {"name" : "OX-STAT Photovoltaic Panel",
+     "wetmass" : 0.01,
+     "drymass" : 0.01
+    },
+    {"name" : "Service Bay",
+     "wetmass" : 0.1,
+     "drymass" : 0.1
+    },
+    {"name" : "Probodobodyne OKTO",
+     "wetmass" : 0.1,
+     "drymass" : 0.1
+    },
+    {"name" : "Mystery Goo(TM) Containment Unit",
+     "wetmass" : 0.05,
+     "drymass" : 0.05
+    },
+    {"name" : "Aerodynamic Nose Cone",
+     "wetmass" : 0.03,
+     "drymass" : 0.03
+    },
+    {"name" : "BACC Thumper Solid Fuel Booster",
+     "wetmass" : 7.65,
+     "drymass" : 1.5,
+     "impulseatm" : 279,
+     "impulsevac" : 320,
+     "thrustatm"  : 168.75,
+     "thrustvac"  : 200
+    },
+    {"name" : "Mk2-R Radial-Mount",
+     "wetmass" : 0.1,
+     "drymass" : 0.1
+    },
+    {"name" : "Z-100 Rechargeable Battery Pack",
+     "wetmass" : 0.005,
+     "drymass" : 0.005
+    },
+    {"name" : "Z-200 Rechargeable Battery Bank",
+     "wetmass" : 0.01,
+     "drymass" : 0.01
+    },
+    {"name" : "Communotron 16",
+     "wetmass" : 0.005,
+     "drymass" : 0.005
+    },
+    {"name" : "SC-9001",
+     "wetmass" : 0.2,
+     "drymass" : 0.2
+    },
+    {"name" : "2HOT Thermometer",
+     "wetmass" : 0.01,
+     "drymass" : 0.01
     }
 ]
