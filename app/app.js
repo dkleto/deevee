@@ -21,20 +21,24 @@ deevee.controller('stageCtrl', ['$scope', '$http', function($scope, $http) {
     $scope.stageList = [];
     $scope.addStage = function() {
         $scope.stageList.push($scope.newStage());
+        $scope.updateTotals();
     }
     $scope.removeStage = function(stageIndex) {
         $scope.stageList.splice(stageIndex, 1);
         if ($scope.stageList.length > 0) {
             $scope.updateCalculations(stageIndex);
         }
+        $scope.updateTotals();
     }
     $scope.addStagePart = function(stageIndex, part) {
         $scope.stageList[stageIndex].addPart(part);
         $scope.updateCalculations(stageIndex);
+        $scope.updateTotals();
     }
     $scope.removeStagePart = function(stageIndex, partid) {
         $scope.stageList[stageIndex].removePart(partid);
         $scope.updateCalculations(stageIndex);
+        $scope.updateTotals();
     }
     $scope.updateCalculations = function(stageIndex) {
         // The uppermost stage has no payload to factor in.
