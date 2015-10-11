@@ -152,5 +152,24 @@ describe('deeVee controllers', function() {
         expect(scope.stageList[0].result).toEqual(scope.calculationResult1);
         expect(scope.stageList[1].result).toEqual(scope.calculationResult2);
     });
+
+    it('should update total values', function() {
+        $httpBackend.flush();
+        scope.addStage();
+        scope.addStage();
+        scope.stageList[0].addPart(scope.testPart1);
+        scope.stageList[0].addPart(scope.testPart2);
+        scope.stageList[1].addPart(scope.testPart1);
+        scope.stageList[1].addPart(scope.testPart2);
+        scope.updateCalculations(0);
+        scope.updateCalculations(1);
+        expect(scope.totals).toEqual({'totaldv'   : 0,
+                                      'totalmass' : 0,
+                                      'totalparts': 0});
+        scope.updateTotals();
+        expect(scope.totals).toEqual({'totaldv'   : 3251.579702462719,
+                                      'totalmass' : 7,
+                                      'totalparts': 4});
+    });
   });
 });
