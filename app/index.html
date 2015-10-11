@@ -43,8 +43,8 @@
   </div>
   <button ng-click="addStage()">Add stage</button>
   <h2>Totals</h2>
-  Total dV: {{totals.totaldv}} m/s <br>
-  Total mass: {{totals.totalmass}} t <br>
+  Total dV: {{totals.totaldv.toFixed(2)}} m/s <br>
+  Total mass: {{totals.totalmass.toFixed(2)}} t <br>
   Total part count: {{totals.totalparts}}
 
   <!--[if lt IE 7]>
