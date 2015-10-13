@@ -6,6 +6,21 @@ deevee.controller('stageCtrl', ['$scope', '$http', function($scope, $http) {
     $http.get('parts/parts.json').success(function(data) {
       $scope.parts = data;
     });
+    $scope.partDialog = false;
+    $scope.currentStage = false;
+    $scope.openPartDialog = function(stageIndex) {
+        $scope.currentStage = stageIndex;
+        $scope.partDialog = true;
+    }
+    $scope.closePartDialog = function() {
+        $scope.partDialog = false;
+        $scope.currentStage = false;
+    }
+    $scope.setPartDialog = function(stageIndex, part) {
+        $scope.addStagePart(stageIndex, part);
+        $scope.closePartDialog();
+    }
+    $scope.selected = {"name" : "Select part"};
     $scope.gravity = 9.81;
     $scope.totals = {'totaldv'   : 0,
                      'totalmass' : 0,
