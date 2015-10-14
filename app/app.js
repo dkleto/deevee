@@ -16,11 +16,10 @@ deevee.controller('stageCtrl', ['$scope', '$http', function($scope, $http) {
         $scope.partDialog = false;
         $scope.currentStage = false;
     }
-    $scope.setPartDialog = function(stageIndex, part) {
+    $scope.savePartDialog = function(stageIndex, part) {
         $scope.addStagePart(stageIndex, part);
         $scope.closePartDialog();
     }
-    $scope.selected = {"name" : "Select part"};
     $scope.gravity = 9.81;
     $scope.totals = {'totaldv'   : 0,
                      'totalmass' : 0,
@@ -111,8 +110,6 @@ deevee.controller('stageCtrl', ['$scope', '$http', function($scope, $http) {
                 newpart[properties[i]] = $scope.checkProperty(part, properties[i]);
             }
             stage.partsList.push(newpart);
-            stage.selected = stage.defaultSelected;
-            stage.selected = $scope.parts[0];
         }
         stage.calculate = function(payloadMass) {
             var sumthrust, sumfuelused, totalimpulse, dv, sumwetmass,

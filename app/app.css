@@ -10,7 +10,7 @@
 }
 .dialog {
   width: 300px;
-  height: 120px;
+  height: 300px;
   line-height: 200px;
   position: fixed;
   top: 50%;
@@ -20,4 +20,7 @@
   background-color: #FFFFFF;
   border-radius: 5px;
   z-index: 11;
+}
+.category {
+  line-height: 1.5rem;
 }

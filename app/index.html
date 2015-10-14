@@ -18,8 +18,14 @@
 <body ng-controller="stageCtrl">
   <div class="overlay" ng-if="partDialog == true" ng-click="closePartDialog()">
     <div class="dialog" ng-click="$event.stopPropagation()">
-      <select class="partSelector" ng-options="part.name for part in parts" ng-model="selected" ng-change="setPartDialog(currentStage, selected)">
-      </select>
+    <div class="category" ng-repeat="category in parts track by $index">
+      <h2>{{category.name}}</h2>
+      <div class="subcategory" ng-repeat="subcategory in category.subcategories track by $index">
+        <h3>{{subcategory.name}}</h2>
+        <select class="partSelector" ng-options="part as part.name for part in subcategory.parts" ng-model="selected" ng-change="savePartDialog(currentStage, selected)">
+        </select>
+      </div>
+    </div>
     </div>
   </div>
 
