@@ -88,7 +88,6 @@ deevee.controller('stageCtrl', ['$scope', '$http', function($scope, $http) {
         var stage = {};
         stage.atm = true;
         stage.partsList = [];
-        stage.selected = $scope.parts[0];
         stage.result = {'impulse' : 0,
                         'thrustratio' : 0,
                         'dv' : 0,

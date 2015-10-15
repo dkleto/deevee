@@ -20,10 +20,13 @@
     <div class="dialog" ng-click="$event.stopPropagation()">
     <div class="category" ng-repeat="category in parts track by $index">
       <h2>{{category.name}}</h2>
-      <div class="subcategory" ng-repeat="subcategory in category.subcategories track by $index">
+      <div class="subcategory" ng-repeat="subcategory in category.subcategories track by $index" ng-click="display = true;">
         <h3>{{subcategory.name}}</h2>
-        <select class="partSelector" ng-options="part as part.name for part in subcategory.parts" ng-model="selected" ng-change="savePartDialog(currentStage, selected)">
-        </select>
+        <div class="partOptions" ng-if="display == true">
+          <span class="partOption" ng-repeat="part in subcategory.parts" ng-click="savePartDialog(currentStage, part)">
+            {{part.name}}
+          </span>
+        </div>
       </div>
     </div>
     </div>
