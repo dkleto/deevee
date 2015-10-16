@@ -47,11 +47,6 @@ describe('deeVee controllers', function() {
           ]);
     });
 
-    it('should set the default selected option', function() {
-      $httpBackend.flush();
-      expect(scope.newStage().selected).toEqual({name: 'Select part'});
-    });
-
     it('should add a new part', function() {
         $httpBackend.flush();
         var testStage = scope.newStage();
