@@ -1,4 +1,4 @@
-[ 
+[
     {"name" : "Engines",
      "subcategories" :
         [
@@ -54,6 +54,101 @@
                     {"name" : "FTL-T400",
                      "wetmass" : 2.25,
                      "drymass" : 0.25
+                    }
+                ]
+            }
+        ]
+    },
+    {"name" : "Command modules",
+     "subcategories" :
+        [
+            {"name" : "Unmanned",
+             "parts":
+                [
+                    {"name" : "Probodobodyne RoveMate",
+                     "wetmass" : 0.15,
+                     "drymass" : 0.15
+                    },
+                    {"name" : "Probodobodyne QBE",
+                     "wetmass" : 0.07,
+                     "drymass" : 0.07
+                    },
+                    {"name" : "Probodobodyne HECS",
+                     "wetmass" : 0.1,
+                     "drymass" : 0.1
+                    },
+                    {"name" : "Probodobodyne OKTO",
+                     "wetmass" : 0.1,
+                     "drymass" : 0.1
+                    },
+                    {"name" : "Probodobodyne OKTO2",
+                     "wetmass" : 0.04,
+                     "drymass" : 0.04
+                    },
+                    {"name" : "Stayputnik Mk. 1",
+                     "wetmass" : 0.05,
+                     "drymass" : 0.05
+                    },
+                    {"name" : "RC-001S Remote Guidance Unit",
+                     "wetmass" : 0.1,
+                     "drymass" : 0.1
+                    },
+                    {"name" : "RC-L01 Remote Guidance Unit",
+                     "wetmass" : 0.5,
+                     "drymass" : 0.5
+                    },
+                    {"name" : "Mk2 Drone Core",
+                     "wetmass" : 0.2,
+                     "drymass" : 0.2
+                    }
+                ]
+            },
+            {"name" : "Manned",
+             "parts":
+                [
+                    {"name" : "Mk1 Cockpit",
+                     "wetmass" : 1.28,
+                     "drymass" : 1.28
+                    },
+                    {"name" : "Mk1 Inline Cockpit",
+                     "wetmass" : 1.03,
+                     "drymass" : 1.03
+                    },
+                    {"name" : "Mk2 Cockpit",
+                     "wetmass" : 2.06,
+                     "drymass" : 2.06
+                    },
+                    {"name" : "Mk2 Inline Cockpit",
+                     "wetmass" : 2.1,
+                     "drymass" : 2.1
+                    },
+                    {"name" : "Mk3 Cockpit",
+                     "wetmass" : 3.9,
+                     "drymass" : 3.9
+                    },
+                    {"name" : "Mk1 Command Pod",
+                     "wetmass" : 0.84,
+                     "drymass" : 0.84
+                    },
+                    {"name" : "Mk1-2 Command Pod",
+                     "wetmass" : 4.12,
+                     "drymass" : 4.12
+                    },
+                    {"name" : "Mk1 Lander Can",
+                     "wetmass" : 0.66,
+                     "drymass" : 0.66
+                    },
+                    {"name" : "Mk2 Lander-can",
+                     "wetmass" : 2.66,
+                     "drymass" : 2.66
+                    },
+                    {"name" : "PPD-12 Cupola Module",
+                     "wetmass" : 1.8,
+                     "drymass" : 1.8
+                    },
+                    {"name" : "EAS-1 External Command Seat",
+                     "wetmass" : 0.05,
+                     "drymass" : 0.05
                     }
                 ]
             }
