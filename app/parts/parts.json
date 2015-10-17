@@ -47,13 +47,145 @@
             {"name" : "Rocket fuel",
              "parts":
                 [
-                    {"name" : "FTL-T200",
+                    {"name" : "ROUND-8 Toroidal Fuel Tank",
+                     "cost" : 175,
+                     "wetmass" : 0.3375,
+                     "drymass" : 0.0375
+                    },
+                    {"name" : "Oscar-B Fuel Tank",
+                     "cost" : 70,
+                     "wetmass" : 0.225,
+                     "drymass" : 0.025
+                    },
+                    {"name" : "FL-T100 Fuel Tank",
+                     "cost" : 150,
+                     "wetmass" : 0.5625,
+                     "drymass" : 0.0625
+                    },
+                    {"name" : "FL-T200 Fuel Tank",
+                     "cost" : 275,
                      "wetmass" : 1.125,
                      "drymass" : 0.125
                     },
-                    {"name" : "FTL-T400",
+                    {"name" : "FL-T400 Fuel Tank",
+                     "cost" : 500,
                      "wetmass" : 2.25,
                      "drymass" : 0.25
+                    },
+                    {"name" : "FL-T800 Fuel Tank",
+                     "cost" : 800,
+                     "wetmass" : 4.5,
+                     "drymass" : 0.5
+                    },
+                    {"name" : "Rockomax X200-8 Fuel Tank",
+                     "cost" : 800,
+                     "wetmass" : 4.5,
+                     "drymass" : 0.5
+                    },
+                    {"name" : "Rockomax X200-16 Fuel Tank",
+                     "cost" : 1550,
+                     "wetmass" : 9,
+                     "drymass" : 1
+                    },
+                    {"name" : "Rockomax X200-32 Fuel Tank",
+                     "cost" : 3000,
+                     "wetmass" : 18,
+                     "drymass" : 2
+                    },
+                    {"name" : "Rockomax Jumbo-64 Fuel Tank",
+                     "cost" : 5750,
+                     "wetmass" : 36,
+                     "drymass" : 4
+                    },
+                    {"name" : "Kerbodyne S3-3600 Tank",
+                     "cost" : 3250,
+                     "wetmass" : 20.25,
+                     "drymass" : 2.25
+                    },
+                    {"name" : "Kerbodyne S3-7200 Tank",
+                     "cost" : 6500,
+                     "wetmass" : 40.5,
+                     "drymass" : 4.5
+                    },
+                    {"name" : "Kerbodyne S3-14400 Tank",
+                     "cost" : 13000,
+                     "wetmass" : 81,
+                     "drymass" : 9
+                    },
+                    {"name" : "Mk2 Rocket Fuel Fuselage Short",
+                     "cost" : 750,
+                     "wetmass" : 2.29,
+                     "drymass" : 0.29
+                    },
+                    {"name" : "Mk2 Rocket Fuel Fuselage",
+                     "cost" : 1450,
+                     "wetmass" : 4.57,
+                     "drymass" : 0.57
+                    },
+                    {"name" : "Mk3 Rocket Fuel Fuselage Short",
+                     "cost" : 2500,
+                     "wetmass" : 14.29,
+                     "drymass" : 1.79
+                    },
+                    {"name" : "Mk3 Rocket Fuel Fuselage",
+                     "cost" : 5000,
+                     "wetmass" : 28.57,
+                     "drymass" : 3.57
+                    },
+                    {"name" : "Mk3 Rocket Fuel Fuselage Long",
+                     "cost" : 10000,
+                     "wetmass" : 57.14,
+                     "drymass" : 7.14
+                    },
+                    {"name" : "C7 Brand Adapter - 2.5m to 1.25m",
+                     "cost" : 800,
+                     "wetmass" : 4.57,
+                     "drymass" : 0.57
+                    },
+                    {"name" : "C7 Brand Adapter Slanted - 2.5m to 1.25m",
+                     "cost" : 800,
+                     "wetmass" : 4.57,
+                     "drymass" : 0.57
+                    },
+                    {"name" : "Mk2 to 1.25m Adapter",
+                     "cost" : 550,
+                     "wetmass" : 2.29,
+                     "drymass" : 0.29
+                    },
+                    {"name" : "Mk2 to 1.25m Adapter Long",
+                     "cost" : 1050,
+                     "wetmass" : 4.57,
+                     "drymass" : 0.57
+                    },
+                    {"name" : "Mk2 Bicoupler",
+                     "cost" : 860,
+                     "wetmass" : 2.29,
+                     "drymass" : 0.29
+                    },
+                    {"name" : "2.5m to Mk2 Adapter",
+                     "cost" : 800,
+                     "wetmass" : 4.57,
+                     "drymass" : 0.57
+                    },
+                    {"name" : "Mk3 to Mk2 Adapter",
+                     "cost" : 2200,
+                     "wetmass" : 11.43,
+                     "drymass" : 1.43
+                    },
+                    {"name" : "Mk3 to 2.5m Adapter",
+                     "cost" : 2500,
+                     "wetmass" : 14.29,
+                     "drymass" : 1.79
+                    },
+                    {"name" : "Mk3 to 2.5m Adapter Slanted",
+                     "cost" : 2500,
+                     "wetmass" : 14.29,
+                     "drymass" : 1.79
+                    },
+                    {"name" : "Mk3 to 3.75m Adapter",
+                     "cost" : 2500,
+                     "wetmass" : 14.29,
+                     "drymass" : 1.79
                     }
                 ]
             }
