@@ -44,7 +44,7 @@
     {"name" : "Fuel tanks",
      "subcategories" :
         [
-            {"name" : "Liquid fuel",
+            {"name" : "Rocket fuel",
              "parts":
                 [
                     {"name" : "FTL-T200",
