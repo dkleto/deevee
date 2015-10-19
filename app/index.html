@@ -35,14 +35,14 @@
   <div class="container">
     <h1>DeeVee</h1>
     <div class="stageBox" ng-repeat="stage in stageList track by $index">
-      <a class="stageRemove" href="#" ng-click="removeStage($index)">Remove stage</a>
-      <h3>Stage {{stageList.length - $index}}</h3>
+      <a class="stageRemove" href="#" title="Remove stage" ng-click="removeStage($index)">&times</a>
+      <h2>Stage {{stageList.length - $index}}</h2>
 
       <div class="partsBox">
         <ul>
           <li ng-repeat="part in stage.partsList track by $index">
               <span>{{part.name}}</span>
-              <span class="partRemove"><a href="#" ng-click="removeStagePart($parent.$index, $index)">Remove</a></span>
+              <span class="partRemove"><a href="#" ng-click="removeStagePart($parent.$index, $index)">&times</a></span>
           </li>
         </ul>
       </div>
