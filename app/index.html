@@ -32,35 +32,42 @@
     </div>
   </div>
 
-  <h1>DeeVee</h1>
-  <div ng-repeat="stage in stageList track by $index">
-    <h3>Stage {{stageList.length - $index}}</h3>
-    <br>
-    <span>
-      <button ng-click="openPartDialog($index)">Add part</button>
-    </span>
-    <span>
-      <button ng-click="removeStage($index)">Remove stage</button>
-      <input type="checkbox" ng-model="stage.atm" ng-change="updateCalculations($index); updateTotals()">Atmosphere</input>
-    </span>
+  <div class="container">
+    <h1>DeeVee</h1>
+    <div class="stageBox" ng-repeat="stage in stageList track by $index">
+      <a class="stageRemove" href="#" ng-click="removeStage($index)">Remove stage</a>
+      <h3>Stage {{stageList.length - $index}}</h3>
 
-    <ul>
-      <li ng-repeat="part in stage.partsList track by $index">
-          <span>{{part.name}}</span>
-          <span><button ng-click="removeStagePart($parent.$index, $index)">Remove</button></span>
-      </li>
-    </ul>
-    <p>
-      dV: {{stage.result.dv.toFixed(2)}}m/s<br>
-      thrust/weight ratio: {{stage.result.thrustratio.toFixed(2)}}<br>
-      impulse: {{stage.result.impulse.toFixed(2)}}s
-    </p>
+      <div class="partsBox">
+        <ul>
+          <li ng-repeat="part in stage.partsList track by $index">
+              <span>{{part.name}}</span>
+              <span class="partRemove"><a href="#" ng-click="removeStagePart($parent.$index, $index)">Remove</a></span>
+          </li>
+        </ul>
+      </div>
+      <span>
+        <button ng-click="openPartDialog($index)">Add part</button>
+      </span>
+      <span class="atmCheck">
+        <input type="checkbox" ng-model="stage.atm" ng-change="updateCalculations($index); updateTotals()">Atmosphere</input>
+      </span>
+      <p>
+        dV: {{stage.result.dv.toFixed(2)}}m/s<br>
+        thrust/weight ratio: {{stage.result.thrustratio.toFixed(2)}}<br>
+        impulse: {{stage.result.impulse.toFixed(2)}}s
+      </p>
+    </div>
+    <button ng-click="addStage()">Add stage</button>
+    <div class="totals">
+    <h2>Totals</h2>
+      <p>
+        Total dV: {{totals.totaldv.toFixed(2)}} m/s <br>
+        Total mass: {{totals.totalmass.toFixed(2)}} t <br>
+        Total part count: {{totals.totalparts}}
+      </p>
+    </div>
   </div>
-  <button ng-click="addStage()">Add stage</button>
-  <h2>Totals</h2>
-  Total dV: {{totals.totaldv.toFixed(2)}} m/s <br>
-  Total mass: {{totals.totalmass.toFixed(2)}} t <br>
-  Total part count: {{totals.totalparts}}
 
   <!--[if lt IE 7]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
