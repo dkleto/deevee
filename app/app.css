@@ -83,3 +83,22 @@ h3 {
 .partRemove a {
   float: right;
 }
+.partAdd a {
+  background-color: #0098ce;
+  color: #eeeeee;
+  padding: 0.5rem;
+  border-radius: 0.2rem;
+}
+.stageAdd {
+  background-color: #bc0000;
+  color: #eeeeee;
+  padding: 0.5rem;
+  border-radius: 0.2rem;
+  min-width: 200rem;
+}
+.totalsBox {
+  background-color: #eeeeee;
+  border-radius: 0.5rem;
+  padding: 1.5rem 1rem 1rem 1rem;
+  margin-bottom: 1rem;
+}
