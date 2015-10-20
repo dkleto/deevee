@@ -20,17 +20,19 @@
   <div class="overlay" ng-if="partDialog == true" ng-click="closePartDialog()">
     <div class="dialog" ng-click="$event.stopPropagation()">
       <a class="dialogClose" href="#" title="Close part dialog" ng-click="closePartDialog()">&times</a>
-    <div class="category" ng-repeat="category in parts track by $index" ng-click="display = true;">
-      <h2>{{category.name}}</h2>
-      <div class="subcategory" ng-repeat="subcategory in category.subcategories track by $index" ng-if="display == true">
-        <h3>{{subcategory.name}}</h2>
-        <div class="partOptions">
-          <span class="partOption" ng-repeat="part in subcategory.parts" ng-click="savePartDialog(currentStage, part)">
-            {{part.name}}
-          </span>
+      <div class="dialogContent">
+        <div class="category" ng-repeat="category in parts track by $index" ng-click="display = true;">
+          <h2>{{category.name}}</h2>
+          <div class="subcategory" ng-repeat="subcategory in category.subcategories track by $index" ng-if="display == true">
+            <h3>{{subcategory.name}}</h2>
+            <div class="partOptions">
+              <span class="partOption" ng-repeat="part in subcategory.parts" ng-click="savePartDialog(currentStage, part)">
+                {{part.name}}
+              </span>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
     </div>
   </div>
 
