@@ -97,6 +97,8 @@ h3 {
 .stageBox .partRemove a {
   color: #b2b2b2;
   float: right;
+  font-size: 1.3rem;
+  line-height: 1.3rem;
 }
 .partAdd a {
   background-color: #0098ce;
