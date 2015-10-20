@@ -41,8 +41,10 @@
       <div class="partsBox">
         <ul>
           <li ng-repeat="part in stage.partsList track by $index">
-              <span>{{part.name}}</span>
-              <span class="partRemove"><a href="#" ng-click="removeStagePart($parent.$index, $index)">&times</a></span>
+              <div ng-class-even="'partEven'" ng-class-odd="'partOdd'">
+                <span>{{part.name}}</span>
+                <span class="partRemove"><a href="#" ng-click="removeStagePart($parent.$index, $index)">&times</a></span>
+              </div>
           </li>
         </ul>
       </div>
