@@ -40,18 +40,19 @@
     <h1>DeeVee</h1>
     <div class="stageBox" ng-repeat="stage in stageList track by $index">
       <a class="stageRemove" href="#" title="Remove stage" ng-click="removeStage($index)">&times</a>
-      <h2>Stage {{stageList.length - $index}}</h2>
+      <div class="stageContent">
+        <h2>Stage {{stageList.length - $index}}</h2>
 
-      <div class="partsBox">
-        <ul>
-          <li ng-repeat="part in stage.partsList track by $index">
-              <div ng-class-even="'partEven'" ng-class-odd="'partOdd'">
-                <span>{{part.name}}</span>
-                <span class="partRemove"><a href="#" ng-click="removeStagePart($parent.$index, $index)">&times</a></span>
-              </div>
-          </li>
-        </ul>
-      </div>
+        <div class="partsBox">
+          <ul>
+            <li ng-repeat="part in stage.partsList track by $index">
+                <div ng-class-even="'partEven'" ng-class-odd="'partOdd'">
+                  <span>{{part.name}}</span>
+                  <span class="partRemove"><a href="#" ng-click="removeStagePart($parent.$index, $index)">&times</a></span>
+                </div>
+            </li>
+          </ul>
+        </div>
       <span class=partAdd>
         <a href="#" ng-click="openPartDialog($index)">Add part</a>
       </span>
@@ -63,6 +64,7 @@
         thrust/weight ratio: {{stage.result.thrustratio.toFixed(2)}}<br>
         impulse: {{stage.result.impulse.toFixed(2)}}s
       </p>
+      </div>
     </div>
     <div class=totalsBox>
       <a class="stageAdd" href="#" ng-click="addStage()">Add stage</a>
