@@ -110,23 +110,14 @@ h3 {
 .atmCheck input {
   margin-right: 0.5rem;
 }
-.stageBox .partRemove a {
-  color: #b2b2b2;
-  float: right;
-  font-size: 1.3rem;
-  line-height: 1.3rem;
-}
 .stageContent .partAdd a {
   background-color: #0098ce;
   color: #eeeeee;
   padding: 0.5rem;
   border-radius: 0.2rem;
 }
-.partsBox .partEven {
-  background-color: #dfdfdf;
-}
-.partsBox .partOdd {
-  background-color: #fbfbfb;
+.partsBox {
+  margin-bottom: 1.5rem;
 }
 .partsBox ul {
   border-radius: 0.3rem;
@@ -135,8 +126,22 @@ h3 {
 .partsBox div {
   padding: 0.25rem;
 }
-.partsBox {
-  margin-bottom: 1.5rem;
+.partsBox .partEven {
+  background-color: #dfdfdf;
+  padding: 0.2rem 0rem 0.2rem 0.2rem;
+}
+.partsBox .partOdd {
+  background-color: #fbfbfb;
+  padding: 0.2rem 0rem 0.2rem 0.2rem;
+}
+.partsBox .partRemove {
+  float: right;
+}
+.partsBox .partRemove a {
+  color: #b2b2b2;
+  font-size: 1.3rem;
+  line-height: 1.3rem;
+  padding: 0.2rem 0.5rem 0.2rem 1rem;
 }
 .partsBox .partRemove a:hover {
   color: #bc0000;
