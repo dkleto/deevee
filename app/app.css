@@ -132,11 +132,11 @@ h3 {
 }
 .partsBox .partEven {
   background-color: #dfdfdf;
-  padding: 0.2rem 0rem 0.2rem 0.2rem;
+  padding: 0.2rem 0rem 0.2rem 0.5rem;
 }
 .partsBox .partOdd {
   background-color: #fbfbfb;
-  padding: 0.2rem 0rem 0.2rem 0.2rem;
+  padding: 0.2rem 0rem 0.2rem 0.5rem;
 }
 .partsBox .partRemove {
   float: right;
