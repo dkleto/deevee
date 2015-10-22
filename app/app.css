@@ -109,12 +109,16 @@ h3 {
 }
 .atmCheck input {
   margin-right: 0.5rem;
+  margin-top: 1rem;
 }
 .stageContent .partAdd a {
   background-color: #0098ce;
   color: #eeeeee;
   padding: 0.5rem;
   border-radius: 0.2rem;
+  display: block;
+  width: 5rem;
+  text-align: center;
 }
 .partsBox {
   margin-bottom: 1.5rem;
@@ -159,7 +163,9 @@ h3 {
   color: #eeeeee;
   padding: 0.5rem;
   border-radius: 0.2rem;
-  min-width: 200rem;
+  display: block;
+  width: 5rem;
+  text-align: center;
 }
 .totalsBox {
   background-color: #eeeeee;
