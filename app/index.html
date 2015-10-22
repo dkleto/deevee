@@ -46,24 +46,26 @@
         <div class="partsBox">
           <ul>
             <li ng-repeat="part in stage.partsList track by $index">
-                <div ng-class-even="'partEven'" ng-class-odd="'partOdd'">
-                  <span>{{part.name}}</span>
+              <div ng-class-even="'partEven'" ng-class-odd="'partOdd'">
+                <span>{{part.name}}</span>
                   <span class="partRemove"><a href="#" ng-click="removeStagePart($parent.$index, $index)">&times</a></span>
-                </div>
+              </div>
             </li>
           </ul>
         </div>
-      <span class=partAdd>
+        <span class=partAdd>
         <a href="#" ng-click="openPartDialog($index)">Add part</a>
-      </span>
-      <span class="atmCheck">
-        <input type="checkbox" ng-model="stage.atm" ng-change="updateCalculations($index); updateTotals()">Atmosphere</input>
-      </span>
-      <p>
-        dV: {{stage.result.dv.toFixed(2)}}m/s<br>
-        thrust/weight ratio: {{stage.result.thrustratio.toFixed(2)}}<br>
-        impulse: {{stage.result.impulse.toFixed(2)}}s
-      </p>
+        </span>
+        <span class="atmCheck">
+          <input type="checkbox" ng-model="stage.atm" ng-change="updateCalculations($index); updateTotals()">
+            Atmosphere
+          </input>
+        </span>
+        <p>
+          dV: {{stage.result.dv.toFixed(2)}}m/s<br>
+          thrust/weight ratio: {{stage.result.thrustratio.toFixed(2)}}<br>
+          impulse: {{stage.result.impulse.toFixed(2)}}s
+        </p>
       </div>
     </div>
     <div class=totalsBox>
