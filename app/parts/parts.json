@@ -38,6 +38,65 @@
                      "thrustvac"  : 120
                     }
                 ]
+            },
+            {"name" : "Solid fuel boosters",
+             "parts":
+                [
+                    {"name" : "RT-5 'Flea' Solid Fuel Booster",
+                     "cost" : 200,
+                     "wetmass" : 1.5,
+                     "drymass" : 0.45,
+                     "thrustatm" : 162.91,
+                     "thrustvac" : 192,
+                     "impulseatm" : 140,
+                     "impulsevac" : 165
+                    },
+                    {"name" : "RT-10 'Hammer' Solid Fuel Booster",
+                     "cost" : 400,
+                     "wetmass" : 3.56,
+                     "drymass" : 0.75,
+                     "thrustatm" : 197.9,
+                     "thrustvac" : 227,
+                     "impulseatm" : 170,
+                     "impulsevac" : 195
+                    },
+                    {"name" : "Rockomax BACC Solid Fuel Booster",
+                     "cost" : 850,
+                     "wetmass" : 7.65,
+                     "drymass" : 1.5,
+                     "thrustatm" : 250,
+                     "thrustvac" : 300,
+                     "impulseatm" : 175,
+                     "impulsevac" : 210
+                    },
+                    {"name" : "S1 SRB-KD25k",
+                     "cost" : 2700,
+                     "wetmass" : 24,
+                     "drymass" : 4.5,
+                     "thrustatm" : 593.86,
+                     "thrustvac" : 670,
+                     "impulseatm" : 195,
+                     "impulsevac" : 220
+                    },
+                    {"name" : "Sepratron I",
+                     "cost" : 75,
+                     "wetmass" : 0.0725,
+                     "drymass" : 0.0125,
+                     "thrustatm" : 13.792,
+                     "thrustvac" : 18,
+                     "impulseatm" : 118,
+                     "impulsevac" : 154
+                    },
+                    {"name" : "Launch Escape System",
+                     "cost" : 1000,
+                     "wetmass" : 1.1,
+                     "drymass" : 0.9,
+                     "thrustatm" : 666.667,
+                     "thrustvac" : 750,
+                     "impulseatm" : 160,
+                     "impulsevac" : 180
+                    }
+                ]
             }
         ]
     },
