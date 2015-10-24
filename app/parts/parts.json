@@ -344,5 +344,380 @@
                 ]
             }
         ]
+    },
+    {"name" : "Utility",
+     "subcategories" :
+        [
+            {"name" : "Parachutes",
+             "parts" :
+                [
+                    {"name" : "Mk16 Parachute",
+                     "cost" : 422,
+                     "wetmass" : 0.1,
+                     "drymass" : 0.1
+                    },
+                    {"name" : "Mk16-XL Parachute",
+                     "cost" : 850,
+                     "wetmass" : 0.3,
+                     "drymass" : 0.3
+                    },
+                    {"name" : "Mk2-R Radial-Mount Parachute",
+                     "cost" : 400,
+                     "wetmass" : 0.1,
+                     "drymass" : 0.1
+                    },
+                    {"name" : "Mk25 Parachute",
+                     "cost" : 400,
+                     "wetmass" : 0.2,
+                     "drymass" : 0.2
+                    },
+                    {"name" : "Mk12-R Radial-Mount Drogue Chute",
+                     "cost" : 300,
+                     "wetmass" : 0.075,
+                     "drymass" : 0.075
+                    }
+                ]
+            },
+            {"name" : "Landing gear",
+             "parts" :
+                [
+                    {"name" : "LY-01 Fixed Landing Gear",
+                     "cost" : 100,
+                     "wetmass" : 0.05,
+                     "drymass" : 0.05
+                    },
+                    {"name" : "LY05 Steerable Landing Gear",
+                     "cost" : 150,
+                     "wetmass" : 0.04,
+                     "drymass" : 0.04
+                    },
+                    {"name" : "LY-10 Small Landing Gear",
+                     "cost" : 450,
+                     "wetmass" : 0.04,
+                     "drymass" : 0.04
+                    },
+                    {"name" : "LY-50 Medium Landing Gear",
+                     "cost" : 700,
+                     "wetmass" : 0.25,
+                     "drymass" : 0.25
+                    },
+                    {"name" : "LY-99 Large Landing Gear",
+                     "cost" : 1200,
+                     "wetmass" : 0.6,
+                     "drymass" : 0.6
+                    }
+                ]
+            },
+            {"name" : "Landing struts",
+             "parts" :
+                [
+                    {"name" : "LT-1 Landing Struts",
+                     "cost" : 440,
+                     "wetmass" : 0.05,
+                     "drymass" : 0.05
+                    },
+                    {"name" : "LT-2 Landing Strut",
+                     "cost" : 340,
+                     "wetmass" : 0.1,
+                     "drymass" : 0.1
+                    },
+                    {"name" : "LT-5 Micro Landing Strut",
+                     "cost" : 200,
+                     "wetmass" : 0.015,
+                     "drymass" : 0.015
+                    }
+                ]
+            },
+            {"name" : "Ladders",
+             "parts" :
+                [
+                    {"name" : "Pegasus I Mobility Enhancer",
+                     "cost" : 100,
+                     "wetmass" : 0.005,
+                     "drymass" : 0.005
+                    },
+                    {"name" : "Telus Mobility Enhancer",
+                     "cost" : 350,
+                     "wetmass" : 0.005,
+                     "drymass" : 0.005
+                    },
+                    {"name" : "Telus-LV Bay Mobility Enhancer",
+                     "cost" : 440,
+                     "wetmass" : 0.005,
+                     "drymass" : 0.005
+                    }
+                ]
+            },
+            {"name" : "Generators",
+             "parts" :
+                [
+                    {"name" : "Gigantor XL Solar Array",
+                     "cost" : 3000,
+                     "wetmass" : 0.3,
+                     "drymass" : 0.3
+                    },
+                    {"name" : "OX-4W 2x3 Photovoltaic Panels",
+                     "cost" : 380,
+                     "wetmass" : 0.0175,
+                     "drymass" : 0.0175
+                    },
+                    {"name" : "OX-4L 1x6 Photovoltaic Panels",
+                     "cost" : 380,
+                     "wetmass" : 0.0175,
+                     "drymass" : 0.0175
+                    },
+                    {"name" : "SP-W 2x3 Photovoltaic Panels",
+                     "cost" : 440,
+                     "wetmass" : 0.025,
+                     "drymass" : 0.025
+                    },
+                    {"name" : "SP-L 1x6 Photovoltaic Panels",
+                     "cost" : 440,
+                     "wetmass" : 0.025,
+                     "drymass" : 0.025
+                    },
+                    {"name" : "OX-STAT Photovoltaic Panels",
+                     "cost" : 75,
+                     "wetmass" : 0.005,
+                     "drymass" : 0.005
+                    },
+                    {"name" : "PB-NUK Radioisotope Thermoelectric Generator",
+                     "cost" : 23300,
+                     "wetmass" : 0.08,
+                     "drymass" : 0.08
+                    },
+                    {"name" : "Fuel Cell",
+                     "cost" : 750,
+                     "wetmass" : 0.05,
+                     "drymass" : 0.05
+                    },
+                    {"name" : "Fuel Cell Array",
+                     "cost" : 4500,
+                     "wetmass" : 0.24,
+                     "drymass" : 0.24
+                    }
+                ]
+            },
+            {"name" : "Batteries",
+             "parts" :
+                [
+                    {"name" : "Z-100 Rechargeable Battery Pack",
+                     "cost" : 80,
+                     "wetmass" : 0.005,
+                     "drymass" : 0.005
+                    },
+                    {"name" : "Z-200 Rechargeable Battery Bank",
+                     "cost" : 360,
+                     "wetmass" : 0.01,
+                     "drymass" : 0.01
+                    },
+                    {"name" : "Z-400 Rechargeable Battery",
+                     "cost" : 550,
+                     "wetmass" : 0.02,
+                     "drymass" : 0.02
+                    },
+                    {"name" : "Z-1k Rechargeable Battery Bank",
+                     "cost" : 880,
+                     "wetmass" : 0.1,
+                     "drymass" : 0.1
+                    },
+                    {"name" : "Z-4K Rechargeable Battery Bank",
+                     "cost" : 4500,
+                     "wetmass" : 0.2,
+                     "drymass" : 0.2
+                    }
+                ]
+            },
+            {"name" : "Lights",
+             "parts" :
+                [
+                    {"name" : "Illuminator Mk1",
+                     "cost" : 100,
+                     "wetmass" : 0.015,
+                     "drymass" : 0.015
+                    },
+                    {"name" : "Illuminator Mk2",
+                     "cost" : 100,
+                     "wetmass" : 0.015,
+                     "drymass" : 0.015
+                    }
+                ]
+            },
+            {"name" : "Docking",
+             "parts" :
+                [
+                    {"name" : "Clamp-O-Tron Jr.",
+                     "cost" : 800,
+                     "wetmass" : 0.02,
+                     "drymass" : 0.02
+                    },
+                    {"name" : "Clamp-O-Tron Docking Port",
+                     "cost" : 280,
+                     "wetmass" : 0.05,
+                     "drymass" : 0.05
+                    },
+                    {"name" : "Clamp-O-Tron Shielded Docking Port",
+                     "cost" : 400,
+                     "wetmass" : 0.1,
+                     "drymass" : 0.1
+                    },
+                    {"name" : "Clamp-O-Tron Sr. Docking Port",
+                     "cost" : 980,
+                     "wetmass" : 0.2,
+                     "drymass" : 0.2
+                    },
+                    {"name" : "Inline Clamp-O-Tron",
+                     "cost" : 700,
+                     "wetmass" : 0.3,
+                     "drymass" : 0.3
+                    },
+                    {"name" : "Mk2 Clamp-O-Tron",
+                     "cost" : 850,
+                     "wetmass" : 0.6,
+                     "drymass" : 0.6
+                    },
+                    {"name" : "Advanced Grabbing Unit",
+                     "cost" : 450,
+                     "wetmass" : 0.075,
+                     "drymass" : 0.075
+                    }
+                ]
+            },
+            {"name" : "Habitation",
+             "parts" :
+                [
+                    {"name" : "PPD-10 Hitchhiker Storage Container",
+                     "cost" : 4000,
+                     "wetmass" : 2.5,
+                     "drymass" : 2.5
+                    },
+                    {"name" : "Mk2 Crew Cabin",
+                     "cost" : 4200,
+                     "wetmass" : 2,
+                     "drymass" : 2
+                    },
+                    {"name" : "Mk3 Passenger Module",
+                     "cost" : 30000,
+                     "wetmass" : 6.5,
+                     "drymass" : 6.5
+                    }
+                ]
+            },
+            {"name" : "Cargo/service bays",
+             "parts" :
+                [
+                    {"name" : "Mk2 Cargo Bay CRG-04",
+                     "cost" : 320,
+                     "wetmass" : 0.25,
+                     "drymass" : 0.25
+                    },
+                    {"name" : "Mk2 Cargo Bay CRG-08",
+                     "cost" : 500,
+                     "wetmass" : 0.5,
+                     "drymass" : 0.5
+                    },
+                    {"name" : "Mk3 Cargo Bay CRG-25",
+                     "cost" : 750,
+                     "wetmass" : 1.5,
+                     "drymass" : 1.5
+                    },
+                    {"name" : "Mk3 Cargo Bay CRG-50",
+                     "cost" : 1500,
+                     "wetmass" : 3,
+                     "drymass" : 3
+                    },
+                    {"name" : "Mk3 Cargo Bay CRG-100",
+                     "cost" : 3000,
+                     "wetmass" : 6,
+                     "drymass" : 6
+                    },
+                    {"name" : "Service Bay (1.25m)",
+                     "cost" : 500,
+                     "wetmass" : 0.1,
+                     "drymass" : 0.1
+                    },
+                    {"name" : "Service Bay (2.5m)",
+                     "cost" : 500,
+                     "wetmass" : 0.3,
+                     "drymass" : 0.3
+                    }
+                ]
+            },
+            {"name" : "Rover wheels",
+             "parts" :
+                [
+                    {"name" : "RoveMax Model S2",
+                     "cost" : 300,
+                     "wetmass" : 0.05,
+                     "drymass" : 0.05
+                    },
+                    {"name" : "RoveMax Model M1",
+                     "cost" : 450,
+                     "wetmass" : 0.075,
+                     "drymass" : 0.075
+                    },
+                    {"name" : "TR-2L Ruggedized Vehicular Wheel",
+                     "cost" : 580,
+                     "wetmass" : 0.05,
+                     "drymass" : 0.05
+                    },
+                    {"name" : "RoveMax Model XL3",
+                     "cost" : 1200,
+                     "wetmass" : 1.25,
+                     "drymass" : 1.25
+                    }
+                ]
+            },
+            {"name" : "Resource extractors",
+             "parts" :
+                [
+                    {"name" : "'Drill-O-Matic' Mining Excavator",
+                     "cost" : 6000,
+                     "wetmass" : 0.75,
+                     "drymass" : 0.75
+                    }
+                ]
+            },
+            {"name" : "Convertors",
+             "parts" :
+                [
+                    {"name" : "ISRU Converter",
+                     "cost" : 8000,
+                     "wetmass" : 4.3,
+                     "drymass" : 4.3
+                    }
+                ]
+            },
+            {"name" : "Radiators",
+             "parts" :
+                [
+                    {"name" : "Radiator Panel (small)",
+                     "cost" : 150,
+                     "wetmass" : 0.01,
+                     "drymass" : 0.01
+                    },
+                    {"name" : "Radiator Panel (large)",
+                     "cost" : 450,
+                     "wetmass" : 0.1,
+                     "drymass" : 0.1
+                    },
+                    {"name" : "Thermal Control System (small)",
+                     "cost" : 450,
+                     "wetmass" : 0.05,
+                     "drymass" : 0.05
+                    },
+                    {"name" : "Thermal Control System (medium)",
+                     "cost" : 2250,
+                     "wetmass" : 0.25,
+                     "drymass" : 0.25
+                    },
+                    {"name" : "Thermal Control System (large)",
+                     "cost" : 9000,
+                     "wetmass" : 1,
+                     "drymass" : 1
+                    }
+                ]
+            }
+        ]
     }
 ]
