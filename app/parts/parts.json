@@ -719,5 +719,21 @@
                 ]
             }
         ]
+    },
+    {"name" : "Command and control",
+     "subcategories" :
+        []
+    },
+    {"name" : "Structural",
+     "subcategories" :
+        []
+    },
+    {"name" : "Aerodynamic",
+     "subcategories" :
+        []
+    },
+    {"name" : "Science",
+     "subcategories" :
+        []
     }
 ]
