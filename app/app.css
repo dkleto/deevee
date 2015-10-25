@@ -49,30 +49,74 @@ h3 {
   z-index: 11;
   padding: 0rem;
 }
+.dialog .catTitles {
+  width: 6rem;
+  display: block;
+  float: left;
+  padding: 0rem;
+  margin-top: 1.2rem;
+  margin-right: 0rem;
+  margin-bottom: 100%;
+  margin-left: 0.2rem;
+}
+.catTitles h2.catTitle {
+  margin: 0;
+  padding: 0.3rem;
+  display: inline-block;
+  text-align: left;
+  font-size: 1rem;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.dialog > div.catContents {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: auto;
+  margin-left: 6.5rem;
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+  margin-right: 0.5rem;
+}
+.dialog .subcategory h3 {
+  margin: 0.5rem 0rem 0rem 0rem;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
 .dialog .dialogClose {
-  float: right;
+  position: absolute;
+  top: 0;
+  left: 100%;
   font-size: 1.7rem;
   color: #777777;
   font-weight: bold;
   padding: 0rem 0.5rem 2rem 2rem;
+  margin-left: -3.4rem;
 }
 .dialog .dialogClose:hover {
   color: #444444;
 }
 .dialog .dialogContent {
-  padding: 0.5rem;
+  margin-top: 1rem;
+  padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+  height: 100%;
 }
 .dialogContent .category {
   line-height: 1.5rem;
   cursor: pointer;
-  padding-top: 0.15rem;
-  padding-left: 0.5rem;
+  padding-left: 0.2rem;
   padding-right: 0.5rem;
 }
 .category .partOption {
   display: inline-block;
-  font-size: 1rem;
-  width: 22rem;
+  font-size: 0.7rem;
+  width: 15rem;
+  padding-bottom: 0.1rem;
+  line-height: 0.9rem;
+  vertical-align: top;
 }
 /** Individual stage box **/
 .stageBox {

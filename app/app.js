@@ -5,7 +5,17 @@ var deevee = angular.module('deeVee', ['ngRoute']);
 deevee.controller('stageCtrl', ['$scope', '$http', function($scope, $http) {
     $http.get('parts/parts.json').success(function(data) {
       $scope.parts = data;
+      $scope.hideCats();
     });
+    $scope.hideCats = function() {
+      for (var i = 0; i < $scope.parts.length; i++) {
+          $scope.parts[i].visible = false;
+      }
+    }
+    $scope.toggleCat = function(catIndex) {
+        $scope.hideCats();
+        $scope.parts[catIndex].visible = !$scope.parts[catIndex].visible;
+    }
     $scope.partDialog = false;
     $scope.currentStage = false;
     $scope.openPartDialog = function(stageIndex) {
