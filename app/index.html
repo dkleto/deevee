@@ -16,7 +16,7 @@
   <script src="bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
 </head>
 
-<body ng-controller="stageCtrl">
+<body ng-class="isPartDialogOpen()" ng-controller="stageCtrl">
   <div class="overlay" ng-if="partDialog == true" ng-click="closePartDialog()">
     <div class="dialog" ng-click="$event.stopPropagation()">
       <a class="dialogClose" href="#" title="Close part dialog" ng-click="closePartDialog()">&times</a>

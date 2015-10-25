@@ -2,6 +2,9 @@
 html {
   font-family: 'Roboto', sans-serif;
 }
+body.partDialogOpen {
+  overflow: hidden;
+}
 .overlay {
   position: fixed;
   top: 0;

@@ -7,6 +7,9 @@ deevee.controller('stageCtrl', ['$scope', '$http', function($scope, $http) {
       $scope.parts = data;
       $scope.hideCats();
     });
+    $scope.isPartDialogOpen = function() {
+        return $scope.partDialog ? 'partDialogOpen' : '';
+    }
     $scope.catSelected = function(index) {
         return $scope.parts[index].visible ? 'selected' : '';
     }
