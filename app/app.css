@@ -14,7 +14,7 @@ html {
 /** Main view **/
 .container {
   padding: 1rem;
-  min-width: 320px;
+  min-width: 280px;
   max-width: 40rem;
   float: center;
   margin-left: auto;
@@ -39,11 +39,11 @@ h3 {
 }
 /** Parts dialog **/
 .dialog {
-  width: 90%;
-  height: 90%;
+  width: 95%;
+  height: 95%;
   position: fixed;
-  top: 5%;
-  left: 5%;
+  top: 2.5%;
+  left: 2.5%;
   background-color: #eeeeee;
   border-radius: 0.5rem;
   z-index: 11;
