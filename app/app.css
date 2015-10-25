@@ -117,6 +117,7 @@ h3 {
   padding-bottom: 0.1rem;
   line-height: 0.9rem;
   vertical-align: top;
+  cursor: pointer;
 }
 /** Individual stage box **/
 .stageBox {
