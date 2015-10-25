@@ -7,6 +7,9 @@ deevee.controller('stageCtrl', ['$scope', '$http', function($scope, $http) {
       $scope.parts = data;
       $scope.hideCats();
     });
+    $scope.catSelected = function(index) {
+        return $scope.parts[index].visible ? 'selected' : '';
+    }
     $scope.hideCats = function() {
       for (var i = 0; i < $scope.parts.length; i++) {
           $scope.parts[i].visible = false;

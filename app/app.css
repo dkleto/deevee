@@ -67,6 +67,10 @@ h3 {
   font-size: 1rem;
   text-transform: uppercase;
   cursor: pointer;
+  color: #666666;
+}
+.catTitles h2.catTitle.selected {
+  color: #222222;
 }
 .dialog > div.catContents {
   display: block;
@@ -76,13 +80,16 @@ h3 {
   bottom: 0;
   left: 0;
   overflow: auto;
-  margin-left: 6.5rem;
+  margin-left: 7rem;
   margin-top: 2rem;
   margin-bottom: 0.5rem;
   margin-right: 0.5rem;
 }
+.dialog div.subcategory {
+  margin-bottom: 0.5rem;
+}
 .dialog .subcategory h3 {
-  margin: 0.5rem 0rem 0rem 0rem;
+  margin: 0rem;
   font-size: 0.9rem;
   text-transform: uppercase;
 }
@@ -118,6 +125,7 @@ h3 {
   line-height: 0.9rem;
   vertical-align: top;
   cursor: pointer;
+  color: #666666;
 }
 /** Individual stage box **/
 .stageBox {
