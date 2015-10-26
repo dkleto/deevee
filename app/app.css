@@ -120,15 +120,18 @@ h3 {
   padding-left: 0.2rem;
   padding-right: 0.5rem;
 }
-.category .partOption {
+.category span.partOption {
   display: inline-block;
-  font-size: 0.7rem;
+  font-size: 0.8rem;
   width: 15rem;
   padding-bottom: 0.1rem;
   line-height: 0.9rem;
   vertical-align: top;
   cursor: pointer;
   color: #666666;
+}
+.category span.partOption:hover {
+  color: #222222;
 }
 /** Individual stage box **/
 .stageBox {
