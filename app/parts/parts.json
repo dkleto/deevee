@@ -856,7 +856,68 @@
     },
     {"name" : "Structural",
      "subcategories" :
-        []
+        [
+            {"name" : "Decouplers and separators",
+             "parts" :
+                [
+                    {"name" : "TT-38K Radial Decoupler",
+                     "cost" : 600,
+                     "wetmass" : 0.025,
+                     "drymass" : 0.025
+                    },
+                    {"name" : "TT-70 Radial Decoupler",
+                     "cost" : 700,
+                     "wetmass" : 0.05,
+                     "drymass" : 0.05
+                    },
+                    {"name" : "Hydraulic Detachment Manifold",
+                     "cost" : 770,
+                     "wetmass" : 0.4,
+                     "drymass" : 0.4
+                    },
+                    {"name" : "Structural Pylon",
+                     "cost" : 1275,
+                     "wetmass" : 0.2,
+                     "drymass" : 0.2
+                    },
+                    {"name" : "TR-2V Stack Decoupler",
+                     "cost" : 300,
+                     "wetmass" : 0.015,
+                     "drymass" : 0.015
+                    },
+                    {"name" : "TR-2C Stack Separator",
+                     "cost" : 450,
+                     "wetmass" : 0.02,
+                     "drymass" : 0.02
+                    },
+                    {"name" : "TR-18A Stack Decoupler",
+                     "cost" : 400,
+                     "wetmass" : 0.05,
+                     "drymass" : 0.05
+                    },
+                    {"name" : "TR-18D Stack Separator",
+                     "cost" : 600,
+                     "wetmass" : 0.075,
+                     "drymass" : 0.075
+                    },
+                    {"name" : "Rockomax Brand Decoupler",
+                     "cost" : 550,
+                     "wetmass" : 0.4,
+                     "drymass" : 0.4
+                    },
+                    {"name" : "TR-XL Stack Separator",
+                     "cost" : 900,
+                     "wetmass" : 0.45,
+                     "drymass" : 0.45
+                    },
+                    {"name" : "TR-38-D",
+                     "cost" : 600,
+                     "wetmass" : 0.8,
+                     "drymass" : 0.8
+                    }
+                ]
+            }
+        ]
     },
     {"name" : "Aerodynamic",
      "subcategories" :
