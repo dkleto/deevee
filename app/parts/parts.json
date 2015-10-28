@@ -916,6 +916,146 @@
                      "drymass" : 0.8
                     }
                 ]
+            },
+            {"name" : "Adapters, couplers and struts",
+             "parts" :
+                [
+                    {"name" : "FL-A10 Adapter",
+                     "cost" : 150,
+                     "wetmass" : 0.05,
+                     "drymass" : 0.05
+                    },
+                    {"name" : "Rockomax Brand Adapter",
+                     "cost" : 500,
+                     "wetmass" : 0.1,
+                     "drymass" : 0.1
+                    },
+                    {"name" : "Kerbodyne ADTP-2-3",
+                     "cost" : 2600,
+                     "wetmass" : 0.2,
+                     "drymass" : 0.2
+                    },
+                    {"name" : "FL-A5 Adapter",
+                     "cost" : 100,
+                     "wetmass" : 0.04,
+                     "drymass" : 0.04
+                    },
+                    {"name" : "Rockomax Brand Adapter 02",
+                     "cost" : 450,
+                     "wetmass" : 0.08,
+                     "drymass" : 0.08
+                    },
+                    {"name" : "Small Hardpoint",
+                     "cost" : 1275,
+                     "wetmass" : 0.02,
+                     "drymass" : 0.02
+                    },
+                    {"name" : "EAS-4 Strut Connector",
+                     "cost" : 42,
+                     "wetmass" : 0.05,
+                     "drymass" : 0.05
+                    },
+                    {"name" : "Cubic Octagonal Strut",
+                     "cost" : 16,
+                     "wetmass" : 0.001,
+                     "drymass" : 0.001
+                    },
+                    {"name" : "Octagonal Strut",
+                     "cost" : 20,
+                     "wetmass" : 0.001,
+                     "drymass" : 0.001
+                    },
+                    {"name" : "Modular Girder Adapter",
+                     "cost" : 50,
+                     "wetmass" : 0.25,
+                     "drymass" : 0.25
+                    },
+                    {"name" : "Modular Girder Segment",
+                     "cost" : 25,
+                     "wetmass" : 0.175,
+                     "drymass" : 0.175
+                    },
+                    {"name" : "Modular Girder Segment XL",
+                     "cost" : 75,
+                     "wetmass" : 0.375,
+                     "drymass" : 0.375
+                    },
+                    {"name" : "M-Beam 650 I-Beam",
+                     "cost" : 50,
+                     "wetmass" : 0.08,
+                     "drymass" : 0.08
+                    },
+                    {"name" : "M-Beam 200 I-Beam",
+                     "cost" : 25,
+                     "wetmass" : 0.375,
+                     "drymass" : 0.375
+                    },
+                    {"name" : "M-Beam 200 I-Beam Pocket Edition",
+                     "cost" : 14,
+                     "wetmass" : 0.1875,
+                     "drymass" : 0.1875
+                    },
+                    {"name" : "The Not-Rockomax Micronode",
+                     "cost" : 25,
+                     "wetmass" : 0.15,
+                     "drymass" : 0.15
+                    },
+                    {"name" : "M-1x1 Structural Panel",
+                     "cost" : 30,
+                     "wetmass" : 0.075,
+                     "drymass" : 0.075
+                    },
+                    {"name" : "M-2x2 Structural Panel",
+                     "cost" : 90,
+                     "wetmass" : 0.3,
+                     "drymass" : 0.3
+                    },
+                    {"name" : "BZ-52 Radial Attachment Point",
+                     "cost" : 250,
+                     "wetmass" : 0.04,
+                     "drymass" : 0.04
+                    },
+                    {"name" : "Rockomax HubMax Multi-Point Connector",
+                     "cost" : 900,
+                     "wetmass" : 1.5,
+                     "drymass" : 1.5
+                    },
+                    {"name" : "Structural Fuselage",
+                     "cost" : 380,
+                     "wetmass" : 0.1,
+                     "drymass" : 0.1
+                    },
+                    {"name" : "TVR-200 Stack Bi-Coupler",
+                     "cost" : 400,
+                     "wetmass" : 0.1,
+                     "drymass" : 0.1
+                    },
+                    {"name" : "TVR-1180C Mk1 Stack Tri-Coupler",
+                     "cost" : 680,
+                     "wetmass" : 0.15,
+                     "drymass" : 0.15
+                    },
+                    {"name" : "TVR-2160C Mk2 Stack Quad-Coupler",
+                     "cost" : 2000,
+                     "wetmass" : 0.175,
+                     "drymass" : 0.175
+                    },
+                    {"name" : "TVR-200L Stack Bi-Adapter",
+                     "cost" : 400,
+                     "wetmass" : 0.1,
+                     "drymass" : 0.1
+                    },
+                    {"name" : "TVR-300L Stack Tri-Adapter",
+                     "cost" : 600,
+                     "wetmass" : 0.15,
+                     "drymass" : 0.15
+                    },
+                    {"name" : "TVR-400L Stack Quad-Adapter",
+                     "cost" : 800,
+                     "wetmass" : 0.2,
+                     "drymass" : 0.2
+                    }
+                ]
             }
         ]
     },
