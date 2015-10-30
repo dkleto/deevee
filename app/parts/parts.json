@@ -516,6 +516,33 @@
                      "drymass" : 0.41
                     }
                 ]
+            },
+            {"name" : "Ore tanks",
+             "parts" :
+                [
+                     {"name" : "Small Holding Tank",
+                      "cost" : 1000,
+                      "wetmass" : 3.5,
+                      "drymass" : 3.5,
+                      "emptymass" : 0.5
+                     },
+                     {"name" : "Large Holding Tank",
+                      "cost" : 3000,
+                      "wetmass" : 17,
+                      "drymass" : 17,
+                      "emptymass" : 2
+                     }
+                ]
+            },
+            {"name" : "Fuel transfer",
+             "parts" :
+                [
+                    {"name" : "FTX-2 External Fuel Duct",
+                     "cost" : 150,
+                     "wetmass" : 0.05,
+                     "drymass" : 0.05
+                    }
+                ]
             }
         ]
     },
