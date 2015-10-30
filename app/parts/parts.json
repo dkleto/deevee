@@ -1018,7 +1018,70 @@
     },
     {"name" : "Command and control",
      "subcategories" :
-        []
+        [
+            {"name" : "SAS modules",
+             "parts" :
+                [
+                    {"name" : "CH-J3 Fly-By-Wire Avionics Hub",
+                     "cost" : 4000,
+                     "wetmass" : 0.08,
+                     "drymass" : 0.08
+                    }
+                ]
+            },
+            {"name" : "Reaction wheels",
+             "parts" :
+                [
+                    {"name" : "Small Inline Reaction Wheel",
+                     "cost" : 600,
+                     "wetmass" : 0.05,
+                     "drymass" : 0.05
+                    },
+                    {"name" : "Advanced Inline Stabilizer",
+                     "cost" : 1200,
+                     "wetmass" : 0.1,
+                     "drymass" : 0.1
+                    },
+                    {"name" : "Advanced Reaction Wheel Module, Large",
+                     "cost" : 2100,
+                     "wetmass" : 0.2,
+                     "drymass" : 0.2
+                    }
+                ]
+            },
+            {"name" : "RCS thrusters",
+             "parts" :
+                [
+                    {"name" : "RV-105 RCS Thruster Block  ",
+                     "cost" : 620,
+                     "wetmass" : 0.05,
+                     "drymass" : 0.05,
+                     "thrustatm" : 1,
+                     "thrustvac" : 1,
+                     "impulseatm" : 100,
+                     "impulsevac" : 240
+                    },
+                    {"name" : "Place-Anywhere 7 Linear RCS Port   ",
+                     "cost" : 280,
+                     "wetmass" : 0.03,
+                     "drymass" : 0.03,
+                     "thrustatm" : 2,
+                     "thrustvac" : 2,
+                     "impulseatm" : 100,
+                     "impulsevac" : 240
+                    },
+                    {"name" : "Vernor Engine  ",
+                     "cost" : 1400,
+                     "wetmass" : 0.08,
+                     "drymass" : 0.08,
+                     "thrustatm" : 12,
+                     "thrustvac" : 12,
+                     "impulseatm" : 140,
+                     "impulsevac" : 260
+                    }
+                ]
+            }
+        ]
     },
     {"name" : "Structural",
      "subcategories" :
