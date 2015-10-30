@@ -227,6 +227,20 @@
                      "impulsevac" : 180
                     }
                 ]
+            },
+            {"name" : "Ion engines",
+             "parts" :
+                [
+                    {"name" : "IX-6315 'Dawn' Electric Propulsion System",
+                     "cost" : 8000,
+                     "wetmass" : 0.25,
+                     "drymass" : 0.25,
+                     "thrustatm" : 0.048,
+                     "thrustvac" : 2.0,
+                     "impulseatm" : 100,
+                     "impulsevac" : 4200
+                    }
+                ]
             }
         ]
     },
