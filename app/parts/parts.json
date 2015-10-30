@@ -377,6 +377,131 @@
                      "drymass" : 1.79
                     }
                 ]
+            },
+            {"name" : "Jet fuel",
+             "parts":
+                [
+                    {"name" : "Engine Nacelle",
+                     "cost" : 1550,
+                     "wetmass" : 0.35,
+                     "drymass" : 0.15
+                    },
+                    {"name" : "Engine Pre-cooler",
+                     "cost" : 1650,
+                     "wetmass" : 0.35,
+                     "drymass" : 0.15
+                    },
+                    {"name" : "Mk1 Liquid Fuel Fuselage",
+                     "cost" : 550,
+                     "wetmass" : 2.25,
+                     "drymass" : 0.25
+                    },
+                    {"name" : "Mk2 Liquid Fuel Fuselage Short",
+                     "cost" : 750,
+                     "wetmass" : 2.29,
+                     "drymass" : 0.29
+                    },
+                    {"name" : "Mk2 Liquid Fuel Fuselage",
+                     "cost" : 1450,
+                     "wetmass" : 4.57,
+                     "drymass" : 0.57
+                    },
+                    {"name" : "Mk3 Liquid Fuel Fuselage Short",
+                     "cost" : 4300,
+                     "wetmass" : 14.29,
+                     "drymass" : 1.79
+                    },
+                    {"name" : "Mk3 Liquid Fuel Fuselage",
+                     "cost" : 8600,
+                     "wetmass" : 28.57,
+                     "drymass" : 3.57
+                    },
+                    {"name" : "Mk3 Liquid Fuel Fuselage Long",
+                     "cost" : 17200,
+                     "wetmass" : 57.14,
+                     "drymass" : 7.14
+                    },
+                    {"name" : "NCS Adapter",
+                     "cost" : 320,
+                     "wetmass" : 0.5,
+                     "drymass" : 0.1
+                    },
+                    {"name" : "FAT-455 Aeroplane Main Wing",
+                     "cost" : 2800,
+                     "wetmass" : 3.78,
+                     "drymass" : 0.78
+                    },
+                    {"name" : "Big-S Wing Strake",
+                     "cost" : 1000,
+                     "wetmass" : 0.6,
+                     "drymass" : 0.1
+                    },
+                    {"name" : "Big-S Delta Wing",
+                     "cost" : 3000,
+                     "wetmass" : 2,
+                     "drymass" : 0.5
+                    }
+                ]
+            },
+            {"name" : "RCS",
+             "parts" :
+                [
+                    {"name" : "FL-R10 RCS Fuel Tank",
+                     "cost" : 200,
+                     "wetmass" : 0.37,
+                     "drymass" : 0.05
+                    },
+                    {"name" : "FL-R25 RCS Fuel Tank",
+                     "cost" : 600,
+                     "wetmass" : 1.15,
+                     "drymass" : 0.15
+                    },
+                    {"name" : "FL-R1 RCS Fuel Tank",
+                     "cost" : 1300,
+                     "wetmass" : 3.4,
+                     "drymass" : 0.4
+                    },
+                    {"name" : "Mk2 Monopropellant Tank",
+                     "cost" : 750,
+                     "wetmass" : 1.89,
+                     "drymass" : 0.29
+                    },
+                    {"name" : "Mk3 Monopropellant Tank",
+                     "cost" : 4300,
+                     "wetmass" : 4.71,
+                     "drymass" : 0.71
+                    },
+                    {"name" : "Stratus-V Roundified Monopropellant Tank",
+                     "cost" : 200,
+                     "wetmass" : 0.315,
+                     "drymass" : 0.075
+                    },
+                    {"name" : "Stratus-V Cylindrified Monopropellant Tank",
+                     "cost" : 450,
+                     "wetmass" : 0.75,
+                     "drymass" : 0.15
+                    }
+                ]
+            },
+            {"name" : "Xenon",
+             "parts" :
+                [
+                    {"name" : "PB-X50R Xenon Container",
+                     "cost" : 2200,
+                     "wetmass" : 0.07,
+                     "drymass" : 0.03
+                    },
+                    {"name" : "PB-X150 Xenon Container",
+                     "cost" : 3000,
+                     "wetmass" : 0.12,
+                     "drymass" : 0.05
+                    },
+                    {"name" : "PB-X750 Xenon Container",
+                     "cost" : 22500,
+                     "wetmass" : 0.94,
+                     "drymass" : 0.41
+                    }
+                ]
             }
         ]
     },
