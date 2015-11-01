@@ -1298,17 +1298,17 @@
             {"name" : "Communications",
              "parts" :
                 [
-                    {"name" : "Communotron 16 ",
+                    {"name" : "Communotron 16",
                      "cost" : 300,
                      "wetmass" : 0.005,
                      "drymass" : 0.005
                     },
-                    {"name" : "Comms DTS-M1   ",
+                    {"name" : "Comms DTS-M1",
                      "cost" : 600,
                      "wetmass" : 0.03,
                      "drymass" : 0.03
                     },
-                    {"name" : "Communotron 88-88  ",
+                    {"name" : "Communotron 88-88",
                      "cost" : 1100,
                      "wetmass" : 0.025,
                      "drymass" : 0.025
@@ -1318,10 +1318,70 @@
             {"name" : "Labs",
              "parts" :
                 [
-                    {"name" : "Mobile Processing Lab MPL-LG-2  Large  ",
+                    {"name" : "Mobile Processing Lab MPL-LG-2  Large",
                      "cost" : 4000,
                      "wetmass" : 3.5,
                      "drymass" : 3.5
+                    }
+                ]
+            },
+            {"name" : "Sensors",
+             "parts" :
+                [
+                    {"name" : "SC-9001 Science Jr",
+                     "cost" : 880,
+                     "wetmass" : 0.2,
+                     "drymass" : 0.2
+                    },
+                    {"name" : "Mystery Goo™ Containment Unit",
+                     "cost" : 800,
+                     "wetmass" : 0.05,
+                     "drymass" : 0.05
+                    },
+                    {"name" : "Double-C Seismic Accelerometer",
+                     "cost" : 6000,
+                     "wetmass" : 0.01,
+                     "drymass" : 0.01
+                    },
+                    {"name" : "PresMat Barometer",
+                     "cost" : 3300,
+                     "wetmass" : 0.01,
+                     "drymass" : 0.01
+                    },
+                    {"name" : "GRAVMAX Negative Gravioli Detector",
+                     "cost" : 8800,
+                     "wetmass" : 0.01,
+                     "drymass" : 0.01
+                    },
+                    {"name" : "2HOT Thermometer",
+                     "cost" : 900,
+                     "wetmass" : 0.01,
+                     "drymass" : 0.01
+                    },
+                    {"name" : "Atmospheric Fluid Spectro-Variometer",
+                     "cost" : 6500,
+                     "wetmass" : 0.01,
+                     "drymass" : 0.01
+                    }
+                ]
+            },
+            {"name" : "Resource scanners",
+             "parts" :
+                [
+                    {"name" : "M700 Survey Scanner",
+                     "cost" : 500,
+                     "wetmass" : 0.2,
+                     "drymass" : 0.2
+                    },
+                    {"name" : "M4435 Narrow-Band Scanner",
+                     "cost" : 1000,
+                     "wetmass" : 0.1,
+                     "drymass" : 0.1
+                    },
+                    {"name" : "Surface Scanning Module",
+                     "cost" : 800,
+                     "wetmass" : 0.01,
+                     "drymass" : 0.01
                     }
                 ]
             }
