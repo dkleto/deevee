@@ -1294,6 +1294,37 @@
     },
     {"name" : "Science",
      "subcategories" :
-        []
+        [
+            {"name" : "Communications",
+             "parts" :
+                [
+                    {"name" : "Communotron 16 ",
+                     "cost" : 300,
+                     "wetmass" : 0.005,
+                     "drymass" : 0.005
+                    },
+                    {"name" : "Comms DTS-M1   ",
+                     "cost" : 600,
+                     "wetmass" : 0.03,
+                     "drymass" : 0.03
+                    },
+                    {"name" : "Communotron 88-88  ",
+                     "cost" : 1100,
+                     "wetmass" : 0.025,
+                     "drymass" : 0.025
+                    }
+                ]
+            },
+            {"name" : "Labs",
+             "parts" :
+                [
+                    {"name" : "Mobile Processing Lab MPL-LG-2  Large  ",
+                     "cost" : 4000,
+                     "wetmass" : 3.5,
+                     "drymass" : 3.5
+                    }
+                ]
+            }
+        ]
     }
 ]
