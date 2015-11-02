@@ -1290,7 +1290,333 @@
     },
     {"name" : "Aerodynamic",
      "subcategories" :
-        []
+        [
+            {"name" : "Air intakes",
+             "parts" :
+                [
+                    {"name" : "Circular Intake",
+                     "cost" : 680,
+                     "wetmass" : 0.01,
+                     "drymass" : 0.01
+                    },
+                    {"name" : "Ram Air Intake",
+                     "cost" : 2680,
+                     "wetmass" : 0.01,
+                     "drymass" : 0.01
+                    },
+                    {"name" : "Shock Cone Intake",
+                     "cost" : 3050,
+                     "wetmass" : 0.025,
+                     "drymass" : 0.025
+                    },
+                    {"name" : "Mk1 Fuselage - Intake",
+                     "cost" : 720,
+                     "wetmass" : 0.12,
+                     "drymass" : 0.12
+                    },
+                    {"name" : "Engine Nacelle",
+                     "cost" : 1550,
+                     "wetmass" : 0.35,
+                     "drymass" : 0.35
+                    },
+                    {"name" : "Engine Pre-cooler",
+                     "cost" : 1650,
+                     "wetmass" : 0.35,
+                     "drymass" : 0.35
+                    },
+                    {"name" : "XM-G50 Radial Air Intake",
+                     "cost" : 1000,
+                     "wetmass" : 0.01,
+                     "drymass" : 0.01
+                    },
+                    {"name" : "Structural Intake",
+                     "cost" : 900,
+                     "wetmass" : 0.008,
+                     "drymass" : 0.008
+                    }
+                ]
+            },
+            {"name" : "Nose cones and tail connectors",
+             "parts" :
+                [
+                    {"name" : "Small Nose Cone",
+                     "cost" : 180,
+                     "wetmass" : 0.01,
+                     "drymass" : 0.01
+                    },
+                    {"name" : "Aerodynamic Nose Cone",
+                     "cost" : 240,
+                     "wetmass" : 0.03,
+                     "drymass" : 0.03
+                    },
+                    {"name" : "Advanced Nose Cone - Type A",
+                     "cost" : 320,
+                     "wetmass" : 0.075,
+                     "drymass" : 0.075
+                    },
+                    {"name" : "Advanced Nose Cone - Type B",
+                     "cost" : 320,
+                     "wetmass" : 0.075,
+                     "drymass" : 0.075
+                    },
+                    {"name" : "Protective Rocket Nose Mk7",
+                     "cost" : 450,
+                     "wetmass" : 0.2,
+                     "drymass" : 0.2
+                    },
+                    {"name" : "Tail Connector A",
+                     "cost" : 675,
+                     "wetmass" : 0.2,
+                     "drymass" : 0.2
+                    },
+                    {"name" : "Tail Connector B",
+                     "cost" : 675,
+                     "wetmass" : 0.2,
+                     "drymass" : 0.2
+                    }
+                ]
+            },
+            {"name" : "Modular wings",
+             "parts" :
+                [
+                    {"name" : "Wing Connector Type A",
+                     "cost" : 500,
+                     "wetmass" : 0.2,
+                     "drymass" : 0.2
+                    },
+                    {"name" : "Wing Connector Type B",
+                     "cost" : 500,
+                     "wetmass" : 0.2,
+                     "drymass" : 0.2
+                    },
+                    {"name" : "Wing Connector Type C",
+                     "cost" : 250,
+                     "wetmass" : 0.1,
+                     "drymass" : 0.1
+                    },
+                    {"name" : "Wing Connector Type D",
+                     "cost" : 100,
+                     "wetmass" : 0.05,
+                     "drymass" : 0.05
+                    },
+                    {"name" : "Wing Connector Type E",
+                     "cost" : 100,
+                     "wetmass" : 0.05,
+                     "drymass" : 0.05
+                    },
+                    {"name" : "Delta Wing",
+                     "cost" : 600,
+                     "wetmass" : 0.2,
+                     "drymass" : 0.2
+                    },
+                    {"name" : "Small Delta Wing",
+                     "cost" : 200,
+                     "wetmass" : 0.05,
+                     "drymass" : 0.05
+                    },
+                    {"name" : "Wing Strake",
+                     "cost" : 400,
+                     "wetmass" : 0.05,
+                     "drymass" : 0.05
+                    },
+                    {"name" : "Structural Wing Type A",
+                     "cost" : 500,
+                     "wetmass" : 0.1,
+                     "drymass" : 0.1
+                    },
+                    {"name" : "Structural Wing Type B",
+                     "cost" : 500,
+                     "wetmass" : 0.1,
+                     "drymass" : 0.1
+                    },
+                    {"name" : "Structural Wing Type C",
+                     "cost" : 300,
+                     "wetmass" : 0.05,
+                     "drymass" : 0.05
+                    },
+                    {"name" : "Structural Wing Type D",
+                     "cost" : 150,
+                     "wetmass" : 0.025,
+                     "drymass" : 0.025
+                    },
+                    {"name" : "Swept Wing Type A",
+                     "cost" : 500,
+                     "wetmass" : 0.113,
+                     "drymass" : 0.113
+                    },
+                    {"name" : "Swept Wing Type B",
+                     "cost" : 500,
+                     "wetmass" : 0.226,
+                     "drymass" : 0.226
+                    }
+                ]
+            },
+            {"name" : "Irregular wings",
+             "parts" :
+                [
+                    {"name" : "Basic Fin",
+                     "cost" : 25,
+                     "wetmass" : 0.01,
+                     "drymass" : 0.01
+                    },
+                    {"name" : "AV-T1 Winglet",
+                     "cost" : 500,
+                     "wetmass" : 0.04,
+                     "drymass" : 0.04
+                    },
+                    {"name" : "Tail Fin",
+                     "cost" : 600,
+                     "wetmass" : 0.13,
+                     "drymass" : 0.13
+                    },
+                    {"name" : "Swept Wings",
+                     "cost" : 620,
+                     "wetmass" : 0.275,
+                     "drymass" : 0.275
+                    },
+                    {"name" : "FAT-455 Aeroplane Main Wing",
+                     "cost" : 2800,
+                     "wetmass" : 3.78,
+                     "drymass" : 3.78
+                    },
+                    {"name" : "Big-S Wing Strake",
+                     "cost" : 1000,
+                     "wetmass" : 0.6,
+                     "drymass" : 0.6
+                    },
+                    {"name" : "Big-S Delta Wing",
+                     "cost" : 3000,
+                     "wetmass" : 2,
+                     "drymass" : 2
+                    }
+                ]
+            },
+            {"name" : "Control surfaces",
+             "parts" :
+                [
+                    {"name" : "V-R8 Winglet",
+                     "cost" : 640,
+                     "wetmass" : 0.1,
+                     "drymass" : 0.1
+                    },
+                    {"name" : "Standard Canard",
+                     "cost" : 720,
+                     "wetmass" : 0.1,
+                     "drymass" : 0.1
+                    },
+                    {"name" : "Advanced Canard",
+                     "cost" : 800,
+                     "wetmass" : 0.08,
+                     "drymass" : 0.08
+                    },
+                    {"name" : "Delta-Deluxe Winglet",
+                     "cost" : 600,
+                     "wetmass" : 0.08,
+                     "drymass" : 0.08
+                    },
+                    {"name" : "Tail Fin",
+                     "cost" : 600,
+                     "wetmass" : 0.125,
+                     "drymass" : 0.125
+                    },
+                    {"name" : "FAT-455 Aeroplane Tail Fin",
+                     "cost" : 1000,
+                     "wetmass" : 0.08,
+                     "drymass" : 0.08
+                    },
+                    {"name" : "Big-S Spaceplane Tail Fin",
+                     "cost" : 2500,
+                     "wetmass" : 0.45,
+                     "drymass" : 0.45
+                    },
+                    {"name" : "Elevon 1",
+                     "cost" : 400,
+                     "wetmass" : 0.05,
+                     "drymass" : 0.05
+                    },
+                    {"name" : "Elevon 2",
+                     "cost" : 550,
+                     "wetmass" : 0.06,
+                     "drymass" : 0.06
+                    },
+                    {"name" : "Elevon 3",
+                     "cost" : 650,
+                     "wetmass" : 0.08,
+                     "drymass" : 0.08
+                    },
+                    {"name" : "Elevon 4",
+                     "cost" : 400,
+                     "wetmass" : 0.04,
+                     "drymass" : 0.04
+                    },
+                    {"name" : "Elevon 5",
+                     "cost" : 800,
+                     "wetmass" : 0.08,
+                     "drymass" : 0.08
+                    },
+                    {"name" : "Big-S Elevon 1",
+                     "cost" : 950,
+                     "wetmass" : 0.15,
+                     "drymass" : 0.15
+                    },
+                    {"name" : "Big-S Elevon 2",
+                     "cost" : 1300,
+                     "wetmass" : 0.23,
+                     "drymass" : 0.23
+                    },
+                    {"name" : "FAT-445 Aeroplane Control Surface",
+                     "cost" : 800,
+                     "wetmass" : 0.17,
+                     "drymass" : 0.17
+                    },
+                    {"name" : "A.I.R.B.R.A.K.E.S",
+                     "cost" : 500,
+                     "wetmass" : 0.05,
+                     "drymass" : 0.05
+                    }
+                ]
+            },
+            {"name" : "Fairings",
+             "parts" :
+                [
+                    {"name" : "AE-FF1 Airstream Protective Shell (1.25m)",
+                     "cost" : 900,
+                     "wetmass" : 0.15,
+                     "drymass" : 0.15
+                    },
+                    {"name" : "AE-FF2 Airstream Protective Shell (2.5m)",
+                     "cost" : 900,
+                     "wetmass" : 0.35,
+                     "drymass" : 0.35
+                    },
+                    {"name" : "AE-FF3 Airstream Protective Shell (3.75m)",
+                     "cost" : 900,
+                     "wetmass" : 0.95,
+                     "drymass" : 0.95
+                    }
+                ]
+            },
+            {"name" : "Heat shields",
+             "parts" :
+                [
+                    {"name" : "Heat Shield (1.25m)",
+                     "cost" : 300,
+                     "wetmass" : 0.3,
+                     "drymass" : 0.3
+                    },
+                    {"name" : "Heat Shield (2.5m)",
+                     "cost" : 600,
+                     "wetmass" : 1.3,
+                     "drymass" : 1.3
+                    },
+                    {"name" : "Heat Shield (3.75m)",
+                     "cost" : 900,
+                     "wetmass" : 2.8,
+                     "drymass" : 2.8
+                    }
+                ]
+            }
+        ]
     },
     {"name" : "Science",
      "subcategories" :
