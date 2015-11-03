@@ -10,6 +10,7 @@
     "gulp": "^3.9.0",
     "http-server": "^0.6.1",
     "jasmine-core": "^2.3.4",
+    "jasmine-expect": "^2.0.0-beta2",
     "karma": "~0.12",
     "karma-chrome-launcher": "^0.1.12",
     "karma-firefox-launcher": "^0.1.6",
