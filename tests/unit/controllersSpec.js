@@ -29,22 +29,38 @@ describe('deeVee controllers', function() {
       $httpBackend = _$httpBackend_;
       $httpBackend.expectGET('parts/parts.json').
           respond([
-            {name: 'Select part'},
-            scope.testPart1,
-            scope.testPart2
+            {"name" : 'Test parts',
+             "subcategories":
+                [
+                    {"name" : "Engines",
+                     "parts" : [scope.testPart1]
+                    },
+                    {"name" : "Fuel tanks",
+                     "parts" : [scope.testPart2]
+                    }
+                ]
+            }
           ]);
       ctrl = $controller('stageCtrl', {$scope: scope});
     }));
 
-    it('should create "parts" model with parts fetched from xhr', function() {
+    it('should have an array of part category objects', function() {
       expect(scope.parts).toBeUndefined();
       $httpBackend.flush();
+      expect(scope.parts).toBeArrayOfObjects();
+    });
 
-      expect(scope.parts).toEqual([
-            {name: 'Select part'},
-            scope.testPart1,
-            scope.testPart2
-          ]);
+    it('should have categories with an array of subcategory objects', function() {
+      expect(scope.parts).toBeUndefined();
+      $httpBackend.flush();
+      expect(scope.parts[0].subcategories).toBeArrayOfObjects();
+    });
+
+    it('should have subcategories with part objects', function() {
+      expect(scope.parts).toBeUndefined();
+      $httpBackend.flush();
+      expect(scope.parts[0].subcategories[0].parts).toBeArrayOfObjects();
+      expect(scope.parts[0].subcategories[1].parts).toBeArrayOfObjects();
     });
 
     it('should add a new part', function() {
