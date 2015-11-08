@@ -1,6 +1,8 @@
 DeeVee
 ==========
 
+[![Build Status](https://travis-ci.org/dkleto/deevee.svg?branch=master)](https://travis-ci.org/dkleto/deevee)
+
 DeeVee is a web-based delta-V calculator for Kerbal Space Program. You can try it out [here](https://dkleto.github.io/deevee/app/).
 
 To put it [simply](https://xkcd.com/1133/): DeeVee is a web page that lets you choose bits from Kerbal Space Program to build a flying space car. Pick the bits that you want to use and it will tell you if you will go to space today.
