@@ -28,7 +28,7 @@ a {
   color: #444444;
 }
 h1 {
-  margin-top: 0rem;
+  margin-top: 0;
   margin-bottom: 0.5rem;
   color: #444444;
 }
@@ -36,8 +36,8 @@ h2 {
   color: #444444;
 }
 h3 {
-  margin-top: 0rem;
-  margin-bottom: 0rem;
+  margin-top: 0;
+  margin-bottom: 0;
   color: #444444;
 }
 /** Parts dialog **/
@@ -50,22 +50,22 @@ h3 {
   background-color: #eeeeee;
   border-radius: 0.5rem;
   z-index: 11;
-  padding: 0rem;
+  padding: 0;
 }
 .dialog .catTitles {
   width: 6rem;
   display: block;
   float: left;
-  padding: 0rem;
+  padding: 0;
   margin-top: 1.5rem;
-  margin-right: 0rem;
+  margin-right: 0;
   margin-bottom: 100%;
   margin-left: 0.5rem;
 }
 .catTitles h2.catTitle {
   margin: 0;
   padding: 0.5rem;
-  padding-top: 0rem;
+  padding-top: 0;
   padding-left: 0.2rem;
   display: inline-block;
   text-align: left;
@@ -94,7 +94,7 @@ h3 {
   margin-bottom: 0.5rem;
 }
 .dialog .subcategory h3 {
-  margin: 0rem;
+  margin: 0;
   font-size: 0.9rem;
   text-transform: uppercase;
 }
@@ -105,7 +105,7 @@ h3 {
   font-size: 1.7rem;
   color: #777777;
   font-weight: bold;
-  padding: 0rem 0.5rem 2rem 2rem;
+  padding: 0 0.5rem 2rem 2rem;
   margin-left: -3.4rem;
 }
 .dialog .dialogClose:hover {
@@ -146,8 +146,8 @@ h3 {
 }
 .stageBox .stageRemove {
   float: right;
-  margin-top: 0rem;
-  margin-right: 0rem;
+  margin-top: 0;
+  margin-right: 0;
   padding: 0.15rem 0.5rem 1rem 1.5rem;
   font-size: 1.5rem;
   color: #888888;
@@ -157,15 +157,15 @@ h3 {
   color: #444444;
 }
 .stageBox p, .stageBox h3 {
-  margin-bottom: 0rem;
+  margin-bottom: 0;
 }
 .stageBox ul {
   list-style-type: none;
-  padding-left: 0rem;
+  padding-left: 0;
 }
 .stageBox h2 {
-  margin-top: 0rem;
-  margin-bottom: 0rem;
+  margin-top: 0;
+  margin-bottom: 0;
   color: #444444;
 }
 .atmCheck input {
@@ -193,11 +193,11 @@ h3 {
 }
 .partsBox .partEven {
   background-color: #dfdfdf;
-  padding: 0.2rem 0rem 0.2rem 0.5rem;
+  padding: 0.2rem 0 0.2rem 0.5rem;
 }
 .partsBox .partOdd {
   background-color: #fbfbfb;
-  padding: 0.2rem 0rem 0.2rem 0.5rem;
+  padding: 0.2rem 0 0.2rem 0.5rem;
 }
 .partsBox .partRemove {
   float: right;
@@ -216,8 +216,8 @@ h3 {
   margin-bottom: 0.5rem;
 }
 .totals p {
-  margin-top: 0rem;
-  margin-bottom: 0rem;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 .stageAdd {
   background-color: #bc0000;
