@@ -19,7 +19,6 @@ body.partDialogOpen {
   padding: 1rem;
   min-width: 280px;
   max-width: 40rem;
-  float: center;
   margin-left: auto;
   margin-right: auto;
 }
@@ -57,10 +56,7 @@ h3 {
   display: block;
   float: left;
   padding: 0;
-  margin-top: 1.5rem;
-  margin-right: 0;
-  margin-bottom: 100%;
-  margin-left: 0.5rem;
+  margin: 1.5rem 0 0 0.5rem;
 }
 .catTitles h2.catTitle {
   margin: 0;
@@ -200,7 +196,8 @@ h3 {
   padding: 0.2rem 0 0.2rem 0.5rem;
 }
 .partsBox .partRemove {
-  float: right;
+  position: fixed;
+  right: 0
 }
 .partsBox .partRemove a {
   color: #b2b2b2;
