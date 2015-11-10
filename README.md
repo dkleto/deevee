@@ -23,7 +23,7 @@ To me, the idea of using a plugin felt a bit like cheating, but I was still gett
 
 ## Mobile
 
-DeeVee was is designed to be generally responsive-ish and mobile friendly. I've tested it on my increasingly aged and weathered Galaxy S2, and it seemed OK.
+DeeVee is designed to be generally responsive-ish and mobile friendly. I've tested it on my increasingly aged and weathered Galaxy S2, and it seemed OK.
 
 ## Disclaimer
 
