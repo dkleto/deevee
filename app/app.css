@@ -196,8 +196,7 @@ h3 {
   padding: 0.2rem 0 0.2rem 0.5rem;
 }
 .partsBox .partRemove {
-  position: fixed;
-  right: 0
+  float: right;
 }
 .partsBox .partRemove a {
   color: #b2b2b2;
