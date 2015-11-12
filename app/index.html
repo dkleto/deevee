@@ -78,12 +78,14 @@
         </p>
     </div>
     </div>
-  <div ng-if="jsEnabled()" class=jsBox>
-    <h2>Javascript is disabled!</h2>
-      <p>
-        DeeVee is a javascript thing... so maybe you should enable javascript.
-      </p>
-  </div>
+    <noscript>
+      <div class=jsBox>
+        <h2>Javascript is disabled!</h2>
+          <p>
+          DeeVee is a javascript thing... so maybe you should enable javascript.
+          </p>
+      </div>
+    </noscript>
   </div>
 
   <!--[if lt IE 7]>
