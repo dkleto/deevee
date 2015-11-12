@@ -14,7 +14,7 @@
 </head>
 
 <body ng-class="isPartDialogOpen()" ng-controller="stageCtrl">
-  <div class="overlay" ng-if="partDialog == true" ng-click="closePartDialog()">
+  <div  ng-cloak class="overlay" ng-if="partDialog == true" ng-click="closePartDialog()">
     <div class="dialog" ng-click="$event.stopPropagation()">
       <a class="dialogClose" href="#" title="Close part dialog" ng-click="closePartDialog()">&times</a>
         <div class="catTitles">
@@ -37,7 +37,7 @@
 
   <div class="container">
     <h1>DeeVee</h1>
-    <div class="stageBox" ng-repeat="stage in stageList track by $index">
+    <div ng-cloak class="stageBox" ng-repeat="stage in stageList track by $index">
       <a class="stageRemove" href="#" title="Remove stage" ng-click="removeStage($index)">&times</a>
       <div class="stageContent">
         <h2>Stage {{stageList.length - $index}}</h2>
@@ -67,7 +67,7 @@
         </p>
       </div>
     </div>
-    <div class=totalsBox>
+    <div ng-cloak class=totalsBox>
       <a class="stageAdd" href="#" ng-click="addStage()">Add stage</a>
       <div class="totals">
       <h2>Total</h2>
@@ -78,6 +78,12 @@
         </p>
     </div>
     </div>
+  <div ng-if="jsEnabled()" class=jsBox>
+    <h2>Javascript is disabled!</h2>
+      <p>
+        DeeVee is a javascript thing... so maybe you should enable javascript.
+      </p>
+  </div>
   </div>
 
   <!--[if lt IE 7]>
