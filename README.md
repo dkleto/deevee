@@ -21,6 +21,10 @@ There are of course a number of KSP plugins you could use ([Kerbal engineer](htt
 
 To me, the idea of using a plugin felt a bit like cheating, but I was still getting tired of manually tapping the Tsiolkovksy equation into a scientific calculator. Obviously the solution to this problem was to write my own calculator, because then it wouldn't be cheating, it would be *automating*. I wrote it as a single-page Angular JS application, because I'd been looking for an excuse to mess with Angular for a while.
 
+## Parts
+
+The parts and specifications used in DeeVee are derived from the very helpful [Kerbal Space Program Wiki](http://wiki.kerbalspaceprogram.com/). KSP development seems to happen at a pretty fast pace, so it's likely that some of these part definitions will become out of date. Writing a proper scraper to deal with this problem (or a script to parse the relevant KSP config files instead) is something I've been meaning to do for a while, but for the time being it's a semi manual process involving copy/paste and the liberal application of vim substitute regexes.
+
 ## Mobile
 
 DeeVee is designed to be generally responsive-ish and mobile friendly. I've tested it on my increasingly aged and weathered Galaxy S2, and it seemed OK.
