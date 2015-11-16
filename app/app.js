@@ -1,6 +1,6 @@
 'use strict';
 
-var deevee = angular.module('deeVee', ['ngRoute']);
+var deevee = angular.module('deeVee', []);
 
 deevee.controller('stageCtrl', ['$scope', '$http', function($scope, $http) {
     $http.get('parts/parts.json').success(function(data) {
