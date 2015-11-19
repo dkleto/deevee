@@ -15,11 +15,11 @@ There's also an atmosphere check-box for each stage. Rocket engines differ in ef
 
 DeeVee doesn't enforce any rules on how you place your parts, so you can design rockets which would be impossible in the actual game. It also doesn't differentiate between different types of fuel - monopropellant and xenon tanks are both included in the calculations - so there is some potential for strange results if you were to do something like combine an ion drive with an ordinary rocket engine in the same stage. I wouldn't know though - I haven't unlocked the ion drive because my game progress stalled when I stopped playing and started doing math with javascript instead.
 
-## Why not use a KSP plugin?
+## Why not use a mod?
 
-There are of course a number of KSP plugins you could use ([Kerbal engineer](http://forum.kerbalspaceprogram.com/threads/18230-1-0-4-Kerbal-Engineer-Redux-v1-0-18-0), for example) which would accomplish the same thing in a much more comprehensive way from within KSP itself.
+There are of course a number of KSP mods you could use ([Kerbal engineer](http://forum.kerbalspaceprogram.com/threads/18230-1-0-4-Kerbal-Engineer-Redux-v1-0-18-0), for example) which would accomplish the same thing in a much more comprehensive way from within KSP itself.
 
-To me, the idea of using a plugin felt a bit like cheating, but I was still getting tired of manually tapping the Tsiolkovksy equation into a scientific calculator. Obviously the solution to this problem was to write my own calculator, because then it wouldn't be cheating, it would be *automating*. I wrote it as a single-page Angular JS application, because I'd been looking for an excuse to mess with Angular for a while.
+To me, the idea of using a mod felt a bit like cheating, but I was still getting tired of manually tapping the Tsiolkovksy equation into a scientific calculator. Obviously the solution to this problem was to write my own calculator, because then it wouldn't be cheating, it would be *automating*. I wrote it as a single-page Angular JS application, because I'd been looking for an excuse to mess with Angular for a while.
 
 ## Parts
 
