@@ -1,0 +1,1716 @@
+[
+    {"name" : "Command modules",
+     "subcategories" :
+        [
+            {"name" : "Unmanned",
+             "parts":
+                [
+                    {"name" : "Probodobodyne RoveMate",
+                     "wetmass" : 0.15,
+                     "drymass" : 0.15
+                    },
+                    {"name" : "Probodobodyne QBE",
+                     "wetmass" : 0.07,
+                     "drymass" : 0.07
+                    },
+                    {"name" : "Probodobodyne HECS",
+                     "wetmass" : 0.1,
+                     "drymass" : 0.1
+                    },
+                    {"name" : "Probodobodyne OKTO",
+                     "wetmass" : 0.1,
+                     "drymass" : 0.1
+                    },
+                    {"name" : "Probodobodyne OKTO2",
+                     "wetmass" : 0.04,
+                     "drymass" : 0.04
+                    },
+                    {"name" : "Stayputnik Mk. 1",
+                     "wetmass" : 0.05,
+                     "drymass" : 0.05
+                    },
+                    {"name" : "RC-001S Remote Guidance Unit",
+                     "wetmass" : 0.1,
+                     "drymass" : 0.1
+                    },
+                    {"name" : "RC-L01 Remote Guidance Unit",
+                     "wetmass" : 0.5,
+                     "drymass" : 0.5
+                    },
+                    {"name" : "Mk2 Drone Core",
+                     "wetmass" : 0.2,
+                     "drymass" : 0.2
+                    }
+                ]
+            },
+            {"name" : "Manned",
+             "parts":
+                [
+                    {"name" : "Mk1 Cockpit",
+                     "wetmass" : 1.28,
+                     "drymass" : 1.28
+                    },
+                    {"name" : "Mk1 Inline Cockpit",
+                     "wetmass" : 1.03,
+                     "drymass" : 1.03
+                    },
+                    {"name" : "Mk2 Cockpit",
+                     "wetmass" : 2.06,
+                     "drymass" : 2.06
+                    },
+                    {"name" : "Mk2 Inline Cockpit",
+                     "wetmass" : 2.1,
+                     "drymass" : 2.1
+                    },
+                    {"name" : "Mk3 Cockpit",
+                     "wetmass" : 3.9,
+                     "drymass" : 3.9
+                    },
+                    {"name" : "Mk1 Command Pod",
+                     "wetmass" : 0.84,
+                     "drymass" : 0.84
+                    },
+                    {"name" : "Mk1-2 Command Pod",
+                     "wetmass" : 4.12,
+                     "drymass" : 4.12
+                    },
+                    {"name" : "Mk1 Lander Can",
+                     "wetmass" : 0.66,
+                     "drymass" : 0.66
+                    },
+                    {"name" : "Mk2 Lander-can",
+                     "wetmass" : 2.66,
+                     "drymass" : 2.66
+                    },
+                    {"name" : "PPD-12 Cupola Module",
+                     "wetmass" : 1.8,
+                     "drymass" : 1.8
+                    },
+                    {"name" : "EAS-1 External Command Seat",
+                     "wetmass" : 0.05,
+                     "drymass" : 0.05
+                    }
+                ]
+            }
+        ]
+    },
+    {"name" : "Engines",
+     "subcategories" :
+        [
+            {"name" : "Liquid fuel",
+             "parts":
+                [
+                    {"name" : "LV-1R 'Spider'",
+                     "cost" : 120,
+                     "wetmass" : 0.02,
+                     "drymass" : 0.02,
+                     "thrustatm" : 1.793,
+                     "thrustvac" : 2,
+                     "impulseatm" : 260,
+                     "impulsevac" : 290
+                    },
+                    {"name" : "24-77 'Twitch'",
+                     "cost" : 400,
+                     "wetmass" : 0.09,
+                     "drymass" : 0.09,
+                     "thrustatm" : 13.793,
+                     "thrustvac" : 16,
+                     "impulseatm" : 250,
+                     "impulsevac" : 290
+                    },
+                    {"name" : "Mk-55 'Thud'",
+                     "cost" : 820,
+                     "wetmass" : 0.9,
+                     "drymass" : 0.9,
+                     "thrustatm" : 108.2,
+                     "thrustvac" : 120,
+                     "impulseatm" : 275,
+                     "impulsevac" : 305
+                    },
+                    {"name" : "O-10 'Puff' MonoPropellant Fuel Engine",
+                     "cost" : 150,
+                     "wetmass" : 0.09,
+                     "drymass" : 0.09,
+                     "thrustatm" : 9.6,
+                     "thrustvac" : 20,
+                     "impulseatm" : 120,
+                     "impulsevac" : 250
+                    },
+                    {"name" : "LV-1 'Ant'",
+                     "cost" : 110,
+                     "wetmass" : 0.02,
+                     "drymass" : 0.02,
+                     "thrustatm" : 0.51,
+                     "thrustvac" : 2,
+                     "impulseatm" : 80,
+                     "impulsevac" : 315
+                    },
+                    {"name" : "48-7S 'Spark'",
+                     "cost" : 200,
+                     "wetmass" : 0.1,
+                     "drymass" : 0.1,
+                     "thrustatm" : 16.2,
+                     "thrustvac" : 18,
+                     "impulseatm" : 270,
+                     "impulsevac" : 300
+                    },
+                    {"name" : "LV-909 'Terrier'",
+                     "cost" : 390,
+                     "wetmass" : 0.5,
+                     "drymass" : 0.5,
+                     "thrustatm" : 14.783,
+                     "thrustvac" : 60,
+                     "impulseatm" : 85,
+                     "impulsevac" : 345
+                    },
+                    {"name" : "LV-T30 'Reliant'",
+                     "cost" : 1100,
+                     "wetmass" : 1.25,
+                     "drymass" : 1.25,
+                     "thrustatm" : 200.67,
+                     "thrustvac" : 215,
+                     "impulseatm" : 280,
+                     "impulsevac" : 300
+                    },
+                    {"name" : "LV-T45 'Swivel'",
+                     "cost" : 1200,
+                     "wetmass" : 1.5,
+                     "drymass" : 1.5,
+                     "thrustatm" : 168.75,
+                     "thrustvac" : 200,
+                     "impulseatm" : 270,
+                     "impulsevac" : 320
+                    },
+                    {"name" : "CR-7 R.A.P.I.E.R. Engine",
+                     "cost" : 6000,
+                     "wetmass" : 2,
+                     "drymass" : 2,
+                     "thrustatm" : 162.3,
+                     "thrustvac" : 180,
+                     "impulseatm" : 275,
+                     "impulsevac" : 305
+                    },
+                    {"name" : "T-1 Toroidal 'Aerospike'",
+                     "cost" : 3850,
+                     "wetmass" : 1,
+                     "drymass" : 1,
+                     "thrustatm" : 153.53,
+                     "thrustvac" : 180,
+                     "impulseatm" : 290,
+                     "impulsevac" : 340
+                    },
+                    {"name" : "LV-N 'Nerv' Atomic Rocket Motor",
+                     "cost" : 10000,
+                     "wetmass" : 3,
+                     "drymass" : 3,
+                     "thrustatm" : 13.875,
+                     "thrustvac" : 60,
+                     "impulseatm" : 185,
+                     "impulsevac" : 800
+                    },
+                    {"name" : "Rockomax 'Poodle'",
+                     "cost" : 1300,
+                     "wetmass" : 1.75,
+                     "drymass" : 1.75,
+                     "thrustatm" : 64.29,
+                     "thrustvac" : 250,
+                     "impulseatm" : 90,
+                     "impulsevac" : 350
+                    },
+                    {"name" : "Rockomax 'Skipper'",
+                     "cost" : 5300,
+                     "wetmass" : 3,
+                     "drymass" : 3,
+                     "thrustatm" : 568.75,
+                     "thrustvac" : 650,
+                     "impulseatm" : 280,
+                     "impulsevac" : 320
+                    },
+                    {"name" : "Rockomax 'Mainsail'",
+                     "cost" : 13000,
+                     "wetmass" : 6,
+                     "drymass" : 6,
+                     "thrustatm" : 1379.0,
+                     "thrustvac" : 1500,
+                     "impulseatm" : 285,
+                     "impulsevac" : 310
+                    },
+                    {"name" : "LFB KR-1x2 'Twin-Boar'",
+                     "cost" : 17000,
+                     "wetmass" : 42,
+                     "drymass" : 42,
+                     "thrustatm" : 1866.7,
+                     "thrustvac" : 2000,
+                     "impulseatm" : 280,
+                     "impulsevac" : 300
+                    },
+                    {"name" : "Kerbodyne KR-2L+ 'Rhino'",
+                     "cost" : 25000,
+                     "wetmass" : 9,
+                     "drymass" : 9,
+                     "thrustatm" : 1500,
+                     "thrustvac" : 2000,
+                     "impulseatm" : 255,
+                     "impulsevac" : 340
+                    },
+                    {"name" : "S3 KS-25x4 'Mammoth'",
+                     "cost" : 39000,
+                     "wetmass" : 15,
+                     "drymass" : 15,
+                     "thrustatm" : 3746.0,
+                     "thrustvac" : 4000,
+                     "impulseatm" : 295,
+                     "impulsevac" : 315
+                    }
+                ]
+            },
+            {"name" : "Solid fuel boosters",
+             "parts":
+                [
+                    {"name" : "RT-5 'Flea' Solid Fuel Booster",
+                     "cost" : 200,
+                     "wetmass" : 1.5,
+                     "drymass" : 0.45,
+                     "thrustatm" : 162.91,
+                     "thrustvac" : 192,
+                     "impulseatm" : 140,
+                     "impulsevac" : 165
+                    },
+                    {"name" : "RT-10 'Hammer' Solid Fuel Booster",
+                     "cost" : 400,
+                     "wetmass" : 3.56,
+                     "drymass" : 0.75,
+                     "thrustatm" : 197.9,
+                     "thrustvac" : 227,
+                     "impulseatm" : 170,
+                     "impulsevac" : 195
+                    },
+                    {"name" : "Rockomax BACC Solid Fuel Booster",
+                     "cost" : 850,
+                     "wetmass" : 7.65,
+                     "drymass" : 1.5,
+                     "thrustatm" : 250,
+                     "thrustvac" : 300,
+                     "impulseatm" : 175,
+                     "impulsevac" : 210
+                    },
+                    {"name" : "S1 SRB-KD25k",
+                     "cost" : 2700,
+                     "wetmass" : 24,
+                     "drymass" : 4.5,
+                     "thrustatm" : 593.86,
+                     "thrustvac" : 670,
+                     "impulseatm" : 195,
+                     "impulsevac" : 220
+                    },
+                    {"name" : "Sepratron I",
+                     "cost" : 75,
+                     "wetmass" : 0.0725,
+                     "drymass" : 0.0125,
+                     "thrustatm" : 13.792,
+                     "thrustvac" : 18,
+                     "impulseatm" : 118,
+                     "impulsevac" : 154
+                    },
+                    {"name" : "Launch Escape System",
+                     "cost" : 1000,
+                     "wetmass" : 1.1,
+                     "drymass" : 0.9,
+                     "thrustatm" : 666.667,
+                     "thrustvac" : 750,
+                     "impulseatm" : 160,
+                     "impulsevac" : 180
+                    }
+                ]
+            },
+            {"name" : "Ion engines",
+             "parts" :
+                [
+                    {"name" : "IX-6315 'Dawn' Electric Propulsion System",
+                     "cost" : 8000,
+                     "wetmass" : 0.25,
+                     "drymass" : 0.25,
+                     "thrustatm" : 0.048,
+                     "thrustvac" : 2.0,
+                     "impulseatm" : 100,
+                     "impulsevac" : 4200
+                    }
+                ]
+            }
+        ]
+    },
+    {"name" : "Fuel tanks",
+     "subcategories" :
+        [
+            {"name" : "Rocket fuel",
+             "parts":
+                [
+                    {"name" : "ROUND-8 Toroidal Fuel Tank",
+                     "cost" : 175,
+                     "wetmass" : 0.3375,
+                     "drymass" : 0.0375
+                    },
+                    {"name" : "Oscar-B Fuel Tank",
+                     "cost" : 70,
+                     "wetmass" : 0.225,
+                     "drymass" : 0.025
+                    },
+                    {"name" : "FL-T100 Fuel Tank",
+                     "cost" : 150,
+                     "wetmass" : 0.5625,
+                     "drymass" : 0.0625
+                    },
+                    {"name" : "FL-T200 Fuel Tank",
+                     "cost" : 275,
+                     "wetmass" : 1.125,
+                     "drymass" : 0.125
+                    },
+                    {"name" : "FL-T400 Fuel Tank",
+                     "cost" : 500,
+                     "wetmass" : 2.25,
+                     "drymass" : 0.25
+                    },
+                    {"name" : "FL-T800 Fuel Tank",
+                     "cost" : 800,
+                     "wetmass" : 4.5,
+                     "drymass" : 0.5
+                    },
+                    {"name" : "Rockomax X200-8 Fuel Tank",
+                     "cost" : 800,
+                     "wetmass" : 4.5,
+                     "drymass" : 0.5
+                    },
+                    {"name" : "Rockomax X200-16 Fuel Tank",
+                     "cost" : 1550,
+                     "wetmass" : 9,
+                     "drymass" : 1
+                    },
+                    {"name" : "Rockomax X200-32 Fuel Tank",
+                     "cost" : 3000,
+                     "wetmass" : 18,
+                     "drymass" : 2
+                    },
+                    {"name" : "Rockomax Jumbo-64 Fuel Tank",
+                     "cost" : 5750,
+                     "wetmass" : 36,
+                     "drymass" : 4
+                    },
+                    {"name" : "Kerbodyne S3-3600 Tank",
+                     "cost" : 3250,
+                     "wetmass" : 20.25,
+                     "drymass" : 2.25
+                    },
+                    {"name" : "Kerbodyne S3-7200 Tank",
+                     "cost" : 6500,
+                     "wetmass" : 40.5,
+                     "drymass" : 4.5
+                    },
+                    {"name" : "Kerbodyne S3-14400 Tank",
+                     "cost" : 13000,
+                     "wetmass" : 81,
+                     "drymass" : 9
+                    },
+                    {"name" : "Mk2 Rocket Fuel Fuselage Short",
+                     "cost" : 750,
+                     "wetmass" : 2.29,
+                     "drymass" : 0.29
+                    },
+                    {"name" : "Mk2 Rocket Fuel Fuselage",
+                     "cost" : 1450,
+                     "wetmass" : 4.57,
+                     "drymass" : 0.57
+                    },
+                    {"name" : "Mk3 Rocket Fuel Fuselage Short",
+                     "cost" : 2500,
+                     "wetmass" : 14.29,
+                     "drymass" : 1.79
+                    },
+                    {"name" : "Mk3 Rocket Fuel Fuselage",
+                     "cost" : 5000,
+                     "wetmass" : 28.57,
+                     "drymass" : 3.57
+                    },
+                    {"name" : "Mk3 Rocket Fuel Fuselage Long",
+                     "cost" : 10000,
+                     "wetmass" : 57.14,
+                     "drymass" : 7.14
+                    },
+                    {"name" : "C7 Brand Adapter - 2.5m to 1.25m",
+                     "cost" : 800,
+                     "wetmass" : 4.57,
+                     "drymass" : 0.57
+                    },
+                    {"name" : "C7 Brand Adapter Slanted - 2.5m to 1.25m",
+                     "cost" : 800,
+                     "wetmass" : 4.57,
+                     "drymass" : 0.57
+                    },
+                    {"name" : "Mk2 to 1.25m Adapter",
+                     "cost" : 550,
+                     "wetmass" : 2.29,
+                     "drymass" : 0.29
+                    },
+                    {"name" : "Mk2 to 1.25m Adapter Long",
+                     "cost" : 1050,
+                     "wetmass" : 4.57,
+                     "drymass" : 0.57
+                    },
+                    {"name" : "Mk2 Bicoupler",
+                     "cost" : 860,
+                     "wetmass" : 2.29,
+                     "drymass" : 0.29
+                    },
+                    {"name" : "2.5m to Mk2 Adapter",
+                     "cost" : 800,
+                     "wetmass" : 4.57,
+                     "drymass" : 0.57
+                    },
+                    {"name" : "Mk3 to Mk2 Adapter",
+                     "cost" : 2200,
+                     "wetmass" : 11.43,
+                     "drymass" : 1.43
+                    },
+                    {"name" : "Mk3 to 2.5m Adapter",
+                     "cost" : 2500,
+                     "wetmass" : 14.29,
+                     "drymass" : 1.79
+                    },
+                    {"name" : "Mk3 to 2.5m Adapter Slanted",
+                     "cost" : 2500,
+                     "wetmass" : 14.29,
+                     "drymass" : 1.79
+                    },
+                    {"name" : "Mk3 to 3.75m Adapter",
+                     "cost" : 2500,
+                     "wetmass" : 14.29,
+                     "drymass" : 1.79
+                    }
+                ]
+            },
+            {"name" : "Jet fuel",
+             "parts":
+                [
+                    {"name" : "Engine Nacelle",
+                     "cost" : 1550,
+                     "wetmass" : 0.35,
+                     "drymass" : 0.15
+                    },
+                    {"name" : "Engine Pre-cooler",
+                     "cost" : 1650,
+                     "wetmass" : 0.35,
+                     "drymass" : 0.15
+                    },
+                    {"name" : "Mk1 Liquid Fuel Fuselage",
+                     "cost" : 550,
+                     "wetmass" : 2.25,
+                     "drymass" : 0.25
+                    },
+                    {"name" : "Mk2 Liquid Fuel Fuselage Short",
+                     "cost" : 750,
+                     "wetmass" : 2.29,
+                     "drymass" : 0.29
+                    },
+                    {"name" : "Mk2 Liquid Fuel Fuselage",
+                     "cost" : 1450,
+                     "wetmass" : 4.57,
+                     "drymass" : 0.57
+                    },
+                    {"name" : "Mk3 Liquid Fuel Fuselage Short",
+                     "cost" : 4300,
+                     "wetmass" : 14.29,
+                     "drymass" : 1.79
+                    },
+                    {"name" : "Mk3 Liquid Fuel Fuselage",
+                     "cost" : 8600,
+                     "wetmass" : 28.57,
+                     "drymass" : 3.57
+                    },
+                    {"name" : "Mk3 Liquid Fuel Fuselage Long",
+                     "cost" : 17200,
+                     "wetmass" : 57.14,
+                     "drymass" : 7.14
+                    },
+                    {"name" : "NCS Adapter",
+                     "cost" : 320,
+                     "wetmass" : 0.5,
+                     "drymass" : 0.1
+                    },
+                    {"name" : "FAT-455 Aeroplane Main Wing",
+                     "cost" : 2800,
+                     "wetmass" : 3.78,
+                     "drymass" : 0.78
+                    },
+                    {"name" : "Big-S Wing Strake",
+                     "cost" : 1000,
+                     "wetmass" : 0.6,
+                     "drymass" : 0.1
+                    },
+                    {"name" : "Big-S Delta Wing",
+                     "cost" : 3000,
+                     "wetmass" : 2,
+                     "drymass" : 0.5
+                    }
+                ]
+            },
+            {"name" : "RCS",
+             "parts" :
+                [
+                    {"name" : "FL-R10 RCS Fuel Tank",
+                     "cost" : 200,
+                     "wetmass" : 0.37,
+                     "drymass" : 0.05
+                    },
+                    {"name" : "FL-R25 RCS Fuel Tank",
+                     "cost" : 600,
+                     "wetmass" : 1.15,
+                     "drymass" : 0.15
+                    },
+                    {"name" : "FL-R1 RCS Fuel Tank",
+                     "cost" : 1300,
+                     "wetmass" : 3.4,
+                     "drymass" : 0.4
+                    },
+                    {"name" : "Mk2 Monopropellant Tank",
+                     "cost" : 750,
+                     "wetmass" : 1.89,
+                     "drymass" : 0.29
+                    },
+                    {"name" : "Mk3 Monopropellant Tank",
+                     "cost" : 4300,
+                     "wetmass" : 4.71,
+                     "drymass" : 0.71
+                    },
+                    {"name" : "Stratus-V Roundified Monopropellant Tank",
+                     "cost" : 200,
+                     "wetmass" : 0.315,
+                     "drymass" : 0.075
+                    },
+                    {"name" : "Stratus-V Cylindrified Monopropellant Tank",
+                     "cost" : 450,
+                     "wetmass" : 0.75,
+                     "drymass" : 0.15
+                    }
+                ]
+            },
+            {"name" : "Xenon",
+             "parts" :
+                [
+                    {"name" : "PB-X50R Xenon Container",
+                     "cost" : 2200,
+                     "wetmass" : 0.07,
+                     "drymass" : 0.03
+                    },
+                    {"name" : "PB-X150 Xenon Container",
+                     "cost" : 3000,
+                     "wetmass" : 0.12,
+                     "drymass" : 0.05
+                    },
+                    {"name" : "PB-X750 Xenon Container",
+                     "cost" : 22500,
+                     "wetmass" : 0.94,
+                     "drymass" : 0.41
+                    }
+                ]
+            },
+            {"name" : "Ore tanks",
+             "parts" :
+                [
+                     {"name" : "Small Holding Tank",
+                      "cost" : 1000,
+                      "wetmass" : 3.5,
+                      "drymass" : 3.5,
+                      "emptymass" : 0.5
+                     },
+                     {"name" : "Large Holding Tank",
+                      "cost" : 3000,
+                      "wetmass" : 17,
+                      "drymass" : 17,
+                      "emptymass" : 2
+                     }
+                ]
+            },
+            {"name" : "Fuel transfer",
+             "parts" :
+                [
+                    {"name" : "FTX-2 External Fuel Duct",
+                     "cost" : 150,
+                     "wetmass" : 0.05,
+                     "drymass" : 0.05
+                    }
+                ]
+            }
+        ]
+    },
+    {"name" : "Command and control",
+     "subcategories" :
+        [
+            {"name" : "SAS modules",
+             "parts" :
+                [
+                    {"name" : "CH-J3 Fly-By-Wire Avionics Hub",
+                     "cost" : 4000,
+                     "wetmass" : 0.08,
+                     "drymass" : 0.08
+                    }
+                ]
+            },
+            {"name" : "Reaction wheels",
+             "parts" :
+                [
+                    {"name" : "Small Inline Reaction Wheel",
+                     "cost" : 600,
+                     "wetmass" : 0.05,
+                     "drymass" : 0.05
+                    },
+                    {"name" : "Advanced Inline Stabilizer",
+                     "cost" : 1200,
+                     "wetmass" : 0.1,
+                     "drymass" : 0.1
+                    },
+                    {"name" : "Advanced Reaction Wheel Module, Large",
+                     "cost" : 2100,
+                     "wetmass" : 0.2,
+                     "drymass" : 0.2
+                    }
+                ]
+            },
+            {"name" : "RCS thrusters",
+             "parts" :
+                [
+                    {"name" : "RV-105 RCS Thruster Block  ",
+                     "cost" : 620,
+                     "wetmass" : 0.05,
+                     "drymass" : 0.05,
+                     "thrustatm" : 1,
+                     "thrustvac" : 1,
+                     "impulseatm" : 100,
+                     "impulsevac" : 240
+                    },
+                    {"name" : "Place-Anywhere 7 Linear RCS Port   ",
+                     "cost" : 280,
+                     "wetmass" : 0.03,
+                     "drymass" : 0.03,
+                     "thrustatm" : 2,
+                     "thrustvac" : 2,
+                     "impulseatm" : 100,
+                     "impulsevac" : 240
+                    },
+                    {"name" : "Vernor Engine  ",
+                     "cost" : 1400,
+                     "wetmass" : 0.08,
+                     "drymass" : 0.08,
+                     "thrustatm" : 12,
+                     "thrustvac" : 12,
+                     "impulseatm" : 140,
+                     "impulsevac" : 260
+                    }
+                ]
+            }
+        ]
+    },
+    {"name" : "Structural",
+     "subcategories" :
+        [
+            {"name" : "Decouplers and separators",
+             "parts" :
+                [
+                    {"name" : "TT-38K Radial Decoupler",
+                     "cost" : 600,
+                     "wetmass" : 0.025,
+                     "drymass" : 0.025
+                    },
+                    {"name" : "TT-70 Radial Decoupler",
+                     "cost" : 700,
+                     "wetmass" : 0.05,
+                     "drymass" : 0.05
+                    },
+                    {"name" : "Hydraulic Detachment Manifold",
+                     "cost" : 770,
+                     "wetmass" : 0.4,
+                     "drymass" : 0.4
+                    },
+                    {"name" : "Structural Pylon",
+                     "cost" : 1275,
+                     "wetmass" : 0.2,
+                     "drymass" : 0.2
+                    },
+                    {"name" : "TR-2V Stack Decoupler",
+                     "cost" : 300,
+                     "wetmass" : 0.015,
+                     "drymass" : 0.015
+                    },
+                    {"name" : "TR-2C Stack Separator",
+                     "cost" : 450,
+                     "wetmass" : 0.02,
+                     "drymass" : 0.02
+                    },
+                    {"name" : "TR-18A Stack Decoupler",
+                     "cost" : 400,
+                     "wetmass" : 0.05,
+                     "drymass" : 0.05
+                    },
+                    {"name" : "TR-18D Stack Separator",
+                     "cost" : 600,
+                     "wetmass" : 0.075,
+                     "drymass" : 0.075
+                    },
+                    {"name" : "Rockomax Brand Decoupler",
+                     "cost" : 550,
+                     "wetmass" : 0.4,
+                     "drymass" : 0.4
+                    },
+                    {"name" : "TR-XL Stack Separator",
+                     "cost" : 900,
+                     "wetmass" : 0.45,
+                     "drymass" : 0.45
+                    },
+                    {"name" : "TR-38-D",
+                     "cost" : 600,
+                     "wetmass" : 0.8,
+                     "drymass" : 0.8
+                    }
+                ]
+            },
+            {"name" : "Adapters, couplers and struts",
+             "parts" :
+                [
+                    {"name" : "FL-A10 Adapter",
+                     "cost" : 150,
+                     "wetmass" : 0.05,
+                     "drymass" : 0.05
+                    },
+                    {"name" : "Rockomax Brand Adapter",
+                     "cost" : 500,
+                     "wetmass" : 0.1,
+                     "drymass" : 0.1
+                    },
+                    {"name" : "Kerbodyne ADTP-2-3",
+                     "cost" : 2600,
+                     "wetmass" : 0.2,
+                     "drymass" : 0.2
+                    },
+                    {"name" : "FL-A5 Adapter",
+                     "cost" : 100,
+                     "wetmass" : 0.04,
+                     "drymass" : 0.04
+                    },
+                    {"name" : "Rockomax Brand Adapter 02",
+                     "cost" : 450,
+                     "wetmass" : 0.08,
+                     "drymass" : 0.08
+                    },
+                    {"name" : "Small Hardpoint",
+                     "cost" : 1275,
+                     "wetmass" : 0.02,
+                     "drymass" : 0.02
+                    },
+                    {"name" : "EAS-4 Strut Connector",
+                     "cost" : 42,
+                     "wetmass" : 0.05,
+                     "drymass" : 0.05
+                    },
+                    {"name" : "Cubic Octagonal Strut",
+                     "cost" : 16,
+                     "wetmass" : 0.001,
+                     "drymass" : 0.001
+                    },
+                    {"name" : "Octagonal Strut",
+                     "cost" : 20,
+                     "wetmass" : 0.001,
+                     "drymass" : 0.001
+                    },
+                    {"name" : "Modular Girder Adapter",
+                     "cost" : 50,
+                     "wetmass" : 0.25,
+                     "drymass" : 0.25
+                    },
+                    {"name" : "Modular Girder Segment",
+                     "cost" : 25,
+                     "wetmass" : 0.175,
+                     "drymass" : 0.175
+                    },
+                    {"name" : "Modular Girder Segment XL",
+                     "cost" : 75,
+                     "wetmass" : 0.375,
+                     "drymass" : 0.375
+                    },
+                    {"name" : "M-Beam 650 I-Beam",
+                     "cost" : 50,
+                     "wetmass" : 0.08,
+                     "drymass" : 0.08
+                    },
+                    {"name" : "M-Beam 200 I-Beam",
+                     "cost" : 25,
+                     "wetmass" : 0.375,
+                     "drymass" : 0.375
+                    },
+                    {"name" : "M-Beam 200 I-Beam Pocket Edition",
+                     "cost" : 14,
+                     "wetmass" : 0.1875,
+                     "drymass" : 0.1875
+                    },
+                    {"name" : "The Not-Rockomax Micronode",
+                     "cost" : 25,
+                     "wetmass" : 0.15,
+                     "drymass" : 0.15
+                    },
+                    {"name" : "M-1x1 Structural Panel",
+                     "cost" : 30,
+                     "wetmass" : 0.075,
+                     "drymass" : 0.075
+                    },
+                    {"name" : "M-2x2 Structural Panel",
+                     "cost" : 90,
+                     "wetmass" : 0.3,
+                     "drymass" : 0.3
+                    },
+                    {"name" : "BZ-52 Radial Attachment Point",
+                     "cost" : 250,
+                     "wetmass" : 0.04,
+                     "drymass" : 0.04
+                    },
+                    {"name" : "Rockomax HubMax Multi-Point Connector",
+                     "cost" : 900,
+                     "wetmass" : 1.5,
+                     "drymass" : 1.5
+                    },
+                    {"name" : "Structural Fuselage",
+                     "cost" : 380,
+                     "wetmass" : 0.1,
+                     "drymass" : 0.1
+                    },
+                    {"name" : "TVR-200 Stack Bi-Coupler",
+                     "cost" : 400,
+                     "wetmass" : 0.1,
+                     "drymass" : 0.1
+                    },
+                    {"name" : "TVR-1180C Mk1 Stack Tri-Coupler",
+                     "cost" : 680,
+                     "wetmass" : 0.15,
+                     "drymass" : 0.15
+                    },
+                    {"name" : "TVR-2160C Mk2 Stack Quad-Coupler",
+                     "cost" : 2000,
+                     "wetmass" : 0.175,
+                     "drymass" : 0.175
+                    },
+                    {"name" : "TVR-200L Stack Bi-Adapter",
+                     "cost" : 400,
+                     "wetmass" : 0.1,
+                     "drymass" : 0.1
+                    },
+                    {"name" : "TVR-300L Stack Tri-Adapter",
+                     "cost" : 600,
+                     "wetmass" : 0.15,
+                     "drymass" : 0.15
+                    },
+                    {"name" : "TVR-400L Stack Quad-Adapter",
+                     "cost" : 800,
+                     "wetmass" : 0.2,
+                     "drymass" : 0.2
+                    }
+                ]
+            }
+        ]
+    },
+    {"name" : "Aerodynamic",
+     "subcategories" :
+        [
+            {"name" : "Air intakes",
+             "parts" :
+                [
+                    {"name" : "Circular Intake",
+                     "cost" : 680,
+                     "wetmass" : 0.01,
+                     "drymass" : 0.01
+                    },
+                    {"name" : "Ram Air Intake",
+                     "cost" : 2680,
+                     "wetmass" : 0.01,
+                     "drymass" : 0.01
+                    },
+                    {"name" : "Shock Cone Intake",
+                     "cost" : 3050,
+                     "wetmass" : 0.025,
+                     "drymass" : 0.025
+                    },
+                    {"name" : "Mk1 Fuselage - Intake",
+                     "cost" : 720,
+                     "wetmass" : 0.12,
+                     "drymass" : 0.12
+                    },
+                    {"name" : "Engine Nacelle",
+                     "cost" : 1550,
+                     "wetmass" : 0.35,
+                     "drymass" : 0.35
+                    },
+                    {"name" : "Engine Pre-cooler",
+                     "cost" : 1650,
+                     "wetmass" : 0.35,
+                     "drymass" : 0.35
+                    },
+                    {"name" : "XM-G50 Radial Air Intake",
+                     "cost" : 1000,
+                     "wetmass" : 0.01,
+                     "drymass" : 0.01
+                    },
+                    {"name" : "Structural Intake",
+                     "cost" : 900,
+                     "wetmass" : 0.008,
+                     "drymass" : 0.008
+                    }
+                ]
+            },
+            {"name" : "Nose cones and tail connectors",
+             "parts" :
+                [
+                    {"name" : "Small Nose Cone",
+                     "cost" : 180,
+                     "wetmass" : 0.01,
+                     "drymass" : 0.01
+                    },
+                    {"name" : "Aerodynamic Nose Cone",
+                     "cost" : 240,
+                     "wetmass" : 0.03,
+                     "drymass" : 0.03
+                    },
+                    {"name" : "Advanced Nose Cone - Type A",
+                     "cost" : 320,
+                     "wetmass" : 0.075,
+                     "drymass" : 0.075
+                    },
+                    {"name" : "Advanced Nose Cone - Type B",
+                     "cost" : 320,
+                     "wetmass" : 0.075,
+                     "drymass" : 0.075
+                    },
+                    {"name" : "Protective Rocket Nose Mk7",
+                     "cost" : 450,
+                     "wetmass" : 0.2,
+                     "drymass" : 0.2
+                    },
+                    {"name" : "Tail Connector A",
+                     "cost" : 675,
+                     "wetmass" : 0.2,
+                     "drymass" : 0.2
+                    },
+                    {"name" : "Tail Connector B",
+                     "cost" : 675,
+                     "wetmass" : 0.2,
+                     "drymass" : 0.2
+                    }
+                ]
+            },
+            {"name" : "Modular wings",
+             "parts" :
+                [
+                    {"name" : "Wing Connector Type A",
+                     "cost" : 500,
+                     "wetmass" : 0.2,
+                     "drymass" : 0.2
+                    },
+                    {"name" : "Wing Connector Type B",
+                     "cost" : 500,
+                     "wetmass" : 0.2,
+                     "drymass" : 0.2
+                    },
+                    {"name" : "Wing Connector Type C",
+                     "cost" : 250,
+                     "wetmass" : 0.1,
+                     "drymass" : 0.1
+                    },
+                    {"name" : "Wing Connector Type D",
+                     "cost" : 100,
+                     "wetmass" : 0.05,
+                     "drymass" : 0.05
+                    },
+                    {"name" : "Wing Connector Type E",
+                     "cost" : 100,
+                     "wetmass" : 0.05,
+                     "drymass" : 0.05
+                    },
+                    {"name" : "Delta Wing",
+                     "cost" : 600,
+                     "wetmass" : 0.2,
+                     "drymass" : 0.2
+                    },
+                    {"name" : "Small Delta Wing",
+                     "cost" : 200,
+                     "wetmass" : 0.05,
+                     "drymass" : 0.05
+                    },
+                    {"name" : "Wing Strake",
+                     "cost" : 400,
+                     "wetmass" : 0.05,
+                     "drymass" : 0.05
+                    },
+                    {"name" : "Structural Wing Type A",
+                     "cost" : 500,
+                     "wetmass" : 0.1,
+                     "drymass" : 0.1
+                    },
+                    {"name" : "Structural Wing Type B",
+                     "cost" : 500,
+                     "wetmass" : 0.1,
+                     "drymass" : 0.1
+                    },
+                    {"name" : "Structural Wing Type C",
+                     "cost" : 300,
+                     "wetmass" : 0.05,
+                     "drymass" : 0.05
+                    },
+                    {"name" : "Structural Wing Type D",
+                     "cost" : 150,
+                     "wetmass" : 0.025,
+                     "drymass" : 0.025
+                    },
+                    {"name" : "Swept Wing Type A",
+                     "cost" : 500,
+                     "wetmass" : 0.113,
+                     "drymass" : 0.113
+                    },
+                    {"name" : "Swept Wing Type B",
+                     "cost" : 500,
+                     "wetmass" : 0.226,
+                     "drymass" : 0.226
+                    }
+                ]
+            },
+            {"name" : "Irregular wings",
+             "parts" :
+                [
+                    {"name" : "Basic Fin",
+                     "cost" : 25,
+                     "wetmass" : 0.01,
+                     "drymass" : 0.01
+                    },
+                    {"name" : "AV-T1 Winglet",
+                     "cost" : 500,
+                     "wetmass" : 0.04,
+                     "drymass" : 0.04
+                    },
+                    {"name" : "Tail Fin",
+                     "cost" : 600,
+                     "wetmass" : 0.13,
+                     "drymass" : 0.13
+                    },
+                    {"name" : "Swept Wings",
+                     "cost" : 620,
+                     "wetmass" : 0.275,
+                     "drymass" : 0.275
+                    },
+                    {"name" : "FAT-455 Aeroplane Main Wing",
+                     "cost" : 2800,
+                     "wetmass" : 3.78,
+                     "drymass" : 3.78
+                    },
+                    {"name" : "Big-S Wing Strake",
+                     "cost" : 1000,
+                     "wetmass" : 0.6,
+                     "drymass" : 0.6
+                    },
+                    {"name" : "Big-S Delta Wing",
+                     "cost" : 3000,
+                     "wetmass" : 2,
+                     "drymass" : 2
+                    }
+                ]
+            },
+            {"name" : "Control surfaces",
+             "parts" :
+                [
+                    {"name" : "V-R8 Winglet",
+                     "cost" : 640,
+                     "wetmass" : 0.1,
+                     "drymass" : 0.1
+                    },
+                    {"name" : "Standard Canard",
+                     "cost" : 720,
+                     "wetmass" : 0.1,
+                     "drymass" : 0.1
+                    },
+                    {"name" : "Advanced Canard",
+                     "cost" : 800,
+                     "wetmass" : 0.08,
+                     "drymass" : 0.08
+                    },
+                    {"name" : "Delta-Deluxe Winglet",
+                     "cost" : 600,
+                     "wetmass" : 0.08,
+                     "drymass" : 0.08
+                    },
+                    {"name" : "Tail Fin",
+                     "cost" : 600,
+                     "wetmass" : 0.125,
+                     "drymass" : 0.125
+                    },
+                    {"name" : "FAT-455 Aeroplane Tail Fin",
+                     "cost" : 1000,
+                     "wetmass" : 0.08,
+                     "drymass" : 0.08
+                    },
+                    {"name" : "Big-S Spaceplane Tail Fin",
+                     "cost" : 2500,
+                     "wetmass" : 0.45,
+                     "drymass" : 0.45
+                    },
+                    {"name" : "Elevon 1",
+                     "cost" : 400,
+                     "wetmass" : 0.05,
+                     "drymass" : 0.05
+                    },
+                    {"name" : "Elevon 2",
+                     "cost" : 550,
+                     "wetmass" : 0.06,
+                     "drymass" : 0.06
+                    },
+                    {"name" : "Elevon 3",
+                     "cost" : 650,
+                     "wetmass" : 0.08,
+                     "drymass" : 0.08
+                    },
+                    {"name" : "Elevon 4",
+                     "cost" : 400,
+                     "wetmass" : 0.04,
+                     "drymass" : 0.04
+                    },
+                    {"name" : "Elevon 5",
+                     "cost" : 800,
+                     "wetmass" : 0.08,
+                     "drymass" : 0.08
+                    },
+                    {"name" : "Big-S Elevon 1",
+                     "cost" : 950,
+                     "wetmass" : 0.15,
+                     "drymass" : 0.15
+                    },
+                    {"name" : "Big-S Elevon 2",
+                     "cost" : 1300,
+                     "wetmass" : 0.23,
+                     "drymass" : 0.23
+                    },
+                    {"name" : "FAT-445 Aeroplane Control Surface",
+                     "cost" : 800,
+                     "wetmass" : 0.17,
+                     "drymass" : 0.17
+                    },
+                    {"name" : "A.I.R.B.R.A.K.E.S",
+                     "cost" : 500,
+                     "wetmass" : 0.05,
+                     "drymass" : 0.05
+                    }
+                ]
+            },
+            {"name" : "Fairings",
+             "parts" :
+                [
+                    {"name" : "AE-FF1 Airstream Protective Shell (1.25m)",
+                     "cost" : 900,
+                     "wetmass" : 0.15,
+                     "drymass" : 0.15
+                    },
+                    {"name" : "AE-FF2 Airstream Protective Shell (2.5m)",
+                     "cost" : 900,
+                     "wetmass" : 0.35,
+                     "drymass" : 0.35
+                    },
+                    {"name" : "AE-FF3 Airstream Protective Shell (3.75m)",
+                     "cost" : 900,
+                     "wetmass" : 0.95,
+                     "drymass" : 0.95
+                    }
+                ]
+            },
+            {"name" : "Heat shields",
+             "parts" :
+                [
+                    {"name" : "Heat Shield (1.25m)",
+                     "cost" : 300,
+                     "wetmass" : 0.3,
+                     "drymass" : 0.3
+                    },
+                    {"name" : "Heat Shield (2.5m)",
+                     "cost" : 600,
+                     "wetmass" : 1.3,
+                     "drymass" : 1.3
+                    },
+                    {"name" : "Heat Shield (3.75m)",
+                     "cost" : 900,
+                     "wetmass" : 2.8,
+                     "drymass" : 2.8
+                    }
+                ]
+            }
+        ]
+    },
+    {"name" : "Utility",
+     "subcategories" :
+        [
+            {"name" : "Parachutes",
+             "parts" :
+                [
+                    {"name" : "Mk16 Parachute",
+                     "cost" : 422,
+                     "wetmass" : 0.1,
+                     "drymass" : 0.1
+                    },
+                    {"name" : "Mk16-XL Parachute",
+                     "cost" : 850,
+                     "wetmass" : 0.3,
+                     "drymass" : 0.3
+                    },
+                    {"name" : "Mk2-R Radial-Mount Parachute",
+                     "cost" : 400,
+                     "wetmass" : 0.1,
+                     "drymass" : 0.1
+                    },
+                    {"name" : "Mk25 Parachute",
+                     "cost" : 400,
+                     "wetmass" : 0.2,
+                     "drymass" : 0.2
+                    },
+                    {"name" : "Mk12-R Radial-Mount Drogue Chute",
+                     "cost" : 300,
+                     "wetmass" : 0.075,
+                     "drymass" : 0.075
+                    }
+                ]
+            },
+            {"name" : "Landing gear",
+             "parts" :
+                [
+                    {"name" : "LY-01 Fixed Landing Gear",
+                     "cost" : 100,
+                     "wetmass" : 0.05,
+                     "drymass" : 0.05
+                    },
+                    {"name" : "LY05 Steerable Landing Gear",
+                     "cost" : 150,
+                     "wetmass" : 0.04,
+                     "drymass" : 0.04
+                    },
+                    {"name" : "LY-10 Small Landing Gear",
+                     "cost" : 450,
+                     "wetmass" : 0.04,
+                     "drymass" : 0.04
+                    },
+                    {"name" : "LY-50 Medium Landing Gear",
+                     "cost" : 700,
+                     "wetmass" : 0.25,
+                     "drymass" : 0.25
+                    },
+                    {"name" : "LY-99 Large Landing Gear",
+                     "cost" : 1200,
+                     "wetmass" : 0.6,
+                     "drymass" : 0.6
+                    }
+                ]
+            },
+            {"name" : "Landing struts",
+             "parts" :
+                [
+                    {"name" : "LT-1 Landing Struts",
+                     "cost" : 440,
+                     "wetmass" : 0.05,
+                     "drymass" : 0.05
+                    },
+                    {"name" : "LT-2 Landing Strut",
+                     "cost" : 340,
+                     "wetmass" : 0.1,
+                     "drymass" : 0.1
+                    },
+                    {"name" : "LT-5 Micro Landing Strut",
+                     "cost" : 200,
+                     "wetmass" : 0.015,
+                     "drymass" : 0.015
+                    }
+                ]
+            },
+            {"name" : "Ladders",
+             "parts" :
+                [
+                    {"name" : "Pegasus I Mobility Enhancer",
+                     "cost" : 100,
+                     "wetmass" : 0.005,
+                     "drymass" : 0.005
+                    },
+                    {"name" : "Telus Mobility Enhancer",
+                     "cost" : 350,
+                     "wetmass" : 0.005,
+                     "drymass" : 0.005
+                    },
+                    {"name" : "Telus-LV Bay Mobility Enhancer",
+                     "cost" : 440,
+                     "wetmass" : 0.005,
+                     "drymass" : 0.005
+                    }
+                ]
+            },
+            {"name" : "Generators",
+             "parts" :
+                [
+                    {"name" : "Gigantor XL Solar Array",
+                     "cost" : 3000,
+                     "wetmass" : 0.3,
+                     "drymass" : 0.3
+                    },
+                    {"name" : "OX-4W 2x3 Photovoltaic Panels",
+                     "cost" : 380,
+                     "wetmass" : 0.0175,
+                     "drymass" : 0.0175
+                    },
+                    {"name" : "OX-4L 1x6 Photovoltaic Panels",
+                     "cost" : 380,
+                     "wetmass" : 0.0175,
+                     "drymass" : 0.0175
+                    },
+                    {"name" : "SP-W 2x3 Photovoltaic Panels",
+                     "cost" : 440,
+                     "wetmass" : 0.025,
+                     "drymass" : 0.025
+                    },
+                    {"name" : "SP-L 1x6 Photovoltaic Panels",
+                     "cost" : 440,
+                     "wetmass" : 0.025,
+                     "drymass" : 0.025
+                    },
+                    {"name" : "OX-STAT Photovoltaic Panels",
+                     "cost" : 75,
+                     "wetmass" : 0.005,
+                     "drymass" : 0.005
+                    },
+                    {"name" : "PB-NUK Radioisotope Thermoelectric Generator",
+                     "cost" : 23300,
+                     "wetmass" : 0.08,
+                     "drymass" : 0.08
+                    },
+                    {"name" : "Fuel Cell",
+                     "cost" : 750,
+                     "wetmass" : 0.05,
+                     "drymass" : 0.05
+                    },
+                    {"name" : "Fuel Cell Array",
+                     "cost" : 4500,
+                     "wetmass" : 0.24,
+                     "drymass" : 0.24
+                    }
+                ]
+            },
+            {"name" : "Batteries",
+             "parts" :
+                [
+                    {"name" : "Z-100 Rechargeable Battery Pack",
+                     "cost" : 80,
+                     "wetmass" : 0.005,
+                     "drymass" : 0.005
+                    },
+                    {"name" : "Z-200 Rechargeable Battery Bank",
+                     "cost" : 360,
+                     "wetmass" : 0.01,
+                     "drymass" : 0.01
+                    },
+                    {"name" : "Z-400 Rechargeable Battery",
+                     "cost" : 550,
+                     "wetmass" : 0.02,
+                     "drymass" : 0.02
+                    },
+                    {"name" : "Z-1k Rechargeable Battery Bank",
+                     "cost" : 880,
+                     "wetmass" : 0.1,
+                     "drymass" : 0.1
+                    },
+                    {"name" : "Z-4K Rechargeable Battery Bank",
+                     "cost" : 4500,
+                     "wetmass" : 0.2,
+                     "drymass" : 0.2
+                    }
+                ]
+            },
+            {"name" : "Lights",
+             "parts" :
+                [
+                    {"name" : "Illuminator Mk1",
+                     "cost" : 100,
+                     "wetmass" : 0.015,
+                     "drymass" : 0.015
+                    },
+                    {"name" : "Illuminator Mk2",
+                     "cost" : 100,
+                     "wetmass" : 0.015,
+                     "drymass" : 0.015
+                    }
+                ]
+            },
+            {"name" : "Docking",
+             "parts" :
+                [
+                    {"name" : "Clamp-O-Tron Jr.",
+                     "cost" : 800,
+                     "wetmass" : 0.02,
+                     "drymass" : 0.02
+                    },
+                    {"name" : "Clamp-O-Tron Docking Port",
+                     "cost" : 280,
+                     "wetmass" : 0.05,
+                     "drymass" : 0.05
+                    },
+                    {"name" : "Clamp-O-Tron Shielded Docking Port",
+                     "cost" : 400,
+                     "wetmass" : 0.1,
+                     "drymass" : 0.1
+                    },
+                    {"name" : "Clamp-O-Tron Sr. Docking Port",
+                     "cost" : 980,
+                     "wetmass" : 0.2,
+                     "drymass" : 0.2
+                    },
+                    {"name" : "Inline Clamp-O-Tron",
+                     "cost" : 700,
+                     "wetmass" : 0.3,
+                     "drymass" : 0.3
+                    },
+                    {"name" : "Mk2 Clamp-O-Tron",
+                     "cost" : 850,
+                     "wetmass" : 0.6,
+                     "drymass" : 0.6
+                    },
+                    {"name" : "Advanced Grabbing Unit",
+                     "cost" : 450,
+                     "wetmass" : 0.075,
+                     "drymass" : 0.075
+                    }
+                ]
+            },
+            {"name" : "Habitation",
+             "parts" :
+                [
+                    {"name" : "PPD-10 Hitchhiker Storage Container",
+                     "cost" : 4000,
+                     "wetmass" : 2.5,
+                     "drymass" : 2.5
+                    },
+                    {"name" : "Mk2 Crew Cabin",
+                     "cost" : 4200,
+                     "wetmass" : 2,
+                     "drymass" : 2
+                    },
+                    {"name" : "Mk3 Passenger Module",
+                     "cost" : 30000,
+                     "wetmass" : 6.5,
+                     "drymass" : 6.5
+                    }
+                ]
+            },
+            {"name" : "Cargo/service bays",
+             "parts" :
+                [
+                    {"name" : "Mk2 Cargo Bay CRG-04",
+                     "cost" : 320,
+                     "wetmass" : 0.25,
+                     "drymass" : 0.25
+                    },
+                    {"name" : "Mk2 Cargo Bay CRG-08",
+                     "cost" : 500,
+                     "wetmass" : 0.5,
+                     "drymass" : 0.5
+                    },
+                    {"name" : "Mk3 Cargo Bay CRG-25",
+                     "cost" : 750,
+                     "wetmass" : 1.5,
+                     "drymass" : 1.5
+                    },
+                    {"name" : "Mk3 Cargo Bay CRG-50",
+                     "cost" : 1500,
+                     "wetmass" : 3,
+                     "drymass" : 3
+                    },
+                    {"name" : "Mk3 Cargo Bay CRG-100",
+                     "cost" : 3000,
+                     "wetmass" : 6,
+                     "drymass" : 6
+                    },
+                    {"name" : "Service Bay (1.25m)",
+                     "cost" : 500,
+                     "wetmass" : 0.1,
+                     "drymass" : 0.1
+                    },
+                    {"name" : "Service Bay (2.5m)",
+                     "cost" : 500,
+                     "wetmass" : 0.3,
+                     "drymass" : 0.3
+                    }
+                ]
+            },
+            {"name" : "Rover wheels",
+             "parts" :
+                [
+                    {"name" : "RoveMax Model S2",
+                     "cost" : 300,
+                     "wetmass" : 0.05,
+                     "drymass" : 0.05
+                    },
+                    {"name" : "RoveMax Model M1",
+                     "cost" : 450,
+                     "wetmass" : 0.075,
+                     "drymass" : 0.075
+                    },
+                    {"name" : "TR-2L Ruggedized Vehicular Wheel",
+                     "cost" : 580,
+                     "wetmass" : 0.05,
+                     "drymass" : 0.05
+                    },
+                    {"name" : "RoveMax Model XL3",
+                     "cost" : 1200,
+                     "wetmass" : 1.25,
+                     "drymass" : 1.25
+                    }
+                ]
+            },
+            {"name" : "Resource extractors",
+             "parts" :
+                [
+                    {"name" : "'Drill-O-Matic' Mining Excavator",
+                     "cost" : 6000,
+                     "wetmass" : 0.75,
+                     "drymass" : 0.75
+                    }
+                ]
+            },
+            {"name" : "Convertors",
+             "parts" :
+                [
+                    {"name" : "ISRU Converter",
+                     "cost" : 8000,
+                     "wetmass" : 4.3,
+                     "drymass" : 4.3
+                    }
+                ]
+            },
+            {"name" : "Radiators",
+             "parts" :
+                [
+                    {"name" : "Radiator Panel (small)",
+                     "cost" : 150,
+                     "wetmass" : 0.01,
+                     "drymass" : 0.01
+                    },
+                    {"name" : "Radiator Panel (large)",
+                     "cost" : 450,
+                     "wetmass" : 0.1,
+                     "drymass" : 0.1
+                    },
+                    {"name" : "Thermal Control System (small)",
+                     "cost" : 450,
+                     "wetmass" : 0.05,
+                     "drymass" : 0.05
+                    },
+                    {"name" : "Thermal Control System (medium)",
+                     "cost" : 2250,
+                     "wetmass" : 0.25,
+                     "drymass" : 0.25
+                    },
+                    {"name" : "Thermal Control System (large)",
+                     "cost" : 9000,
+                     "wetmass" : 1,
+                     "drymass" : 1
+                    }
+                ]
+            }
+        ]
+    },
+    {"name" : "Science",
+     "subcategories" :
+        [
+            {"name" : "Communications",
+             "parts" :
+                [
+                    {"name" : "Communotron 16",
+                     "cost" : 300,
+                     "wetmass" : 0.005,
+                     "drymass" : 0.005
+                    },
+                    {"name" : "Comms DTS-M1",
+                     "cost" : 600,
+                     "wetmass" : 0.03,
+                     "drymass" : 0.03
+                    },
+                    {"name" : "Communotron 88-88",
+                     "cost" : 1100,
+                     "wetmass" : 0.025,
+                     "drymass" : 0.025
+                    }
+                ]
+            },
+            {"name" : "Labs",
+             "parts" :
+                [
+                    {"name" : "Mobile Processing Lab MPL-LG-2  Large",
+                     "cost" : 4000,
+                     "wetmass" : 3.5,
+                     "drymass" : 3.5
+                    }
+                ]
+            },
+            {"name" : "Sensors",
+             "parts" :
+                [
+                    {"name" : "SC-9001 Science Jr",
+                     "cost" : 880,
+                     "wetmass" : 0.2,
+                     "drymass" : 0.2
+                    },
+                    {"name" : "Mystery Goo™ Containment Unit",
+                     "cost" : 800,
+                     "wetmass" : 0.05,
+                     "drymass" : 0.05
+                    },
+                    {"name" : "Double-C Seismic Accelerometer",
+                     "cost" : 6000,
+                     "wetmass" : 0.01,
+                     "drymass" : 0.01
+                    },
+                    {"name" : "PresMat Barometer",
+                     "cost" : 3300,
+                     "wetmass" : 0.01,
+                     "drymass" : 0.01
+                    },
+                    {"name" : "GRAVMAX Negative Gravioli Detector",
+                     "cost" : 8800,
+                     "wetmass" : 0.01,
+                     "drymass" : 0.01
+                    },
+                    {"name" : "2HOT Thermometer",
+                     "cost" : 900,
+                     "wetmass" : 0.01,
+                     "drymass" : 0.01
+                    },
+                    {"name" : "Atmospheric Fluid Spectro-Variometer",
+                     "cost" : 6500,
+                     "wetmass" : 0.01,
+                     "drymass" : 0.01
+                    }
+                ]
+            },
+            {"name" : "Resource scanners",
+             "parts" :
+                [
+                    {"name" : "M700 Survey Scanner",
+                     "cost" : 500,
+                     "wetmass" : 0.2,
+                     "drymass" : 0.2
+                    },
+                    {"name" : "M4435 Narrow-Band Scanner",
+                     "cost" : 1000,
+                     "wetmass" : 0.1,
+                     "drymass" : 0.1
+                    },
+                    {"name" : "Surface Scanning Module",
+                     "cost" : 800,
+                     "wetmass" : 0.01,
+                     "drymass" : 0.01
+                    }
+                ]
+            }
+        ]
+    }
+]
