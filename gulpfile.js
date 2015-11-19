@@ -3,6 +3,7 @@ var uglify = require('gulp-uglify')
 var concat = require('gulp-concat')
 var sourcemaps = require('gulp-sourcemaps');
 var del = require('del');
+var deploy = require('gulp-gh-pages');
 
 var paths = {
     files: ['app/**/*', '!app/**/*.js'],
