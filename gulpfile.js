@@ -40,7 +40,7 @@ gulp.task('watch', function() {
     gulp.watch(paths.js, ['js']);
 });
 
-gulp.task('deploy', ['build'], function() {
+gulp.task('deploy', function() {
     return gulp.src("./dist/**/*")
         .pipe(deploy())
 });
