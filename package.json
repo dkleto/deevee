@@ -24,10 +24,10 @@
     "shelljs": "^0.2.6"
   },
   "scripts": {
+    "postinstall" : "gulp build",
     "prestart": "npm install",
-    "watch-js" : "watchify app/app.js -v -o 'uglifyjs -c > app/bundle.min.js'",
-    "http-server" : "http-server -a localhost -p 8000 -c-1",
-    "start": "npm run watch-js & npm run http-server",
+    "http-server": "http-server dist -a localhost -p 8000 -c-1",
+    "start": "gulp watch & npm run http-server",
     "pretest": "npm install",
     "test": "karma start karma.conf.js",
     "test-single-run": "karma start karma.conf.js  --single-run",
