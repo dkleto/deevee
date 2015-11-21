@@ -73,14 +73,17 @@ deevee.controller('stageCtrl', ['$scope', '$http', function($scope, $http) {
     $scope.updateCalculations = function(stageIndex) {
         // The uppermost stage has no payload to factor in.
         if (stageIndex === 0) {
-            $scope.stageList[stageIndex].result = $scope.stageList[stageIndex].calculate(0);
+            $scope.stageList[stageIndex].result =
+                $scope.stageList[stageIndex].calculate(0);
             if ($scope.stageList.length > 0) {
                 $scope.updateCalculations(1);
             }
         } else {
             // Recalculate all stages below this one as well.
             for (var i = stageIndex; i < $scope.stageList.length; i++) {
-                $scope.stageList[i].result = $scope.stageList[i].calculate($scope.stageList[i - 1].result['sumwetmass']);
+                var prevResult = $scope.stageList[i - 1].result['sumwetmass'];
+                $scope.stageList[i].result =
+                    $scope.stageList[i].calculate(prevResult);
             }
         }
     }
@@ -90,7 +93,7 @@ deevee.controller('stageCtrl', ['$scope', '$http', function($scope, $http) {
         for (var i = 0; i < $scope.stageList.length; i++) {
             totaldv += $scope.stageList[i].result.dv;
             totalParts += $scope.stageList[i].partsList.length;
-            // Just use the value of the last stage, as sumwetmass is cumulative.
+            // Use the value of the last stage, as sumwetmass is cumulative.
             if (i === $scope.stageList.length - 1) {
                 totalMass = $scope.stageList[i].result.sumwetmass;
             }
@@ -109,7 +112,9 @@ deevee.controller('stageCtrl', ['$scope', '$http', function($scope, $http) {
                         'dv' : 0,
                         'sumwetmass' : 0};
         stage.removePart = function(partid) {
-            if (partid > -1 && typeof stage.partsList[partid] !== 'undefined') {
+            var partExists = partid > -1
+                && typeof stage.partsList[partid] !== 'undefined';
+            if (partExists) {
                stage.partsList.splice(partid, 1);
             }
             stage.result = stage.calculate(0);
@@ -122,7 +127,8 @@ deevee.controller('stageCtrl', ['$scope', '$http', function($scope, $http) {
                               'thrustvac'];
 
             for (var i = 0; i < properties.length; i++) {
-                newpart[properties[i]] = $scope.checkProperty(part, properties[i]);
+                newpart[properties[i]] =
+                    $scope.checkProperty(part, properties[i]);
             }
             stage.partsList.push(newpart);
         }
