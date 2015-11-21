@@ -140,7 +140,7 @@ h3 {
   background-color: #eeeeee;
   border-radius: 0.5rem;
   margin-bottom: 1.5rem;
-  box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.16), 0 1px 5px 0 rgba(0, 0, 0, 0.26);
+  box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.24);
 }
 .stageBox .stageContent {
   padding: 1rem;
@@ -234,7 +234,7 @@ h3 {
   border-radius: 0.5rem;
   padding: 1.5rem 1rem 1rem 1rem;
   margin-bottom: 1rem;
-  box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.16), 0 1px 5px 0 rgba(0, 0, 0, 0.26);
+  box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.24);
 }
 .jsBox h2 {
   margin: 0.75rem 0.75rem 0.5rem 0.25rem;
