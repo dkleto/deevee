@@ -9,10 +9,16 @@ describe('deeVee app', function() {
     });
 
 
-    it('should add a stage when the user clicks "add stage"', function() {
+    it('should allow the user to add and remove stages', function() {
 
       var stageList = element.all(by.repeater('stage in stageList'));
+      var stageAdd = element(by.css('.stageAdd'));
+      var stageRemove = element(by.css('.stageRemove'));
 
+      expect(stageList.count()).toBe(0);
+      stageAdd.click();
+      expect(stageList.count()).toBe(1);
+      stageRemove.click();
       expect(stageList.count()).toBe(0);
 
     });
