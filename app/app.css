@@ -222,6 +222,7 @@ h3 {
 .partsBox .partRemove {
   right: 0;
   position: absolute;
+  padding-top: 0.1rem;
 }
 .partsBox .partRemove a {
   color: #b2b2b2;
