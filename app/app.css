@@ -196,13 +196,29 @@ h3 {
 .partsBox .partEven {
   background-color: #dfdfdf;
   padding: 0.2rem 0 0.2rem 0.5rem;
+  position: relative;
+  height: 1.5rem;
 }
 .partsBox .partOdd {
   background-color: #fbfbfb;
   padding: 0.2rem 0 0.2rem 0.5rem;
+  position: relative;
+  height: 1.5rem;
+}
+.partsBox .partName {
+  position: absolute;
+  left: 0;
+  right: 2.6rem;
+  width: auto;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  text-align: left;
+  padding-left: 0.3rem;
 }
 .partsBox .partRemove {
-  float: right;
+  right: 0;
+  position: absolute;
 }
 .partsBox .partRemove a {
   color: #b2b2b2;
