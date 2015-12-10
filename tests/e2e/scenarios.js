@@ -23,6 +23,16 @@ describe('deeVee app', function() {
 
     });
 
+    it('should allow the user to select parts to add and remove', function() {
+      var stageAdd = element(by.css('.stageAdd'));
+      var partAdd = element(by.css('.partAdd'));
+      var dialog = element(by.css('.dialog'));
 
+      stageAdd.click();
+      expect(dialog.isPresent()).toBeFalsy;
+      partAdd.click();
+      expect(dialog.isPresent()).toBeTruthy;
+
+    });
   });
 });
