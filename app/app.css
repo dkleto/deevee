@@ -211,7 +211,7 @@ h3 {
 .partsBox .partName {
   position: absolute;
   left: 0;
-  right: 2.6rem;
+  right: 1.5rem;
   width: auto;
   text-overflow: ellipsis;
   overflow: hidden;
