@@ -27,9 +27,11 @@ describe('deeVee app', function() {
       var stageAdd = element(by.css('.stageAdd'));
       var partAdd = element(by.css('.partAdd'));
       var dialog = element(by.css('.dialog'));
+      var partsList = element.all(by.repeater('part in stage.partsList'));
 
       stageAdd.click();
       expect(dialog.isPresent()).toBeFalsy;
+      expect(partsList.count()).toBe(0);
       partAdd.click();
       expect(dialog.isPresent()).toBeTruthy;
 
