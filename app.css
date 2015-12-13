@@ -3,7 +3,7 @@ html {
   font-family: 'Roboto', sans-serif;
 }
 body.partDialogOpen {
-  overflow: hidden;
+  overflow: auto;
 }
 [ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
   display: none;
@@ -15,10 +15,11 @@ a {
 .overlay {
   position: fixed;
   top: 0;
-  left: 0;
   height: 100%;
   width: 100%;
   z-index: 10;
+  top:0;
+  bottom: 0;
   background-color: rgba(0,0,0,0.3);
 }
 /** Main view **/
@@ -79,6 +80,14 @@ h3 {
   cursor: pointer;
   color: #666666;
   border-left: 0.3rem solid #EEEEEE;
+}
+.catTitles .multiplier hr {
+  padding-left: 0;
+  margin-left: 0.7rem;
+  width: 6rem;
+  height: 1px;
+  border: none;
+  background-color: #C2C2C2;
 }
 .catTitles h2.catTitle.selected {
   color: #222222;
@@ -211,7 +220,7 @@ h3 {
 .partsBox .partName {
   position: absolute;
   left: 0;
-  right: 2.6rem;
+  right: 1.5rem;
   width: auto;
   text-overflow: ellipsis;
   overflow: hidden;
