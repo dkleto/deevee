@@ -7,6 +7,14 @@ deevee.controller('stageCtrl', ['$scope', '$http', function($scope, $http) {
       $scope.parts = data;
       $scope.hideCats();
     });
+    $scope.multiplier = 1;
+    $scope.incrementMultiplier = function() {
+        if ($scope.multiplier > 4) {
+            $scope.multiplier = 1;
+        } else {
+            $scope.multiplier++;
+        }
+    }
     $scope.isPartDialogOpen = function() {
         return $scope.partDialog ? 'partDialogOpen' : '';
     }
@@ -33,7 +41,7 @@ deevee.controller('stageCtrl', ['$scope', '$http', function($scope, $http) {
         $scope.currentStage = false;
     }
     $scope.savePartDialog = function(stageIndex, part) {
-        $scope.addStagePart(stageIndex, part);
+        $scope.addStagePart(stageIndex, part, $scope.multiplier);
         $scope.closePartDialog();
     }
     $scope.gravity = 9.81;
@@ -60,8 +68,11 @@ deevee.controller('stageCtrl', ['$scope', '$http', function($scope, $http) {
         }
         $scope.updateTotals();
     }
-    $scope.addStagePart = function(stageIndex, part) {
-        $scope.stageList[stageIndex].addPart(part);
+    $scope.addStagePart = function(stageIndex, part, multiplier) {
+        for (var i = 0; i < multiplier; i++) {
+            console.log('adding: '+part);
+            $scope.stageList[stageIndex].addPart(part);
+        }
         $scope.updateCalculations(stageIndex);
         $scope.updateTotals();
     }
