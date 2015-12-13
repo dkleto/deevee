@@ -80,6 +80,14 @@ h3 {
   color: #666666;
   border-left: 0.3rem solid #EEEEEE;
 }
+.catTitles .multiplier hr {
+  padding-left: 0;
+  margin-left: 0.7rem;
+  width: 6rem;
+  height: 1px;
+  border: none;
+  background-color: #C2C2C2;
+}
 .catTitles h2.catTitle.selected {
   color: #222222;
   border-left: 0.3rem solid #222222;

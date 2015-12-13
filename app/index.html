@@ -22,6 +22,7 @@
         <div class="catTitles">
           <h2 class="catTitle" ng-class="catSelected($index)"ng-repeat="category in parts track by $index" ng-click="toggleCat($index)">{{category.name}}</h2>
           <div class="multiplier" ng-click="incrementMultiplier()">
+            <hr>
             <h2 class="catTitle">x{{multiplier}}</h2>
           </div>
         </div>
