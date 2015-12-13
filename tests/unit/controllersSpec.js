@@ -137,7 +137,7 @@ describe('deeVee controllers', function() {
         scope.addStage();
         scope.addStage();
         expect(scope.stageList[1].partsList).toEqual([]);
-        scope.addStagePart(1, scope.testPart1);
+        scope.addStagePart(1, scope.testPart1, 1);
         expect(scope.stageList[1].partsList).toEqual([scope.testPart1]);
     });
 
@@ -145,10 +145,21 @@ describe('deeVee controllers', function() {
         $httpBackend.flush();
         scope.addStage();
         scope.addStage();
-        scope.addStagePart(1, scope.testPart1);
+        scope.addStagePart(1, scope.testPart1, 1);
         expect(scope.stageList[1].partsList).toEqual([scope.testPart1]);
         scope.removeStagePart(1, 0);
         expect(scope.stageList[1].partsList).toEqual([]);
+    });
+
+    it('should add multiple parts to a specific stage', function() {
+        $httpBackend.flush();
+        scope.addStage();
+        scope.addStage();
+        expect(scope.stageList[1].partsList).toEqual([]);
+        scope.addStagePart(1, scope.testPart1, 2);
+        expect(scope.stageList[1].partsList.length).toEqual(2);
+        scope.removeStagePart(1, 0);
+        expect(scope.stageList[1].partsList).toEqual([scope.testPart1]);
     });
 
     it('should update calculations across lower stages', function() {
