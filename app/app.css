@@ -88,6 +88,16 @@ h3 {
   border: none;
   background-color: #C2C2C2;
 }
+.catTitles .multiplier a {
+  font-size: 1.1rem;
+  margin: 0 0 0 0.3rem;
+  padding: 0px 0px 0px 0.5rem;
+  display: inline-block;
+  text-align: left;
+  cursor: pointer;
+  font-weight: bold;
+  color: #666666;
+}
 .catTitles .multiplier .highlight-blue {
   color: #0098ce;
 }
