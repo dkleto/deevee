@@ -6,10 +6,10 @@ var del = require('del');
 var deploy = require('gulp-gh-pages');
 
 var paths = {
-    files: ['app/**/*', '!app/**/*.js'],
-    js: ['app/**/*.js'],
-    filesdist: ['dist/**/*', '!dist/**/*.js'],
-    jsdist: ['dist/**/*.js'],
+    files: ['app/app.css', 'app/index.html', 'app/**/*'],
+    js: ['app/app.js'],
+    filesdist: ['dist/app.css', 'dist/index.html', 'dist/parts'],
+    jsdist: ['dist/all.min.js'],
 }
 
 gulp.task('clean:js', function() {
