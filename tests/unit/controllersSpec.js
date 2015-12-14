@@ -193,5 +193,18 @@ describe('deeVee controllers', function() {
                                       'totalmass' : 7,
                                       'totalparts': 4});
     });
+
+    it('should highglight multiplier with the right colour', function() {
+        expect(scope.multiplier).toEqual(1);
+        expect(scope.multiClass()).toEqual('');
+        for (var i=2; i<6; i++) {
+            scope.incrementMultiplier();
+            expect(scope.multiplier).toEqual(i);
+            expect(scope.multiClass()).toEqual('highlight-blue');
+        }
+        scope.incrementMultiplier();
+        expect(scope.multiplier).toEqual(1);
+        expect(scope.multiClass()).toEqual('');
+    });
   });
 });

@@ -8,6 +8,12 @@ deevee.controller('stageCtrl', ['$scope', '$http', function($scope, $http) {
       $scope.hideCats();
     });
     $scope.multiplier = 1;
+    $scope.multiClass = function() {
+        if ($scope.multiplier > 1) {
+            return 'highlight-blue';
+        }
+        return '';
+    }
     $scope.incrementMultiplier = function() {
         if ($scope.multiplier > 4) {
             $scope.multiplier = 1;

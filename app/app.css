@@ -88,6 +88,9 @@ h3 {
   border: none;
   background-color: #C2C2C2;
 }
+.catTitles .multiplier .highlight-blue {
+  color: #0098ce;
+}
 .catTitles h2.catTitle.selected {
   color: #222222;
   border-left: 0.3rem solid #222222;
