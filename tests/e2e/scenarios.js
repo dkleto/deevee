@@ -2,11 +2,11 @@
 
 describe('deeVee app', function() {
 
+  beforeEach(function() {
+    browser.get('index.html');
+  });
   describe('Staging view', function() {
 
-    beforeEach(function() {
-      browser.get('index.html');
-    });
 
 
     it('should allow the user to add and remove stages', function() {
@@ -22,6 +22,8 @@ describe('deeVee app', function() {
       expect(stageList.count()).toBe(0);
 
     });
+  });
+  describe('Parts dialog view', function() {
 
     it('should allow the user to select parts to add and remove', function() {
       var stageAdd = element(by.css('.stageAdd'));
