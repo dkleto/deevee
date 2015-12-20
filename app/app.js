@@ -41,6 +41,7 @@ deevee.controller('stageCtrl', ['$scope', '$http', function($scope, $http) {
     $scope.openPartDialog = function(stageIndex) {
         $scope.currentStage = stageIndex;
         $scope.partDialog = true;
+        $scope.multiplier = 1;
     }
     $scope.closePartDialog = function() {
         $scope.partDialog = false;
