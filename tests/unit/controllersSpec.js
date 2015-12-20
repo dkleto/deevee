@@ -206,5 +206,12 @@ describe('deeVee controllers', function() {
         expect(scope.multiplier).toEqual(1);
         expect(scope.multiClass()).toEqual('');
     });
+
+    it('should reset multiplier for each new part selection', function() {
+        expect(scope.multiplier).toEqual(1);
+        scope.multiplier = 2;
+        scope.openPartDialog();
+        expect(scope.multiplier).toEqual(1);
+    });
   });
 });
