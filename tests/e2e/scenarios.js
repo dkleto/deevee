@@ -61,6 +61,26 @@ describe('deeVee app', function() {
       expect(partsList.count()).toBe(2);
     });
 
+    it('should allow the user to close the parts dialog', function() {
+      var stageAdd = element(by.css('.stageAdd'));
+      var partAdd = element(by.css('.partAdd a'));
+      var dialog = element(by.css('.dialog'));
+      var closeDialog = element(by.css('.dialogClose'));
+      var overlay = element(by.css('.overlay'));
+
+      stageAdd.click();
+      expect(dialog.isPresent()).toBeFalsy;
+      partAdd.click();
+      expect(dialog.isPresent()).toBeTruthy;
+      closeDialog.click();
+      expect(dialog.isPresent()).toBeFalsy;
+      partAdd.click();
+      expect(dialog.isPresent()).toBeTruthy;
+      overlay.click();
+      expect(dialog.isPresent()).toBeFalsy;
+
+    });
+
     it('should allow the user to remove parts', function() {
       var stageAdd = element(by.css('.stageAdd'));
       var partAdd = element(by.css('.partAdd a'));
@@ -81,7 +101,7 @@ describe('deeVee app', function() {
       expect(partsList.count()).toBe(1);
       partRemove.click();
       expect(partsList.count()).toBe(0);
-
     });
+
   });
 });
