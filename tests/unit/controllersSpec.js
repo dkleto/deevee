@@ -194,6 +194,32 @@ describe('deeVee controllers', function() {
                                       'totalparts': 4});
     });
 
+    it('should never have NaN as total values', function() {
+        $httpBackend.flush();
+        var checkTotals = function(totals) {
+            for (var property in totals) {
+                if (totals.hasOwnProperty(property)) {
+                    expect(!isNaN(property)).toBeFalse();
+                }
+            }
+        }
+        checkTotals(scope.totals);
+        scope.addStage();
+        scope.addStage();
+        scope.addStage();
+        checkTotals(scope.totals);
+        scope.stageList[0].addPart(scope.testPart1);
+        scope.stageList[0].addPart(scope.testPart2);
+        scope.stageList[1].addPart(scope.testPart1);
+        scope.stageList[1].addPart(scope.testPart2);
+        checkTotals(scope.totals);
+        scope.updateCalculations(0);
+        checkTotals(scope.totals);
+        scope.updateCalculations(1);
+        checkTotals(scope.totals);
+    });
+
+
     it('should highglight multiplier with the right colour', function() {
         expect(scope.multiplier).toEqual(1);
         expect(scope.multiClass()).toEqual('');
