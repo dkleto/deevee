@@ -44,7 +44,7 @@
   <div class="container">
     <h1>DeeVee</h1>
     <div ng-cloak class="stageBox" ng-repeat="stage in stageList track by $index">
-      <a class="stageRemove" href="#" title="Remove stage" ng-click="removeStage($index)">&times</a>
+      <a class="stageRemove" title="Remove stage" ng-click="removeStage($index)">&times</a>
       <div class="stageContent">
         <h2>Stage {{stageList.length - $index}}</h2>
 
@@ -55,13 +55,13 @@
                  <span class="partName">
                 {{part.name}}
                  </span>
-                  <span class="partRemove"><a href="#" ng-click="removeStagePart($parent.$index, $index)">&times</a></span>
+                  <span class="partRemove"><a ng-click="removeStagePart($parent.$index, $index)">&times</a></span>
               </div>
             </li>
           </ul>
         </div>
         <span class=partAdd>
-        <a href="#" ng-click="openPartDialog($index)">Add part</a>
+        <a ng-click="openPartDialog($index)">Add part</a>
         </span>
         <span class="atmCheck">
           <input type="checkbox" ng-model="stage.atm" ng-change="updateCalculations($index); updateTotals()">
@@ -76,7 +76,7 @@
       </div>
     </div>
     <div ng-cloak class=totalsBox>
-      <a class="stageAdd" href="#" ng-click="addStage()">Add stage</a>
+      <a class="stageAdd" ng-click="addStage()">Add stage</a>
       <div class="totals">
       <h2>Total</h2>
         <p>
