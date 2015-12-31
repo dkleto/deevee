@@ -103,5 +103,17 @@ describe('deeVee app', function() {
       expect(partsList.count()).toBe(0);
     });
 
+    it('should not reset scroll position when adding stages', function() {
+      var stageAdd = element(by.css('.stageAdd'));
+      var partAdd = element(by.css('.partAdd a'));
+
+      expect(browser.executeScript('return window.pageYOffset;')).toEqual(0);
+
+      for (var i=0; i<7; i++) {
+          stageAdd.click();
+      }
+      expect(browser.executeScript('return window.pageYOffset;')).toNotEqual(0);
+    });
+
   });
 });
