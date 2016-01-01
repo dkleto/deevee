@@ -68,12 +68,15 @@ describe('deeVee app', function() {
       var closeDialog = element(by.css('.dialogClose'));
       var overlay = element(by.css('.overlay'));
 
+      /* First test cancel icon in top right corner. */
       stageAdd.click();
       expect(dialog.isPresent()).toBeFalsy;
       partAdd.click();
       expect(dialog.isPresent()).toBeTruthy;
       closeDialog.click();
       expect(dialog.isPresent()).toBeFalsy;
+
+      /* Test cancellation by clicking outside the dialog. */
       partAdd.click();
       expect(dialog.isPresent()).toBeTruthy;
       overlay.click();
@@ -103,16 +106,46 @@ describe('deeVee app', function() {
       expect(partsList.count()).toBe(0);
     });
 
-    it('should not reset scroll position when adding stages', function() {
+    it('should not reset scroll position', function() {
       var stageAdd = element(by.css('.stageAdd'));
-      var partAdd = element(by.css('.partAdd a'));
+      var partAdd = element.all(by.css('.partAdd a')).last();
+      var catTitle = element.all(by.repeater('category in parts')).first();
+      var part = element.all(by.repeater('part in subcategory.parts')).first();
+      var closeDialog = element(by.css('.dialogClose'));
+      var overlay = element(by.css('.overlay'));
+      var getScroll = 'return window.pageYOffset;';
+      var scrollBottom = 'window.scrollTo(0,document.body.scrollHeight);';
 
-      expect(browser.executeScript('return window.pageYOffset;')).toEqual(0);
+      /* Test stage addition. */
+      expect(browser.executeScript(scrollBottom + getScroll)).toEqual(0);
 
-      for (var i=0; i<7; i++) {
+      for (var i=0; i<16; i++) {
           stageAdd.click();
       }
-      expect(browser.executeScript('return window.pageYOffset;')).toNotEqual(0);
+      expect(browser.executeScript(getScroll)).toNotEqual(0);
+
+      /* Test part addition. */
+      browser.executeScript(scrollBottom).then(function() {
+          partAdd.click();
+          catTitle.click();
+          part.click();
+          expect(browser.executeScript(getScroll)).toNotEqual(0);
+     });
+
+      /* Test parts dialog cancellation by clicking cancel icon. */
+      browser.executeScript(scrollBottom).then(function() {
+          partAdd.click();
+          closeDialog.click();
+          expect(browser.executeScript(getScroll)).toNotEqual(0);
+      });
+
+      /* Test parts dialog cancellation by clicking outside dialog. */
+      browser.executeScript(scrollBottom).then(function() {
+          partAdd.click();
+          overlay.click();
+          expect(browser.executeScript(getScroll)).toNotEqual(0);
+      });
+
     });
 
   });
