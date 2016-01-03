@@ -23,14 +23,14 @@ describe('deeVee app', function() {
   });
   describe('Part selection', function() {
 
-    it('should allow the user to add a part', function() {
-      var stageAdd = element(by.css('.stageAdd'));
-      var partAdd = element(by.css('.partAdd a'));
-      var dialog = element(by.css('.dialog'));
-      var partsList = element.all(by.repeater('part in stage.partsList'));
-      var catTitle = element.all(by.repeater('category in parts')).first();
-      var part = element.all(by.repeater('part in subcategory.parts')).first();
+    var stageAdd = element(by.css('.stageAdd'));
+    var partAdd = element.all(by.css('.partAdd a')).first();
+    var dialog = element(by.css('.dialog'));
+    var partsList = element.all(by.repeater('part in stage.partsList'));
+    var catTitle = element.all(by.repeater('category in parts')).first();
+    var part = element.all(by.repeater('part in subcategory.parts')).first();
 
+    it('should allow the user to add a part', function() {
       stageAdd.click();
       expect(dialog.isPresent()).toBeFalsy;
       expect(partsList.count()).toBe(0);
@@ -42,12 +42,6 @@ describe('deeVee app', function() {
     });
 
     it('should allow the user to add multiple parts', function() {
-      var stageAdd = element(by.css('.stageAdd'));
-      var partAdd = element(by.css('.partAdd a'));
-      var dialog = element(by.css('.dialog'));
-      var partsList = element.all(by.repeater('part in stage.partsList'));
-      var catTitle = element.all(by.repeater('category in parts')).first();
-      var part = element.all(by.repeater('part in subcategory.parts')).first();
       var multiplier = element(by.css('.multiplier a'));
 
       stageAdd.click();
@@ -62,9 +56,6 @@ describe('deeVee app', function() {
     });
 
     it('should allow the user to close the parts dialog', function() {
-      var stageAdd = element(by.css('.stageAdd'));
-      var partAdd = element(by.css('.partAdd a'));
-      var dialog = element(by.css('.dialog'));
       var closeDialog = element(by.css('.dialogClose'));
       var overlay = element(by.css('.overlay'));
 
@@ -85,12 +76,6 @@ describe('deeVee app', function() {
     });
 
     it('should allow the user to remove parts', function() {
-      var stageAdd = element(by.css('.stageAdd'));
-      var partAdd = element(by.css('.partAdd a'));
-      var dialog = element(by.css('.dialog'));
-      var partsList = element.all(by.repeater('part in stage.partsList'));
-      var catTitle = element.all(by.repeater('category in parts')).first();
-      var part = element.all(by.repeater('part in subcategory.parts')).first();
       var multiplier = element(by.css('.multiplier a'));
       var partRemove = element(by.css('.partRemove a'));
 
@@ -107,10 +92,6 @@ describe('deeVee app', function() {
     });
 
     it('should not reset scroll position', function() {
-      var stageAdd = element(by.css('.stageAdd'));
-      var partAdd = element.all(by.css('.partAdd a')).last();
-      var catTitle = element.all(by.repeater('category in parts')).first();
-      var part = element.all(by.repeater('part in subcategory.parts')).first();
       var closeDialog = element(by.css('.dialogClose'));
       var overlay = element(by.css('.overlay'));
       var getScroll = 'return window.pageYOffset;';
